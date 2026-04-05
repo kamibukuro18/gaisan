@@ -24,7 +24,95 @@ window.siteContent = {
     },
   ],
 
-  projects: [],
+  projects: [
+    {
+      slug: "steam-image-exporter",
+      meta: "Desktop App",
+      title: "Steam Image Exporter",
+      summary:
+        "1枚のキーアートから Steam ストア向け画像セットをまとめて生成するデスクトップアプリ。ロゴ配置、フォーカスポイント調整、書き出し前チェックまで含めて扱える。",
+      year: "2026.04",
+      tags: ["Steam", "Desktop", "TypeScript", "Rust"],
+      cta: "Read detail",
+      details: [
+        "1枚の画像から Steam 用アセットを一括生成",
+        "ロゴのドラッグ&ドロップと背景除去に対応",
+        "プレビュー上でフォーカスポイントを設定できる",
+        "GitHub Releases ベースのアップデート確認あり",
+      ],
+      page: {
+        eyebrow: "Project / 2026.04",
+        intro:
+          "Steam 向けのストア画像制作をまとめて処理するためのデスクトップアプリ。1枚のキーアートを元に、複数サイズの Steam 用アセットを一括で生成できるようにしている。",
+        highlights: [
+          "Steam ストア画像を 1 枚のキーアートからまとめて生成する",
+          "ロゴ配置やフォーカスポイント調整をアプリ内で完結できる",
+          "配布は GitHub Releases ベースで回している",
+        ],
+        sections: [
+          {
+            title: "概要",
+            paragraphs: [
+              "Steam Image Exporter は、Steam ストア向け画像セットを 1 枚のキーアートから生成するためのデスクトップアプリ。",
+              "ソース画像を読み込み、必要ならロゴを加え、複数の Steam 向けサイズへ一括で書き出せるようにしている。",
+            ],
+          },
+          {
+            title: "主な機能",
+            bullets: [
+              "png / jpg / jpeg / webp の入力に対応",
+              "ロゴ画像のドラッグ&ドロップに対応",
+              "ロゴの背景除去",
+              "ロゴ配置用のテンプレートプレビュー",
+              "プレビュー画像上でフォーカスポイントを設定",
+              "書き出し前の preflight checks",
+              "GitHub Releases ベースの更新確認",
+            ],
+          },
+          {
+            title: "使い方",
+            bullets: [
+              "キーアートを読み込む",
+              "必要ならロゴ画像を追加する",
+              "プレビュー上でフォーカスポイントを決める",
+              "書き出しモードを選ぶ",
+              "Steam 出力対象を選ぶ",
+              "Generate all Steam images で出力する",
+            ],
+          },
+          {
+            title: "出力モード",
+            bullets: [
+              "Fill (crop): 比率に合わせてトリミング",
+              "Fit (black): 全体を保持して余白を黒で埋める",
+              "Fit Extend (blur): 全体を保持して余白をぼかし背景で埋める",
+            ],
+          },
+          {
+            title: "出力対象",
+            paragraphs: [
+              "header capsule, small capsule, main capsule, vertical capsule, screenshot, page background, library capsule, library hero, library logo, event cover, event header など、Steam 用の複数ターゲットに対応している。",
+              "ロゴ関連ターゲットではベース画像に加えて `_logo` 版も生成される。",
+            ],
+          },
+          {
+            title: "技術と配布",
+            paragraphs: [
+              "リポジトリ上では TypeScript と Rust を中心に構成されている。",
+              "配布は GitHub Releases ベースで、更新があるとアプリ内で通知される。",
+            ],
+          },
+          {
+            title: "リンク",
+            bullets: [
+              "Repository: https://github.com/kamibukuro18/SteamImageExporter",
+              "Latest release: v0.1.0",
+            ],
+          },
+        ],
+      },
+    },
+  ],
 
   ideas: [
     {
@@ -176,6 +264,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.04",
+      title: "Steam Image Exporter を Projects に追加",
+      summary:
+        "Steam ストア向け画像セットを一括生成するデスクトップアプリとして掲載。",
+    },
     {
       date: "2026.04",
       title: "旅費規程ログ自動化ツールのアイデアを追加",
