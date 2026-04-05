@@ -26,6 +26,96 @@ window.siteContent = {
 
   projects: [
     {
+      slug: "flow-switch",
+      meta: "Desktop App",
+      title: "FlowSwitch",
+      summary:
+        "作業コンテキストをワンクリックで切り替えるための Tauri デスクトップアプリ。URL、アプリ、ファイル、フォルダ、コマンドをモード単位でまとめて起動できる。",
+      year: "2026.04",
+      tags: ["Desktop", "Productivity", "Tauri", "Gumroad"],
+      cta: "Read detail",
+      details: [
+        "URL、アプリ、ファイル、フォルダ、コマンドをまとめて起動",
+        "モード単位で作業セットを切り替え",
+        "トレイ常駐と軽量な Updates パネルあり",
+        "Gumroad でも配布中",
+      ],
+      page: {
+        eyebrow: "Project / 2026.04",
+        intro:
+          "FlowSwitch は、作業の切り替えをワンクリックで行うための Tauri デスクトップアプリ。仕事ごとに必要な URL、アプリ、ファイル、フォルダ、コマンドをモードとしてまとめて保存し、まとめて起動できるようにしている。",
+        highlights: [
+          "作業モードごとに起動対象をまとめて管理できる",
+          "URL だけでなくアプリ、ファイル、フォルダ、コマンドも扱える",
+          "GitHub Releases ベースの軽量な更新確認を持つ",
+        ],
+        sections: [
+          {
+            title: "概要",
+            paragraphs: [
+              "FlowSwitch は、作業コンテキストを素早く切り替えるためのデスクトップアプリ。",
+              "毎回同じブラウザタブ、アプリ、フォルダ、ターミナルコマンドを開く手間を、モード単位の起動セットとしてまとめることで減らしている。",
+            ],
+          },
+          {
+            title: "主な機能",
+            bullets: [
+              "URL、アプリ、フォルダ、ファイル、コンソールコマンドをモードに登録",
+              "モード単位で起動対象をまとめて一括実行",
+              "ドラッグ&ドロップ対応のコンパクトなモードエディタ",
+              "トレイ / メニューバー常駐",
+              "アプリ内の Info / About 表示",
+              "GitHub Releases ベースの Updates パネル",
+            ],
+          },
+          {
+            title: "使い方",
+            bullets: [
+              "作業ごとにモードを作る",
+              "そのモードに URL、アプリ、ファイル、フォルダ、コマンドを追加する",
+              "必要なタイミングで対象モードを起動する",
+              "ワンクリックで作業環境をまとめて開く",
+            ],
+          },
+          {
+            title: "Info / About / Updates",
+            paragraphs: [
+              "アプリ内には軽量な Info エントリがあり、アプリ名、作者情報、現在バージョン、外部リンク、最新リリース情報を表示する。",
+              "新しいリリースがある場合は NEW バッジを出すが、強制ポップアップにはせず、通常利用を邪魔しない設計になっている。",
+            ],
+          },
+          {
+            title: "技術と配布",
+            paragraphs: [
+              "リポジトリ上では TypeScript を中心に、Tauri ベースのデスクトップアプリとして構成されている。",
+              "更新情報は GitHub Releases API を利用して取得し、配布リンクとして Gumroad も持っている。",
+            ],
+          },
+          {
+            title: "開発要件",
+            bullets: [
+              "Node.js 18+",
+              "Rust with rustup",
+              "Tauri 2 toolchain",
+            ],
+          },
+          {
+            title: "リンク",
+            links: [
+              {
+                label: "Repository",
+                href: "https://github.com/kamibukuro18/FlowSwitch",
+              },
+              {
+                label: "Gumroad",
+                href: "https://kamibukuro.gumroad.com/l/flowswitch",
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
       slug: "steam-image-exporter",
       meta: "Desktop App",
       title: "Steam Image Exporter",
@@ -274,6 +364,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.04",
+      title: "FlowSwitch を Projects に追加",
+      summary:
+        "作業コンテキストをワンクリックで切り替えるデスクトップアプリとして掲載。",
+    },
     {
       date: "2026.04",
       title: "Steam Image Exporter を Projects に追加",
