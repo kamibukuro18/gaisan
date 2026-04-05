@@ -32,12 +32,13 @@ window.siteContent = {
       summary:
         "1枚のキーアートから Steam ストア向け画像セットをまとめて生成するデスクトップアプリ。ロゴ配置、フォーカスポイント調整、書き出し前チェックまで含めて扱える。",
       year: "2026.04",
-      tags: ["Steam", "Desktop", "TypeScript", "Rust"],
+      tags: ["Steam", "Desktop", "TypeScript", "Gumroad"],
       cta: "Read detail",
       details: [
         "1枚の画像から Steam 用アセットを一括生成",
         "ロゴのドラッグ&ドロップと背景除去に対応",
         "プレビュー上でフォーカスポイントを設定できる",
+        "Gumroad でも配布中",
         "GitHub Releases ベースのアップデート確認あり",
       ],
       page: {
@@ -106,6 +107,7 @@ window.siteContent = {
             title: "リンク",
             bullets: [
               "Repository: https://github.com/kamibukuro18/SteamImageExporter",
+              "Gumroad: https://kamibukuro.gumroad.com/l/steamimageexporter",
               "Latest release: v0.1.0",
             ],
           },
