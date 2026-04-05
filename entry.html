@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gaisan | entry</title>
+  <meta
+    name="description"
+    content="gaisan に載せているアイデアやメモの詳細ページ。"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-orb background-orb-a" aria-hidden="true"></div>
+  <div class="background-orb background-orb-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">gaisan</a>
+    <nav class="site-nav" aria-label="primary navigation">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#ideas">Ideas</a>
+      <a href="index.html#notes">Notes</a>
+    </nav>
+  </header>
+
+  <main class="entry-page">
+    <section class="entry-hero reveal">
+      <p class="eyebrow" id="entry-eyebrow"></p>
+      <h1 id="entry-title"></h1>
+      <p class="entry-intro" id="entry-intro"></p>
+      <div class="hero-actions">
+        <a class="action-link action-link-secondary" id="back-link" href="index.html">Back to index</a>
+      </div>
+    </section>
+
+    <section class="entry-section reveal">
+      <div class="entry-grid">
+        <aside class="entry-sidebar">
+          <p class="panel-label">Highlights</p>
+          <ul class="entry-highlights" id="entry-highlights"></ul>
+        </aside>
+        <div class="entry-content" id="entry-sections"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p id="footer-text"></p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="entry.js"></script>
+</body>
+</html>

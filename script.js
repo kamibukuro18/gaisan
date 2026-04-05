@@ -17,6 +17,18 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function getEntryHref(collectionName, item) {
+  if (item.href) {
+    return item.href;
+  }
+
+  if (item.slug) {
+    return `entry.html?type=${encodeURIComponent(collectionName)}&slug=${encodeURIComponent(item.slug)}`;
+  }
+
+  return "#";
+}
+
 heroEyebrow.textContent = content.hero.eyebrow;
 heroTitle.textContent = content.hero.title;
 heroSummary.textContent = content.hero.summary;
@@ -44,7 +56,7 @@ content.stats.forEach((stat) => {
   statsGrid.appendChild(item);
 });
 
-function renderCardGrid(targetId, items, emptyMessage) {
+function renderCardGrid(targetId, collectionName, items, emptyMessage) {
   const target = document.getElementById(targetId);
 
   if (!items.length) {
@@ -63,8 +75,8 @@ function renderCardGrid(targetId, items, emptyMessage) {
       .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
       .join("");
 
-    const href = item.href || "#";
-    const hasHref = Boolean(item.href);
+    const href = getEntryHref(collectionName, item);
+    const hasHref = href !== "#";
     const isExternal = /^https?:\/\//.test(href);
     const targetAttr = isExternal ? ' target="_blank" rel="noreferrer"' : "";
     const details = (item.details || [])
@@ -104,10 +116,10 @@ function renderTimeline() {
   });
 }
 
-renderCardGrid("featured-grid", content.featured, "");
-renderCardGrid("projects-grid", content.projects, content.emptyStates.projects);
-renderCardGrid("ideas-grid", content.ideas, content.emptyStates.ideas);
-renderCardGrid("notes-grid", content.notes, content.emptyStates.notes);
+renderCardGrid("featured-grid", "featured", content.featured, "");
+renderCardGrid("projects-grid", "projects", content.projects, content.emptyStates.projects);
+renderCardGrid("ideas-grid", "ideas", content.ideas, content.emptyStates.ideas);
+renderCardGrid("notes-grid", "notes", content.notes, content.emptyStates.notes);
 renderTimeline();
 
 const observer = new IntersectionObserver(
