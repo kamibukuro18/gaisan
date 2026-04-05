@@ -1,29 +1,5 @@
 window.siteContent = {
-  hero: {
-    eyebrow: "",
-    title: "GAIさんの記録",
-    summary:
-      "アイデア、作ったもの、メモをまとめて置いておくための場所です。",
-    note: "",
-    links: [
-      {
-        label: "GitHub Profile",
-        href: "https://github.com/kamibukuro18",
-        style: "primary",
-      },
-      {
-        label: "Site Repository",
-        href: "https://github.com/kamibukuro18/gaisan",
-        style: "secondary",
-      },
-    ],
-  },
-
-  stats: [
-    { label: "Pinned links", key: "featured" },
-    { label: "Projects", key: "projects" },
-    { label: "Ideas", key: "ideas" },
-  ],
+  intro: "GAIさんのアイデア、作ったもの、メモを置いておくための記録場所。",
 
   featured: [
     {
@@ -222,6 +198,5 @@ window.siteContent = {
       "短いメモや覚え書きが増えていく想定です。必要なら外部リンク付きでも整理できます。",
   },
 
-  footer:
-    "Simple, static, and easy to grow. GitHub Pages で公開しやすく、あとから中身だけ増やせる構成です。",
+  footer: "記録を足していくためのシンプルな静的ページ。",
 };

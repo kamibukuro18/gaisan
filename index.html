@@ -14,15 +14,13 @@
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260405-2">
 </head>
 <body>
-  <div class="background-orb background-orb-a" aria-hidden="true"></div>
-  <div class="background-orb background-orb-b" aria-hidden="true"></div>
-
   <header class="site-header">
-    <a class="brand" href="#top">gaisan</a>
+    <a class="brand" href="#top">GAI</a>
     <nav class="site-nav" aria-label="primary navigation">
+      <a href="#featured">Links</a>
       <a href="#projects">Projects</a>
       <a href="#ideas">Ideas</a>
       <a href="#notes">Notes</a>
@@ -30,53 +28,34 @@
   </header>
 
   <main id="top">
-    <section class="hero reveal">
-      <div class="hero-copy">
-        <p class="eyebrow" id="hero-eyebrow"></p>
-        <h1 id="hero-title"></h1>
-        <p class="hero-summary" id="hero-summary"></p>
-        <p class="hero-note" id="hero-note"></p>
-        <div class="hero-actions" id="hero-links"></div>
-      </div>
-
-      <aside class="hero-panel">
-        <p class="panel-label">Snapshot</p>
-        <div class="stats-grid" id="stats-grid"></div>
-      </aside>
+    <section class="intro-section reveal">
+      <p class="intro-text" id="intro-text"></p>
     </section>
 
     <section class="section reveal" id="featured">
       <div class="section-heading">
-        <p class="section-kicker">Pinned</p>
-        <h2>まず見る場所</h2>
-        <p>最近見てほしいリンクや、このページの入口になるものを置きます。</p>
+        <h2>Links</h2>
       </div>
       <div class="card-grid" id="featured-grid"></div>
     </section>
 
     <section class="section reveal" id="projects">
       <div class="section-heading">
-        <p class="section-kicker">Projects</p>
-        <h2>作ったもの</h2>
-        <p>GitHub リポジトリ、公開ページ、試作品などをまとめるための棚です。</p>
+        <h2>Projects</h2>
       </div>
       <div class="card-grid" id="projects-grid"></div>
     </section>
 
     <section class="section reveal" id="ideas">
       <div class="section-heading">
-        <p class="section-kicker">Ideas</p>
-        <h2>アイデア置き場</h2>
-        <p>思いついたことを雑に投げても、後から読み返しやすい形で並ぶようにしています。</p>
+        <h2>Ideas</h2>
       </div>
       <div class="card-grid" id="ideas-grid"></div>
     </section>
 
     <section class="section reveal" id="notes">
       <div class="section-heading">
-        <p class="section-kicker">Notes</p>
-        <h2>メモと更新</h2>
-        <p>短い記録や、このサイト自体の更新ログを残すためのセクションです。</p>
+        <h2>Notes</h2>
       </div>
       <div class="notes-layout">
         <div class="card-grid compact-grid" id="notes-grid"></div>
@@ -89,7 +68,7 @@
     <p id="footer-text"></p>
   </footer>
 
-  <script src="content.js"></script>
-  <script src="script.js"></script>
+  <script src="content.js?v=20260405-2"></script>
+  <script src="script.js?v=20260405-2"></script>
 </body>
 </html>

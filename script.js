@@ -1,11 +1,6 @@
 const content = window.siteContent;
 
-const heroEyebrow = document.getElementById("hero-eyebrow");
-const heroTitle = document.getElementById("hero-title");
-const heroSummary = document.getElementById("hero-summary");
-const heroNote = document.getElementById("hero-note");
-const heroLinks = document.getElementById("hero-links");
-const statsGrid = document.getElementById("stats-grid");
+const introText = document.getElementById("intro-text");
 const footerText = document.getElementById("footer-text");
 
 function escapeHtml(value) {
@@ -29,40 +24,8 @@ function getEntryHref(collectionName, item) {
   return "#";
 }
 
-heroEyebrow.textContent = content.hero.eyebrow;
-heroTitle.textContent = content.hero.title;
-heroSummary.textContent = content.hero.summary;
-heroNote.textContent = content.hero.note;
+introText.textContent = content.intro || "";
 footerText.textContent = content.footer;
-
-if (!content.hero.eyebrow) {
-  heroEyebrow.hidden = true;
-}
-
-if (!content.hero.note) {
-  heroNote.hidden = true;
-}
-
-content.hero.links.forEach((link) => {
-  const anchor = document.createElement("a");
-  anchor.className = `action-link action-link-${link.style}`;
-  anchor.href = link.href;
-  anchor.target = "_blank";
-  anchor.rel = "noreferrer";
-  anchor.textContent = link.label;
-  heroLinks.appendChild(anchor);
-});
-
-content.stats.forEach((stat) => {
-  const value = Array.isArray(content[stat.key]) ? content[stat.key].length : stat.value;
-  const item = document.createElement("article");
-  item.className = "stat-card";
-  item.innerHTML = `
-    <span class="stat-value">${escapeHtml(value)}</span>
-    <span class="stat-label">${escapeHtml(stat.label)}</span>
-  `;
-  statsGrid.appendChild(item);
-});
 
 function renderCardGrid(targetId, collectionName, items, emptyMessage) {
   const target = document.getElementById(targetId);
@@ -92,7 +55,7 @@ function renderCardGrid(targetId, collectionName, items, emptyMessage) {
       .join("");
     const linkMarkup = hasHref
       ? `<a class="card-link" href="${escapeHtml(href)}"${targetAttr}>${escapeHtml(item.cta || "Open")}</a>`
-      : `<span class="card-link card-link-muted">${escapeHtml(item.cta || "Concept")}</span>`;
+      : "";
 
     card.innerHTML = `
       <p class="card-meta">${escapeHtml(item.meta || "Entry")}</p>
@@ -139,9 +102,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.16,
-  }
+  { threshold: 0.12 }
 );
 
 document.querySelectorAll(".reveal").forEach((element) => {
