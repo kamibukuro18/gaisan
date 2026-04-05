@@ -403,6 +403,12 @@ main {
   margin-top: 0.35rem;
 }
 
+.entry-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .entry-content {
   display: grid;
   gap: 0.8rem;

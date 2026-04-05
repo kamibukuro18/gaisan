@@ -85,11 +85,23 @@ function renderEntry(entry) {
       const bullets = (section.bullets || [])
         .map((bullet) => `<li>${escapeHtml(bullet)}</li>`)
         .join("");
+      const links = (section.links || [])
+        .map(
+          (link) => `
+            <li>
+              <a class="entry-link" href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">
+                ${escapeHtml(link.label)}
+              </a>
+            </li>
+          `
+        )
+        .join("");
 
       return `
         <article class="entry-block">
           <h2>${escapeHtml(section.title || "")}</h2>
           ${paragraphs}
+          ${links ? `<ul class="entry-list">${links}</ul>` : ""}
           ${bullets ? `<ul class="entry-list">${bullets}</ul>` : ""}
         </article>
       `;

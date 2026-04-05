@@ -105,9 +105,17 @@ window.siteContent = {
           },
           {
             title: "リンク",
+            links: [
+              {
+                label: "Repository",
+                href: "https://github.com/kamibukuro18/SteamImageExporter",
+              },
+              {
+                label: "Gumroad",
+                href: "https://kamibukuro.gumroad.com/l/steamimageexporter",
+              },
+            ],
             bullets: [
-              "Repository: https://github.com/kamibukuro18/SteamImageExporter",
-              "Gumroad: https://kamibukuro.gumroad.com/l/steamimageexporter",
               "Latest release: v0.1.0",
             ],
           },
