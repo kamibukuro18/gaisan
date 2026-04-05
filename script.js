@@ -35,6 +35,14 @@ heroSummary.textContent = content.hero.summary;
 heroNote.textContent = content.hero.note;
 footerText.textContent = content.footer;
 
+if (!content.hero.eyebrow) {
+  heroEyebrow.hidden = true;
+}
+
+if (!content.hero.note) {
+  heroNote.hidden = true;
+}
+
 content.hero.links.forEach((link) => {
   const anchor = document.createElement("a");
   anchor.className = `action-link action-link-${link.style}`;

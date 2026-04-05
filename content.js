@@ -1,11 +1,10 @@
 window.siteContent = {
   hero: {
-    eyebrow: "Personal Index",
-    title: "アイデアと\n作ったものを\n一箇所に。",
+    eyebrow: "",
+    title: "GAIさんの記録",
     summary:
-      "思いついたこと、公開したリポジトリ、ちょっとしたメモを、あとから見返しやすい形で残していくためのホームページです。",
-    note:
-      "ここには完成品だけでなく、途中の試作や雑な発想もそのまま置いていきます。更新は少しずつ増やしていく想定です。",
+      "アイデア、作ったもの、メモをまとめて置いておくための場所です。",
+    note: "",
     links: [
       {
         label: "GitHub Profile",
