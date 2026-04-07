@@ -53,12 +53,18 @@ function renderCardGrid(targetId, collectionName, items, emptyMessage) {
     const details = (item.details || [])
       .map((detail) => `<li>${escapeHtml(detail)}</li>`)
       .join("");
+    const statusMarkup = item.status
+      ? `<span class="status-badge">${escapeHtml(item.status)}</span>`
+      : "";
     const linkMarkup = hasHref
       ? `<a class="card-link" href="${escapeHtml(href)}"${targetAttr}>${escapeHtml(item.cta || "Open")}</a>`
       : "";
 
     card.innerHTML = `
-      <p class="card-meta">${escapeHtml(item.meta || "Entry")}</p>
+      <div class="card-topline">
+        <p class="card-meta">${escapeHtml(item.meta || "Entry")}</p>
+        ${statusMarkup}
+      </div>
       <h3 class="card-title">${escapeHtml(item.title)}</h3>
       <p class="card-summary">${escapeHtml(item.summary)}</p>
       ${details ? `<ul class="card-details">${details}</ul>` : ""}

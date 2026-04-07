@@ -3,6 +3,7 @@ const content = window.siteContent;
 const footerText = document.getElementById("footer-text");
 const entryEyebrow = document.getElementById("entry-eyebrow");
 const entryTitle = document.getElementById("entry-title");
+const entryStatus = document.getElementById("entry-status");
 const entryIntro = document.getElementById("entry-intro");
 const highlightsList = document.getElementById("entry-highlights");
 const sectionsRoot = document.getElementById("entry-sections");
@@ -46,6 +47,7 @@ function getBackHref(type) {
 function renderNotFound() {
   entryEyebrow.textContent = "Not Found";
   entryTitle.textContent = "ページが見つかりません";
+  entryStatus.hidden = true;
   entryIntro.textContent =
     "指定された詳細ページが存在しないか、まだデータが追加されていません。";
   sectionsRoot.innerHTML = `
@@ -65,6 +67,13 @@ function renderEntry(entry) {
   document.title = `gaisan | ${entry.title}`;
   entryEyebrow.textContent = page.eyebrow || entry.meta || "Entry";
   entryTitle.textContent = entry.title;
+  if (entry.status) {
+    entryStatus.hidden = false;
+    entryStatus.textContent = entry.status;
+  } else {
+    entryStatus.hidden = true;
+    entryStatus.textContent = "";
+  }
   entryIntro.textContent = page.intro || entry.summary || "";
 
   const highlights = page.highlights || [];
