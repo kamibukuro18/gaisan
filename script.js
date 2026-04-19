@@ -94,6 +94,7 @@ function renderTimeline() {
 }
 
 renderCardGrid("featured-grid", "featured", content.featured, "");
+renderCardGrid("games-grid", "games", content.games, content.emptyStates.games);
 renderCardGrid("projects-grid", "projects", content.projects, content.emptyStates.projects);
 renderCardGrid("ideas-grid", "ideas", content.ideas, content.emptyStates.ideas);
 renderCardGrid("notes-grid", "notes", content.notes, content.emptyStates.notes);

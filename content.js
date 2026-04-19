@@ -24,6 +24,128 @@ window.siteContent = {
     },
   ],
 
+  games: [
+    {
+      slug: "crabhouse",
+      meta: "Mobile Game",
+      title: "Crabhouse",
+      summary:
+        "2021年に話題化した、カニのおうちを眺めるだけのゆるいスマホゲーム。iOS と Android で展開し、メディア掲載やストア上での反響も大きかった代表作のひとつ。",
+      year: "2021.02",
+      status: "Released",
+      tags: ["Game", "Mobile", "iOS", "Android"],
+      cta: "Read detail",
+      details: [
+        "カニが増えて、ときどきしゃべるだけの観賞ゲーム",
+        "GAIBAKO公式プロフィールでは 2 日で 10 万 DL、App Store 1 位と案内",
+        "iOS 版は後に Crabhome へ改名、Android 版は Crabhouse 名義で継続",
+        "AUTOMATON、ねとらぼ、ABEMA TIMES などで掲載",
+      ],
+      page: {
+        eyebrow: "Game / 2021.02",
+        intro:
+          "Crabhouse は、カニのおうちをただ眺めて過ごすためのスマホゲーム。誰かが起動するとカニが増え、ときどきカニがしゃべるだけという構造で、2021年2月にSNSと各種メディアで一気に広がった。",
+        highlights: [
+          "GAIBAKO公式プロフィールでは、2日で10万DLと App Store ランキング1位を案内",
+          "iOS では後に Apple の要請で Crabhome へ改名",
+          "国内外のゲーム / テック系メディアで継続的に紹介された",
+        ],
+        sections: [
+          {
+            title: "概要",
+            paragraphs: [
+              "Clubhouse が話題だった時期に生まれた、カニだけが集まるゆるい観賞ゲーム。",
+              "プレイヤーは部屋の中で増減するカニを眺め、音楽を流し、ときどき表示されるカニのセリフを読む。競争や攻略よりも、発想の面白さと空気感で広がったタイプの作品。",
+            ],
+          },
+          {
+            title: "作品情報",
+            bullets: [
+              "初出: 2021年2月",
+              "プラットフォーム: iOS / Android",
+              "iOS 版名称: Crabhome",
+              "Android 版名称: Crabhouse",
+              "開発: GAIBAKO",
+            ],
+          },
+          {
+            title: "主な実績",
+            bullets: [
+              "GAIBAKO公式プロフィールで 2日で10万DL と案内",
+              "GAIBAKO公式プロフィールで App Store ランキング1位 と案内",
+              "App Store では 2021年4月の更新履歴で Crabhouse から Crabhome への改名を確認できる",
+              "Google Play では 1万+ ダウンロード表記を確認できる",
+            ],
+          },
+          {
+            title: "ストア / 公式リンク",
+            links: [
+              {
+                label: "GAIBAKO 公式プロフィール",
+                href: "https://gaibako.com/about/",
+              },
+              {
+                label: "GAIBAKO の Crabhouse ページ",
+                href: "https://gaibako.com/crabhouse/",
+              },
+              {
+                label: "App Store: Crabhome",
+                href: "https://apps.apple.com/jp/app/crabhome/id1551908729",
+              },
+              {
+                label: "Google Play: Crabhouse",
+                href: "https://play.google.com/store/apps/details?hl=ja&id=com.GAIBAKO.Crabhouse",
+              },
+            ],
+          },
+          {
+            title: "メディア掲載",
+            paragraphs: [
+              "2021年2月の公開直後から、ゲームメディア、テックメディア、ニュース系メディアで取り上げられた。",
+            ],
+            links: [
+              {
+                label: "AUTOMATON: 2021-02-08",
+                href: "https://automaton-media.com/articles/newsjp/20210208-151467/",
+              },
+              {
+                label: "ねとらぼ: 2021-02-08",
+                href: "https://nlab.itmedia.co.jp/cont/articles/3315811/",
+              },
+              {
+                label: "ABEMA TIMES: 2021-02-09",
+                href: "https://times.abema.tv/articles/-/8645707",
+              },
+              {
+                label: "GIGAZINE: 2021-02-09",
+                href: "https://gigazine.net/gsc_news/en/20210209-crabhouse/",
+              },
+              {
+                label: "GameWith: 2021-02-10",
+                href: "https://gamewith.jp/gamedb/6576/articles/24469",
+              },
+              {
+                label: "マイナビニュース: 2021-02-15",
+                href: "https://news.mynavi.jp/article/20210215-1733102/",
+              },
+              {
+                label: "AUTOMATON: 改名リジェクト報道 2021-02-23",
+                href: "https://automaton-media.com/articles/newsjp/20210223-152941/",
+              },
+            ],
+          },
+          {
+            title: "補足",
+            paragraphs: [
+              "GAIBAKO公式プロフィールでは、Crabhouse をきっかけに ABEMA、テレビ朝日、日テレ news zero、Yahoo news、GIGAZINE、ねとらぼ、AUTOMATON、bizSPA!フレッシュ などでの掲載実績も案内している。",
+              "このページでは、公開Web上で追跡しやすい記事リンクを優先して掲載している。",
+            ],
+          },
+        ],
+      },
+    },
+  ],
+
   projects: [
     {
       slug: "flow-switch",
@@ -710,6 +832,12 @@ window.siteContent = {
   timeline: [
     {
       date: "2026.04",
+      title: "Games セクションを追加して Crabhouse を掲載",
+      summary:
+        "作成したゲームの一覧を新設し、Crabhouse の概要、ストア情報、メディア掲載を詳細ページ付きで整理。",
+    },
+    {
+      date: "2026.04",
       title: "FPS変換デスクトップツールのアイデアを追加",
       summary:
         "Tauri / Rust + FFmpeg で、均等間引き、範囲指定変換、自動 fps 判断を扱う映像制作向けツール案を記録。",
@@ -758,6 +886,8 @@ window.siteContent = {
   ],
 
   emptyStates: {
+    games:
+      "ここには自分で作ったゲームを追加していきます。ストア公開済みのものや、振り返って残しておきたい代表作をまとめる想定です。",
     projects:
       "まだ項目はありません。これから追加される GitHub リポジトリや公開物がここに並びます。",
     ideas:

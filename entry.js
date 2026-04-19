@@ -29,6 +29,10 @@ function getEntryData(type, slug) {
 }
 
 function getBackHref(type) {
+  if (type === "games") {
+    return "index.html#games";
+  }
+
   if (type === "projects") {
     return "index.html#projects";
   }
