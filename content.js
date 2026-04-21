@@ -338,6 +338,195 @@ window.siteContent = {
 
   ideas: [
     {
+      slug: "real-estate-inquiry-ai-gas",
+      meta: "App Idea",
+      title: "不動産会社向け問い合わせ対応AI自動化",
+      summary:
+        "Gmailで受信した不動産問い合わせをGASで取得し、AIで分類・情報抽出、Sheets / Driveから必要情報を参照して、Gmail下書きまで自動生成するGoogle Workspace完結型の業務自動化案。",
+      year: "2026.04",
+      status: "構成メモ",
+      tags: ["GAS", "Gemini", "Gmail", "Real Estate"],
+      cta: "Read detail",
+      details: [
+        "Gmail受信をトリガーに問い合わせ内容をAI解析",
+        "Google Sheetsの物件情報とDriveの資料を参照",
+        "返信文を生成し、Gmail下書きとして保存",
+        "低コスト・高再現性・導入しやすいGoogle Workspace構成",
+      ],
+      page: {
+        eyebrow: "App Idea / 2026.04",
+        intro:
+          "Gmailで受信した問い合わせメールをトリガーに、AIで内容を解析し、必要な情報をGoogle Sheets / Driveから取得し、返信文を生成してGmailの下書きとして保存するシステム案。Google Workspace内で完結する構成にして、導入・運用のハードルを下げる。",
+        highlights: [
+          "Gmail、GAS、Gemini API、Google Sheets、Google Drive の最小構成で成立する",
+          "問い合わせ分類、情報抽出、物件データ取得、返信文生成、下書き作成まで自動化する",
+          "いきなり自動送信せず、まずは下書き作成で人間確認を残す",
+        ],
+        sections: [
+          {
+            title: "概要",
+            paragraphs: [
+              "不動産会社の問い合わせ対応を、Google Workspace内で完結する形で自動化する。",
+              "問い合わせメールを処理し、物件情報や資料を参照したうえで、返信文をGmail下書きとして作成する。最初から完全自動返信にせず、人間が確認できる運用にする。",
+            ],
+          },
+          {
+            title: "使用技術スタック",
+            bullets: [
+              "基盤: Google Apps Script（GAS）",
+              "メール: Gmail / GmailApp / Gmail API",
+              "データ管理: Google Sheets",
+              "資料管理: Google Drive",
+              "AI: Gemini API 推奨。Vertex AI 経由または直接API",
+              "代替AI: OpenAI API。文章品質重視や将来的なWeb化で検討",
+            ],
+          },
+          {
+            title: "システム構成",
+            bullets: [
+              "Gmail受信",
+              "GASトリガー: 時間ベースまたはポーリング",
+              "メール取得・整形",
+              "AI解析: 分類 + 情報抽出",
+              "データ取得: Sheets / Drive",
+              "返信文生成: AI",
+              "Gmail下書き作成",
+              "ログ保存: Sheets",
+            ],
+          },
+          {
+            title: "Gmail",
+            paragraphs: [
+              "問い合わせ受信、スレッド管理、下書き作成、ラベル管理を担当する。",
+            ],
+            bullets: [
+              "使用機能: GmailApp / Gmail API",
+              "ラベル例: AI処理済み",
+              "ラベル例: 要確認",
+              "ラベル例: 下書き作成済み",
+            ],
+          },
+          {
+            title: "Google Apps Script",
+            paragraphs: [
+              "GASは全体のオーケストレーションを担当する中核。メール取得、AI API呼び出し、Sheets / Driveアクセス、下書き作成までをつなぐ。",
+            ],
+            bullets: [
+              "未処理メール取得",
+              "AI API呼び出し",
+              "Sheets / Driveアクセス",
+              "下書き作成",
+              "処理結果のログ保存",
+            ],
+          },
+          {
+            title: "AIの用途",
+            bullets: [
+              "問い合わせ分類: 空室確認、内見予約、初期費用、条件確認、その他",
+              "情報抽出: inquiryType、propertyName、desiredDate、conditions などをJSON化",
+              "必要データの特定: どの物件情報、費用表、資料が必要か判断",
+              "返信文生成: 顧客メール、抽出情報、物件データ、テンプレを入力にして生成",
+            ],
+          },
+          {
+            title: "Google Sheets",
+            paragraphs: [
+              "Sheetsは構造データの管理場所として使う。非エンジニアでも編集でき、クライアントごとにカスタムしやすい。",
+            ],
+            bullets: [
+              "物件マスタ",
+              "空室情報",
+              "初期費用表",
+              "担当者一覧",
+              "テンプレート",
+              "ログ",
+            ],
+          },
+          {
+            title: "Google Drive",
+            paragraphs: [
+              "Driveは画像、間取り図、PDF資料、添付ファイルの管理に使う。",
+            ],
+            bullets: [
+              "/物件資料/ 配下に物件ごとのフォルダを作る",
+              "例: /物件資料/○○マンション/floorplan.jpg",
+              "例: /物件資料/○○マンション/brochure.pdf",
+              "下書き作成時に必要資料を添付候補として取得する",
+            ],
+          },
+          {
+            title: "処理フロー詳細",
+            bullets: [
+              "1. 未処理メールを検索し、スレッド含めて取得してテキスト正規化",
+              "2. AI解析 Step1: 問い合わせ分類、情報抽出、必要データの特定",
+              "3. Sheetsから物件情報、空室情報、初期費用などを取得",
+              "4. Driveから間取り図や資料を取得",
+              "5. AI生成 Step2: 顧客メール、抽出情報、物件データ、テンプレから返信文を生成",
+              "6. Gmail下書き作成: 宛先、件名、本文、添付ファイル",
+              "7. Sheetsへ処理結果、問い合わせ内容、生成結果をログ保存",
+            ],
+          },
+          {
+            title: "GAS構成例",
+            bullets: [
+              "/gas/main.gs",
+              "/gas/gmailService.gs",
+              "/gas/aiService.gs",
+              "/gas/sheetService.gs",
+              "/gas/driveService.gs",
+              "/gas/draftService.gs",
+              "/gas/config.gs",
+            ],
+          },
+          {
+            title: "モジュール構成",
+            bullets: [
+              "gmailService: メール取得、ラベル付与",
+              "aiService: Gemini API呼び出し、JSON解析、プロンプト管理",
+              "sheetService: 物件検索、データ取得",
+              "driveService: ファイル検索、添付取得",
+              "draftService: 下書き作成",
+            ],
+          },
+          {
+            title: "Gemini vs OpenAI",
+            paragraphs: [
+              "Google Workspace内で完結させるなら、Gemini APIが第一候補。Google環境との親和性が高く、GASから扱いやすく、構造化出力も安定しやすい。",
+              "OpenAI APIは、返信文の文章品質をより重視する場合や、将来的にWebアプリ化する場合の選択肢として残す。",
+            ],
+          },
+          {
+            title: "非機能要件",
+            bullets: [
+              "GASの実行時間は最大6分",
+              "トリガーは最短1分",
+              "処理を軽量に分割する",
+              "1メールずつ処理する",
+              "重い処理を避ける",
+              "APIキーなどの機密情報は環境変数またはシークレット管理相当の仕組みで扱う",
+            ],
+          },
+          {
+            title: "拡張案",
+            bullets: [
+              "Supabase連携: 顧客DB",
+              "Web管理画面: Vercel",
+              "LINE連携",
+              "自動送信モード追加",
+              "承認フロー",
+            ],
+          },
+          {
+            title: "まとめ",
+            paragraphs: [
+              "最小構成は Gmail、GAS、Gemini API、Google Sheets、Google Drive で成立する。",
+              "この構成で、低コスト・高再現性・高導入性を狙える。",
+            ],
+          },
+        ],
+      },
+    },
+    {
       slug: "memory-recall-browser",
       meta: "App Idea",
       title: "Memory Recall Browser",
@@ -1250,6 +1439,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.04",
+      title: "不動産会社向け問い合わせ対応AI自動化のアイデアを追加",
+      summary:
+        "Gmail、GAS、Gemini、Sheets、Driveを使い、問い合わせ解析から返信下書き作成まで自動化する構成案を記録。",
+    },
     {
       date: "2026.04",
       title: "Memory Recall Browser に類似サービス比較を追記",
