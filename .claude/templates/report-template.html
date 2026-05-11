@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__TITLE__ — リサーチレポート</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-text: #111827;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+  --color-accent: #1E3A8A;
+  --color-accent-soft: #3B5BB8;
+  --color-bg: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-surface-2: #F1F5F9;
+  --color-border: #E5E7EB;
+  --color-border-strong: #CBD5E1;
+  --max-width: 880px;
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-serif: 'Noto Serif JP', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-surface);
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.report {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: var(--color-bg);
+  padding: clamp(56px, 8vh, 112px) clamp(32px, 6vw, 88px);
+  min-height: 100vh;
+  box-shadow: 0 0 60px rgba(15, 23, 42, 0.06);
+}
+
+/* ヘッダー */
+.report-header {
+  border-bottom: 2px solid var(--color-text);
+  padding-bottom: 36px;
+  margin-bottom: 64px;
+}
+.report-header .label {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.report-header h1 {
+  font-size: clamp(30px, 4.4vw, 44px);
+  line-height: 1.3;
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: -0.012em;
+  color: var(--color-text);
+}
+.report-header .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 36px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+.report-header .meta .item { display: flex; gap: 10px; align-items: baseline; }
+.report-header .meta dt { font-weight: 700; color: var(--color-text); }
+
+/* 目次 */
+.toc {
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-accent);
+  padding: 28px 36px;
+  margin: 56px 0;
+}
+.toc h2 {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 18px;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+}
+.toc ol {
+  list-style: none;
+  counter-reset: toc-counter;
+  padding-left: 0;
+}
+.toc ol li {
+  counter-increment: toc-counter;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--color-border);
+  font-size: 14px;
+  display: flex;
+  gap: 16px;
+}
+.toc ol li:last-child { border-bottom: none; }
+.toc ol li::before {
+  content: counter(toc-counter, decimal-leading-zero);
+  font-weight: 700;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.toc ol li a {
+  color: var(--color-text);
+  text-decoration: none;
+  flex: 1;
+}
+.toc ol li a:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+
+/* 章 */
+.section {
+  margin-top: 72px;
+  scroll-margin-top: 24px;
+}
+.section h2 {
+  font-size: clamp(22px, 2.8vw, 30px);
+  font-weight: 700;
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-text);
+  letter-spacing: -0.008em;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+.section h2 .num {
+  font-size: 0.7em;
+  font-weight: 900;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+.section h3 {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  color: var(--color-accent);
+  letter-spacing: -0.005em;
+}
+.section h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  color: var(--color-text);
+}
+
+.section p {
+  margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.section ul, .section ol {
+  margin-bottom: 18px;
+  padding-left: 26px;
+  font-size: 15px;
+}
+.section li { margin-bottom: 10px; line-height: 1.85; }
+.section ul li::marker { color: var(--color-accent); }
+
+.section strong { font-weight: 700; color: var(--color-text); }
+.section em { font-style: normal; background: linear-gradient(transparent 65%, rgba(30, 58, 138, 0.12) 65%); padding: 0 2px; }
+
+/* キーファインディングカード（エグゼクティブサマリー用） */
+.key-findings {
+  background: linear-gradient(180deg, var(--color-surface) 0%, white 100%);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 4px;
+  padding: 36px 40px;
+  margin: 40px 0;
+}
+.key-findings .label {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.key-findings ol {
+  counter-reset: kf-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-findings ol li {
+  counter-increment: kf-counter;
+  display: flex;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--color-border);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.key-findings ol li:last-child { border-bottom: none; }
+.key-findings ol li::before {
+  content: counter(kf-counter, decimal-leading-zero);
+  flex-shrink: 0;
+  font-weight: 900;
+  color: var(--color-accent);
+  font-size: 24px;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  min-width: 36px;
+}
+
+/* コールアウト（補足情報） */
+.callout {
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-accent-soft);
+  padding: 18px 26px;
+  margin: 28px 0;
+  font-size: 14px;
+  border-radius: 0 4px 4px 0;
+}
+.callout .callout-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* 注記 */
+.note {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  padding: 12px 16px;
+  background: var(--color-surface-2);
+  border-radius: 3px;
+  margin: 16px 0;
+}
+
+/* 引用 */
+blockquote {
+  border-left: 3px solid var(--color-accent-soft);
+  padding: 8px 28px;
+  margin: 28px 0;
+  font-family: var(--font-serif);
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
+}
+blockquote cite {
+  display: block;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 10px;
+}
+
+/* テーブル */
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.section thead th {
+  background: var(--color-text);
+  color: white;
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid var(--color-text);
+}
+.section tbody td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+  line-height: 1.7;
+}
+.section tbody tr:nth-child(even) td { background: #FAFBFC; }
+.section tbody tr:hover td { background: var(--color-surface); }
+
+/* シナリオブロック */
+.scenarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+.scenario {
+  border: 1px solid var(--color-border-strong);
+  padding: 20px 24px;
+  border-radius: 4px;
+}
+.scenario .scen-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-text-secondary);
+}
+.scenario.optimistic { border-top: 4px solid #16A34A; }
+.scenario.optimistic .scen-label { color: #16A34A; }
+.scenario.base { border-top: 4px solid var(--color-accent); }
+.scenario.base .scen-label { color: var(--color-accent); }
+.scenario.pessimistic { border-top: 4px solid #DC2626; }
+.scenario.pessimistic .scen-label { color: #DC2626; }
+.scenario h4 { font-size: 16px; margin-top: 0; margin-bottom: 12px; }
+.scenario p { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+
+/* リンク */
+a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* 出典 */
+.references {
+  margin-top: 96px;
+  padding-top: 36px;
+  border-top: 1px solid var(--color-border-strong);
+}
+.references h2 {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  border: none;
+  padding: 0;
+  margin-bottom: 24px;
+  display: block;
+}
+.references ol {
+  list-style: decimal;
+  padding-left: 36px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+.references ol li { margin-bottom: 10px; line-height: 1.7; }
+.references ol li a { color: var(--color-accent-soft); }
+
+/* フッター */
+.report-footer {
+  margin-top: 72px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+/* 印刷 */
+@media print {
+  body { background: white; font-size: 11pt; }
+  .report { box-shadow: none; padding: 16mm; max-width: 100%; }
+  .toc, .section, .key-findings, .scenarios, blockquote { page-break-inside: avoid; }
+  a { color: var(--color-text); text-decoration: none; }
+}
+
+/* レスポンシブ */
+@media (max-width: 720px) {
+  .report { padding: 36px 22px; }
+  .report-header h1 { font-size: 26px; }
+  .section h2 { font-size: 22px; }
+  .key-findings { padding: 24px 24px; }
+  .key-findings ol li { gap: 14px; }
+  .scenarios { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<article class="report">
+  <header class="report-header">
+    <div class="label">Research Report</div>
+    <h1>__TITLE__</h1>
+    <dl class="meta">
+      <div class="item"><dt>作成日</dt><dd>__DATE__</dd></div>
+      <div class="item"><dt>対象読者</dt><dd>経営層・意思決定者・事業責任者</dd></div>
+      <div class="item"><dt>形式</dt><dd>詳細リサーチレポート（補足含む）</dd></div>
+    </dl>
+  </header>
+
+  <!-- ===== REPORT_BODY_PLACEHOLDER ===== -->
+  <!-- reporter エージェントは Edit ツールで、この HTMLコメントブロック全体を      -->
+  <!-- 実際のレポート本文に置換する。次のセクション群を含めること:                 -->
+  <!--   1. 目次（class="toc"）                                                      -->
+  <!--   2. エグゼクティブサマリー（class="key-findings"）                           -->
+  <!--   3. 各章（class="section"、ID付き）                                          -->
+  <!--   4. 参考資料（class="references"）                                           -->
+  <!-- マークアップ詳細は reporter.md を参照。                                       -->
+  <!-- ===== END REPORT_BODY_PLACEHOLDER ===== -->
+
+  <footer class="report-footer">
+    AI 社員 — Generated Research Report
+  </footer>
+</article>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)",
+      "Bash(rm -Rf *)",
+      "Bash(rm -fR *)",
+      "Bash(*rm -rf *)",
+      "Bash(*rm -fr *)",
+      "Bash(sudo *)",
+      "Bash(su *)",
+      "Bash(mkfs *)",
+      "Bash(mkfs.*)",
+      "Bash(dd *)",
+      "Bash(fdisk *)",
+      "Bash(parted *)",
+      "Bash(shutdown *)",
+      "Bash(reboot *)",
+      "Bash(halt *)",
+      "Bash(poweroff *)",
+      "Bash(*git push*--force*)",
+      "Bash(*git push* -f)",
+      "Bash(*git push* -f *)",
+      "Bash(*git push *+*)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)"
+    ],
+    "defaultMode": "bypassPermissions"
+  },
+  "effortLevel": "low"
+}

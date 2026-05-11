@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /Users/ogikazuki/Desktop/5:3のワーク/presentations/.claude/templates/report-template.html /Users/ogikazuki/Desktop/5:3のワーク/presentations/output/report.html)",
+      "Bash(cp /Users/ogikazuki/Desktop/5:3のワーク/presentations/.claude/templates/presentation-template.html /Users/ogikazuki/Desktop/5:3のワーク/presentations/output/presentation.html)"
+    ]
+  }
+}
