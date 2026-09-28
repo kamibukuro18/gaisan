@@ -33,6 +33,10 @@ function getBackHref(type) {
     return "index.html#games";
   }
 
+  if (type === "aiGames") {
+    return "index.html#ai-games";
+  }
+
   if (type === "projects") {
     return "index.html#projects";
   }

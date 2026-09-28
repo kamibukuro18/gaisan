@@ -336,6 +336,8 @@ window.siteContent = {
     },
   ],
 
+  aiGames: [],
+
   ideas: [
     {
       slug: "spend-100-billion-yen",
@@ -1715,6 +1717,8 @@ window.siteContent = {
   emptyStates: {
     games:
       "ここには自分で作ったゲームを追加していきます。ストア公開済みのものや、振り返って残しておきたい代表作をまとめる想定です。",
+    aiGames:
+      "ここには AI と一緒に作ったゲームを並べていきます。作品タイトル・公開先・使ったツールをまとめて追加できるようになっています。",
     projects:
       "まだ項目はありません。これから追加される GitHub リポジトリや公開物がここに並びます。",
     ideas:

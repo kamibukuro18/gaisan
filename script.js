@@ -95,6 +95,7 @@ function renderTimeline() {
 
 renderCardGrid("featured-grid", "featured", content.featured, "");
 renderCardGrid("games-grid", "games", content.games, content.emptyStates.games);
+renderCardGrid("ai-games-grid", "aiGames", content.aiGames || [], content.emptyStates.aiGames);
 renderCardGrid("projects-grid", "projects", content.projects, content.emptyStates.projects);
 renderCardGrid("ideas-grid", "ideas", content.ideas, content.emptyStates.ideas);
 renderCardGrid("notes-grid", "notes", content.notes, content.emptyStates.notes);
