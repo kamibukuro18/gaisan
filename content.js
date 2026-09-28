@@ -336,7 +336,24 @@ window.siteContent = {
     },
   ],
 
-  aiGames: [],
+  aiGames: [
+    {
+      slug: "crabhouse-opus",
+      meta: "AI Game",
+      title: "Crabhouse Opus",
+      summary:
+        "Claude Opus と一緒に作った Web 版 Crabhouse。ブラウザで開くだけで、カニのおうちを眺めるオリジナル版の空気感をそのまま楽しめる。",
+      year: "2026.09",
+      tags: ["Web", "Claude", "Opus", "Crab"],
+      href: "https://kamibukuro18.github.io/opuscrabhouse/",
+      cta: "Open game",
+      details: [
+        "Claude Opus と一緒に作った Web 版 Crabhouse",
+        "ブラウザで開くだけで遊べる",
+        "元祖 Crabhouse の空気感を Web で再現",
+      ],
+    },
+  ],
 
   ideas: [
     {
@@ -1623,6 +1640,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.09",
+      title: "AI Games セクションを新設して Crabhouse Opus を掲載",
+      summary:
+        "Claude Opus と一緒に作った Web 版 Crabhouse を、新設した AI Games セクションに追加。",
+    },
     {
       date: "2026.05",
       title: "1000億円の使い方のアイデアを追加",
