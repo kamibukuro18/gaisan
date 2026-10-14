@@ -1,118 +1,32 @@
-const content = window.siteContent;
-
-const introText = document.getElementById("intro-text");
-const footerText = document.getElementById("footer-text");
-
-function escapeHtml(value) {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
+const { content, esc, works, styles, entryHref, primaryAction, illustration } = window.portfolioUI;
+function card(item) {
+  const action = primaryAction(item);
+  const accent = styles[item.slug]?.accent || 'blue';
+  return `<article class="work-card" data-type="${item.kind}">
+    <a class="visual ${accent}" href="${esc(entryHref(item))}" aria-label="${esc(item.title)}の詳細">${illustration(item)}</a>
+    <div class="work-info"><div class="work-top"><span class="work-label">${esc(item.meta || 'WORK')}</span><span class="status">${esc(item.status || item.year || '')}</span></div>
+    <h3><a href="${esc(entryHref(item))}">${esc(item.title)}</a></h3><p>${esc(item.summary)}</p>
+    <div class="work-actions"><a class="primary-action" href="${esc(entryHref(item))}">詳細を見る</a>
+    ${action ? `<a class="external-action" href="${esc(action.href)}" target="_blank" rel="noreferrer">${esc(action.label)} ↗</a>` : ''}</div></div></article>`;
 }
-
-function getEntryHref(collectionName, item) {
-  if (item.href) {
-    return item.href;
-  }
-
-  if (item.slug) {
-    return `entry.html?type=${encodeURIComponent(collectionName)}&slug=${encodeURIComponent(item.slug)}`;
-  }
-
-  return "#";
+const selected = ['crabhouse','flow-switch','steam-image-exporter'].map(slug => works.find(item => item.slug === slug)).filter(Boolean);
+document.getElementById('featured-grid').innerHTML = selected.map(card).join('');
+const grid = document.getElementById('works-grid'), empty = document.getElementById('empty-state');
+const filters = [...document.querySelectorAll('.filter')];
+function render(filter='all') {
+  const items = filter === 'all' ? works : works.filter(item => item.kind === filter);
+  grid.innerHTML = items.map(card).join(''); empty.hidden = items.length > 0;
+  filters.forEach(button => { const active = button.dataset.filter === filter; button.classList.toggle('active',active); button.setAttribute('aria-pressed',String(active)); });
 }
-
-introText.textContent = content.intro || "";
-footerText.textContent = content.footer;
-
-function renderCardGrid(targetId, collectionName, items, emptyMessage) {
-  const target = document.getElementById(targetId);
-
-  if (!items.length) {
-    const empty = document.createElement("article");
-    empty.className = "empty-card";
-    empty.innerHTML = `<p>${escapeHtml(emptyMessage)}</p>`;
-    target.appendChild(empty);
-    return;
-  }
-
-  items.forEach((item) => {
-    const card = document.createElement("article");
-    card.className = "card";
-
-    const tags = (item.tags || [])
-      .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
-      .join("");
-
-    const href = getEntryHref(collectionName, item);
-    const hasHref = href !== "#";
-    const isExternal = /^https?:\/\//.test(href);
-    const targetAttr = isExternal ? ' target="_blank" rel="noreferrer"' : "";
-    const details = (item.details || [])
-      .map((detail) => `<li>${escapeHtml(detail)}</li>`)
-      .join("");
-    const statusMarkup = item.status
-      ? `<span class="status-badge">${escapeHtml(item.status)}</span>`
-      : "";
-    const linkMarkup = hasHref
-      ? `<a class="card-link" href="${escapeHtml(href)}"${targetAttr}>${escapeHtml(item.cta || "Open")}</a>`
-      : "";
-
-    card.innerHTML = `
-      <div class="card-topline">
-        <p class="card-meta">${escapeHtml(item.meta || "Entry")}</p>
-        ${statusMarkup}
-      </div>
-      <h3 class="card-title">${escapeHtml(item.title)}</h3>
-      <p class="card-summary">${escapeHtml(item.summary)}</p>
-      ${details ? `<ul class="card-details">${details}</ul>` : ""}
-      <div class="card-tags">${tags}</div>
-      <div class="card-footer">
-        <span class="card-year">${escapeHtml(item.year || "")}</span>
-        ${linkMarkup}
-      </div>
-    `;
-
-    target.appendChild(card);
-  });
+filters.forEach(button => { const filter = button.dataset.filter; button.hidden = filter !== 'all' && !works.some(item => item.kind === filter); button.addEventListener('click',()=>render(filter)); });
+render();
+function memoCard(item,collection) {
+  const href = entryHref(item,collection);
+  return `<article class="memo"><span>${esc(item.date || item.year || collection)}</span><h3>${href ? `<a href="${esc(href)}">${esc(item.title)} ↗</a>` : esc(item.title)}</h3><p>${esc(item.summary || '')}</p></article>`;
 }
-
-function renderTimeline() {
-  const list = document.getElementById("timeline-list");
-
-  content.timeline.forEach((item) => {
-    const entry = document.createElement("li");
-    entry.innerHTML = `
-      <span class="timeline-date">${escapeHtml(item.date)}</span>
-      <p class="timeline-title">${escapeHtml(item.title)}</p>
-      <p class="timeline-summary">${escapeHtml(item.summary)}</p>
-    `;
-    list.appendChild(entry);
-  });
-}
-
-renderCardGrid("featured-grid", "featured", content.featured, "");
-renderCardGrid("games-grid", "games", content.games, content.emptyStates.games);
-renderCardGrid("ai-games-grid", "aiGames", content.aiGames || [], content.emptyStates.aiGames);
-renderCardGrid("projects-grid", "projects", content.projects, content.emptyStates.projects);
-renderCardGrid("ideas-grid", "ideas", content.ideas, content.emptyStates.ideas);
-renderCardGrid("notes-grid", "notes", content.notes, content.emptyStates.notes);
-renderTimeline();
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-document.querySelectorAll(".reveal").forEach((element) => {
-  observer.observe(element);
-});
+document.getElementById('memo-grid').innerHTML = (content.timeline || []).slice(0,3).map(item=>memoCard(item,'timeline')).join('');
+document.getElementById('ideas-grid').innerHTML = (content.ideas || []).map(item=>memoCard(item,'ideas')).join('');
+document.getElementById('notes-grid').innerHTML = (content.notes || []).map(item=>memoCard(item,'notes')).join('');
+document.getElementById('timeline-grid').innerHTML = (content.timeline || []).map(item=>memoCard(item,'timeline')).join('');
+document.getElementById('archive-link').addEventListener('click',()=>{document.getElementById('memo-archive').open=true;});
+if (['#memo-archive','#ideas','#notes','#timeline'].includes(window.location.hash)) document.getElementById('memo-archive').open=true;

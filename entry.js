@@ -28,29 +28,7 @@ function getEntryData(type, slug) {
   return collection.find((item) => item.slug === slug) || null;
 }
 
-function getBackHref(type) {
-  if (type === "games") {
-    return "index.html#games";
-  }
-
-  if (type === "aiGames") {
-    return "index.html#ai-games";
-  }
-
-  if (type === "projects") {
-    return "index.html#projects";
-  }
-
-  if (type === "notes") {
-    return "index.html#notes";
-  }
-
-  if (type === "featured") {
-    return "index.html#featured";
-  }
-
-  return "index.html#ideas";
-}
+function getBackHref(type) { return ['ideas', 'notes'].includes(type) ? 'index.html#memo-archive' : 'index.html#works'; }
 
 function renderNotFound() {
   entryEyebrow.textContent = "Not Found";
@@ -137,6 +115,16 @@ backLink.href = getBackHref(type);
 
 if (entry) {
   renderEntry(entry);
+  const action = window.portfolioUI.primaryAction({ ...entry, collection: type });
+  if (action) {
+    const link = document.createElement("a");
+    link.className = "action-link entry-primary-action";
+    link.href = action.href;
+    link.textContent = action.label + " ↗";
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    document.querySelector(".hero-actions").prepend(link);
+  }
 } else {
   renderNotFound();
 }
