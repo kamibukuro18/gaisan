@@ -9,7 +9,7 @@ function card(item) {
     <div class="work-actions"><a class="primary-action" href="${esc(entryHref(item))}">詳細を見る</a>
     ${action ? `<a class="external-action" href="${esc(action.href)}" target="_blank" rel="noreferrer">${esc(action.label)} ↗</a>` : ''}</div></div></article>`;
 }
-const selected = ['crabhouse','flow-switch','steam-image-exporter'].map(slug => works.find(item => item.slug === slug)).filter(Boolean);
+const selected = ['crabhouse','star-finch','flow-switch'].map(slug => works.find(item => item.slug === slug)).filter(Boolean);
 document.getElementById('featured-grid').innerHTML = selected.map(card).join('');
 const grid = document.getElementById('works-grid'), empty = document.getElementById('empty-state');
 const filters = [...document.querySelectorAll('.filter')];

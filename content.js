@@ -144,6 +144,71 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "star-finch",
+      meta: "Web Game",
+      title: "STAR FINCH",
+      summary:
+        "ファミコン風の横型シューティング。2つのステージを進み、負荷と熱量を管理しながらボスを撃破するブラウザゲーム。",
+      year: "2026.10",
+      status: "Playable",
+      tags: ["Game", "Web", "Shooter", "Godot"],
+      href: "games/star-finch/index.html",
+      cta: "Play game",
+      details: [
+        "インストール不要でブラウザからプレイ可能",
+        "2ステージ構成。IRIS MOTH と SOLAR WARDEN に挑戦",
+        "移動・射撃・ボム・冷却を使い分けるアーケードシューティング",
+      ],
+      page: {
+        eyebrow: "Web Game / 2026.10",
+        intro:
+          "STAR FINCH は、512×320の内部解像度で描くファミコン風の横型シューティングです。敵弾を避けながら、射撃と冷却を切り替え、限られたボムを使って2つのステージを攻略します。",
+        highlights: [
+          "ブラウザ上でそのまま遊べる Godot 4 Web ビルド",
+          "2ステージと2体のボスを収録",
+          "オート射撃、低速移動、冷却、ボムを組み合わせた操作感",
+        ],
+        sections: [
+          {
+            title: "ゲーム概要",
+            paragraphs: [
+              "右側のHUDに負荷メーターやボム残数を表示する、横型のアーケードシューティングです。ステージ中は射撃を止めて冷却する判断も重要になります。",
+              "開始時のボムは1発。ステージを進みながら、画面全体を一掃するタイミングを見極めてください。",
+            ],
+          },
+          {
+            title: "操作",
+            bullets: [
+              "移動: 矢印キー / WASD",
+              "低速移動・当たり判定表示: Shift長押し",
+              "射撃: 初期設定はオート。Z / Space長押しで手動射撃、Fで切替",
+              "ボム: C。右パネルのC BOMBでも発動",
+              "冷却: X長押し。停止中に負荷を下げる",
+              "一時停止 / 復帰: P / Esc。即リトライ: R",
+            ],
+          },
+          {
+            title: "ビルド",
+            bullets: [
+              "Godot 4.6.3 Web export",
+              "WebAssembly + WebGL2 / single-thread",
+              "内部解像度 512×320、横画面向け",
+              "音声は開始操作後に有効化",
+            ],
+          },
+          {
+            title: "プレイ",
+            links: [
+              {
+                label: "STAR FINCHをブラウザでプレイ",
+                href: "games/star-finch/index.html",
+              },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   projects: [
