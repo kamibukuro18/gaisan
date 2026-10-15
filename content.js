@@ -29,6 +29,7 @@ window.siteContent = {
       slug: "crabhouse",
       meta: "Mobile Game",
       title: "Crabhouse",
+      cover: "assets/games/crabhouse-thumbnail.png",
       summary:
         "2021年に話題化した、カニのおうちを眺めるだけのゆるいスマホゲーム。iOS と Android で展開し、メディア掲載やストア上での反響も大きかった代表作のひとつ。",
       year: "2021.02",
@@ -589,6 +590,53 @@ window.siteContent = {
             title: "購入ページ",
             links: [
               { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8981554" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      slug: "lira-sofa",
+      meta: "3D Model / Furniture",
+      title: "Lira Sofa",
+      summary:
+        "ベージュ系の張地、ウォールナット調の台座、スチール脚を組み合わせた2人掛けソファの3Dモデル。",
+      status: "BOOTH",
+      tags: ["3D", "Blender", "GLB", "Furniture"],
+      href: "https://kamibukuro18.booth.pm/items/8979961",
+      cover: "assets/3d/lira-sofa/lira-sofa-01.jpg",
+      cta: "BOOTHで購入",
+      details: [
+        "クッション、縫い目、台座、脚をそれぞれ編集可能",
+        "GLB形式とBlender形式を収録",
+        "参考寸法は幅約2200mm × 奥行約954mm × 高さ約850mm",
+      ],
+      page: {
+        eyebrow: "3D Model / Lira Sofa",
+        intro:
+          "Lira Sofa は、ベージュ系の張地にウォールナット調の台座とスチール脚を組み合わせた2人掛けソファの3Dモデルです。商品ページには三方向のレンダーと正面・背面を含む資料画像が掲載されています。",
+        highlights: [
+          "クッション、縫い目、台座、脚をそれぞれ編集可能",
+          "ベージュ系の張地、ウォールナット調の台座、スチール脚",
+          "インテリアレイアウト、建築ビジュアライゼーション、3Dシーン制作向けとして案内",
+        ],
+        gallery: [
+          { src: "assets/3d/lira-sofa/lira-sofa-01.jpg", alt: "Lira Sofaの三方向レンダー" },
+          { src: "assets/3d/lira-sofa/lira-sofa-02.jpg", alt: "Lira Sofaの正面・側面・背面資料" },
+        ],
+        sections: [
+          {
+            title: "商品ページ記載の仕様",
+            bullets: [
+              "同梱形式: Lira_Sofa.glb / Lira_Sofa.blend",
+              "参考寸法: 幅約2200mm × 奥行約954mm × 高さ約850mm",
+              "クッション、縫い目、台座、脚を個別に編集可能",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8979961" },
             ],
           },
         ],

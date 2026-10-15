@@ -5,13 +5,14 @@
   const collections = [['games','game'],['aiGames','game'],['projects','tool'],['models3d','3d']];
   const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind})));
   const styles = {
-    'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'crab'},
+    'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'image'},
     'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'crab'},
     'star-finch': {accent:'violet',caption:'STAR FINCH / 2 STAGES',visual:'star'},
     'potato-collection': {accent:'coral',caption:'POTATO COLLECTION',visual:'image'},
     'fantasy-dungeon': {accent:'blue',caption:'FANTASY DUNGEON',visual:'image'},
     'gourmet-hamburger': {accent:'coral',caption:'GOURMET HAMBURGER',visual:'image'},
     'showa-candy-shop': {accent:'mint',caption:'SHOWA CANDY SHOP',visual:'image'},
+    'lira-sofa': {accent:'blue',caption:'LIRA SOFA',visual:'image'},
     'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'windows'},
     'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'export'}
   };
