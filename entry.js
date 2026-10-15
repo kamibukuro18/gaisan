@@ -50,6 +50,23 @@ function renderNotFound() {
 function renderEntry(entry) {
   const page = entry.page || {};
 
+  const galleryRoot = document.getElementById("entry-gallery");
+  const gallery = page.gallery || [];
+  if (galleryRoot) {
+    galleryRoot.hidden = gallery.length === 0;
+    galleryRoot.innerHTML = gallery.length
+      ? `<div class="entry-gallery-grid">${gallery
+          .map(
+            (image) => `
+              <figure class="entry-gallery-item">
+                <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || entry.title)}" loading="lazy">
+              </figure>
+            `
+          )
+          .join("")}</div>`
+      : "";
+  }
+
   document.title = `gaisan | ${entry.title}`;
   entryEyebrow.textContent = page.eyebrow || entry.meta || "Entry";
   entryTitle.textContent = entry.title;

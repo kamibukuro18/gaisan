@@ -401,6 +401,201 @@ window.siteContent = {
     },
   ],
 
+  models3d: [
+    {
+      slug: "potato-collection",
+      meta: "3D Model / じゃがいも",
+      title: "Potato Collection",
+      summary:
+        "形・皮の色・断面の異なる、じゃがいもの3Dモデルセット。丸ごと8種と半切り3種の全11モデルを収録。",
+      status: "BOOTH",
+      tags: ["3D", "Blender", "GLB", "Food"],
+      href: "https://kamibukuro18.booth.pm/items/8993285",
+      cover: "assets/3d/potato/potato-01.jpg",
+      cta: "BOOTHで購入",
+      details: [
+        "丸ごとモデル8種と半切りモデル3種",
+        "全11モデルを独立オブジェクトとして個別に配置・編集可能",
+        "GLB形式とBlender形式を収録",
+      ],
+      page: {
+        eyebrow: "3D Model / Potato Collection",
+        intro:
+          "形、皮の色、断面の違いをまとめたじゃがいもの3Dモデルセットです。商品ページには丸ごと8種と半切り3種、合計11モデルが掲載されています。",
+        highlights: [
+          "丸ごと8種 + 半切り3種の全11モデル",
+          "各モデルは独立オブジェクトとして個別に扱える構成",
+          "材質画像33枚をモデルに内包し、外部テクスチャ不要",
+        ],
+        gallery: [
+          { src: "assets/3d/potato/potato-01.jpg", alt: "じゃがいも3Dモデルセットの一覧" },
+          { src: "assets/3d/potato/potato-02.jpg", alt: "じゃがいも3Dモデルのレンダー" },
+          { src: "assets/3d/potato/potato-03.jpg", alt: "半切りを含むじゃがいもモデル" },
+        ],
+        sections: [
+          {
+            title: "収録内容",
+            bullets: [
+              "丸形、湾曲した縦長、金色の楕円、赤皮、紫皮などの丸ごとモデル8種",
+              "白・黄・紫の果肉を見せる半切りモデル3種",
+              "商品ページ記載の同梱形式: GLB / Blender",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8993285" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      slug: "fantasy-dungeon",
+      meta: "3D Model / Environment",
+      title: "Fantasy Dungeon",
+      summary:
+        "大回廊を中心にした石造ダンジョン環境モデル。尖頭アーチ、連続ヴォールト、祭壇の騎士像などを収録。",
+      status: "BOOTH",
+      tags: ["3D", "Environment", "GLB", "Dungeon"],
+      href: "https://kamibukuro18.booth.pm/items/8984869",
+      cover: "assets/3d/dungeon/dungeon-01.jpg",
+      cta: "BOOTHで購入",
+      details: [
+        "大回廊を中心に構成した石造ダンジョン",
+        "松明、水路、排水格子、鉄扉、宝箱などを収録",
+        "材質画像内蔵の軽量版GLBを同梱",
+      ],
+      page: {
+        eyebrow: "3D Model / Fantasy Dungeon",
+        intro:
+          "大回廊を中心に構成した石造ダンジョンの環境モデルです。商品ページ掲載のレンダーでは、尖頭アーチや連続ヴォールト、祭壇の騎士像、松明、水路などを確認できます。",
+        highlights: [
+          "尖頭アーチ、連続ヴォールト、束ね柱を含む石造空間",
+          "祭壇の騎士像、松明、水路、排水格子、鉄扉、宝箱を収録",
+          "34枚の材質画像を内包したCompact GLB",
+        ],
+        gallery: [
+          { src: "assets/3d/dungeon/dungeon-01.jpg", alt: "ファンタジーダンジョンの大回廊" },
+          { src: "assets/3d/dungeon/dungeon-02.jpg", alt: "ファンタジーダンジョンの内部レンダー" },
+          { src: "assets/3d/dungeon/dungeon-03.jpg", alt: "ファンタジーダンジョンの環境レンダー" },
+        ],
+        sections: [
+          {
+            title: "商品ページ記載の仕様",
+            bullets: [
+              "同梱形式: Fantasy_Dungeon_Compact.glb（材質画像内蔵）",
+              "材質画像34枚を内包",
+              "規模目安: 主ホール幅約12.5m、奥行約28m、天井最高部約9m（商品ページ記載の推定値）",
+              "約63.2万ポリゴン",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8984869" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      slug: "gourmet-hamburger",
+      meta: "3D Model / Food",
+      title: "Gourmet Hamburger",
+      summary:
+        "バンズ、ソース、ベーコン、チェダー、ビーフパティ、野菜を重ねたボリューム感のあるハンバーガーモデル。",
+      status: "BOOTH",
+      tags: ["3D", "Blender", "GLB", "Food"],
+      href: "https://kamibukuro18.booth.pm/items/8984040",
+      cover: "assets/3d/hamburger/hamburger-01.jpg",
+      cta: "BOOTHで購入",
+      details: [
+        "具材を重ねたハンバーガーの3Dモデル",
+        "GLBは11個の具材メッシュに分割",
+        "GLBにテクスチャを内包",
+      ],
+      page: {
+        eyebrow: "3D Model / Gourmet Hamburger",
+        intro:
+          "具材の層を見せる、グルメハンバーガーの3Dモデルです。商品ページでは、バンズからレタスまでの具材を重ねたレンダーと、編集用・軽量化用の形式が案内されています。",
+        highlights: [
+          "バンズ、ソース、ベーコン、チェダー、ビーフパティを収録",
+          "赤玉ねぎ、トマト、レタスなどの具材を重ねた構成",
+          "GLBは11個の具材メッシュに分割、テクスチャ内包",
+        ],
+        gallery: [
+          { src: "assets/3d/hamburger/hamburger-01.jpg", alt: "グルメハンバーガー3Dモデル" },
+          { src: "assets/3d/hamburger/hamburger-02.jpg", alt: "グルメハンバーガーの別レンダー" },
+        ],
+        sections: [
+          {
+            title: "商品ページ記載の仕様",
+            bullets: [
+              "同梱形式: Blender編集用モデル / 軽量化GLB",
+              "サイズ目安: 約122 × 122 × 112mm",
+              "制作環境: Blender 4.3.2",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8984040" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      slug: "showa-candy-shop",
+      meta: "3D Model / Environment",
+      title: "昭和の駄菓子屋",
+      summary:
+        "店内まで作り込んだ昭和の駄菓子屋環境モデル。建物、看板、陳列棚、駄菓子、小物類を収録。",
+      status: "BOOTH",
+      tags: ["3D", "Blender", "GLB", "Environment"],
+      href: "https://kamibukuro18.booth.pm/items/8981554",
+      cover: "assets/3d/candy-shop/candy-shop-01.jpg",
+      cta: "BOOTHで購入",
+      details: [
+        "建物と店内を含む昭和の駄菓子屋環境",
+        "木板、屋根瓦、庇、日本語看板、陳列棚を収録",
+        "駄菓子やレジ、ポスト、ベンチなどの小物を収録",
+      ],
+      page: {
+        eyebrow: "3D Model / 昭和の駄菓子屋",
+        intro:
+          "昭和の駄菓子屋を再現した、店内まで作り込んだ3D環境モデルです。商品ページ掲載の画像から、建物の外観、赤白の庇、日本語看板、陳列された駄菓子まで確認できます。",
+        highlights: [
+          "建物、木板、屋根瓦、赤白の庇、日本語看板を収録",
+          "陳列棚、駄菓子の袋・箱・瓶、飴、レジ、ポスト、ベンチを収録",
+          "冷凍ケース、狐面、ラムネ旗、鉢植えなどの小物を収録",
+        ],
+        gallery: [
+          { src: "assets/3d/candy-shop/candy-shop-01.jpg", alt: "昭和の駄菓子屋の外観" },
+          { src: "assets/3d/candy-shop/candy-shop-02.jpg", alt: "昭和の駄菓子屋の別レンダー" },
+          { src: "assets/3d/candy-shop/candy-shop-03.jpg", alt: "昭和の駄菓子屋の環境レンダー" },
+        ],
+        sections: [
+          {
+            title: "商品ページ記載の仕様",
+            bullets: [
+              "同梱形式: Blender編集用モデル / 形状・埋め込みテクスチャのGLB",
+              "制作環境: Blender 4.3.2",
+              "建物背面の配管やガスボンベまで含む構成",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8981554" },
+            ],
+          },
+        ],
+      },
+    },
+  ],
+
   aiGames: [
     {
       slug: "crabhouse-opus",

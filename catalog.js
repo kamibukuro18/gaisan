@@ -2,18 +2,22 @@
 (() => {
   const content = window.siteContent || {};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-  const collections = [['games','game'],['aiGames','game'],['projects','tool']];
+  const collections = [['games','game'],['aiGames','game'],['projects','tool'],['models3d','3d']];
   const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind})));
   const styles = {
     'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'crab'},
     'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'crab'},
     'star-finch': {accent:'violet',caption:'STAR FINCH / 2 STAGES',visual:'star'},
+    'potato-collection': {accent:'coral',caption:'POTATO COLLECTION',visual:'image'},
+    'fantasy-dungeon': {accent:'blue',caption:'FANTASY DUNGEON',visual:'image'},
+    'gourmet-hamburger': {accent:'coral',caption:'GOURMET HAMBURGER',visual:'image'},
+    'showa-candy-shop': {accent:'mint',caption:'SHOWA CANDY SHOP',visual:'image'},
     'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'windows'},
     'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'export'}
   };
   const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
   function primaryAction(item) {
-    if (item.href) return {href:item.href,label:item.collection === 'aiGames' ? '遊ぶ' : '開く'};
+    if (item.href) return {href:item.href,label:item.collection === 'models3d' ? 'BOOTHで購入' : (item.collection === 'aiGames' ? '遊ぶ' : '開く')};
     const links = (item.page?.sections || []).flatMap(section => section.links || []);
     const store = links.find(link => /^https:\/\/apps\.apple\.com\//.test(link.href));
     if (store) return {href:store.href,label:'App Storeへ'};
@@ -23,6 +27,9 @@
   }
   function illustration(item) {
     const style = styles[item.slug] || {accent:'blue',caption:item.title,visual:'export'};
+    if (style.visual === 'image' && item.cover) {
+      return `<span class="visual-image-wrap"><img class="visual-image" src="${esc(item.cover)}" alt="" loading="lazy"><span class="visual-image-shade"></span></span><span class="visual-label">${esc(style.caption)}</span><span class="visual-source">BOOTH / 3D MODEL</span>`;
+    }
     let art;
     if (style.visual === 'crab') {
       art = '<svg viewBox="0 0 320 180" aria-hidden="true"><path d="M0 145h320M0 159h320" stroke="currentColor" opacity=".18"/><g fill="currentColor"><path d="M116 88h88v43h-88zM102 73h16v22h-16zM86 61h15v29H86zM202 73h16v22h-16zM219 61h15v29h-15zM101 115h16v11h-16zM89 128h27v10H89zM204 115h16v11h-16zM204 128h27v10h-27zM128 70h12v18h-12zM180 70h12v18h-12z"/><rect x="128" y="70" width="12" height="6" fill="#111315"/><rect x="180" y="70" width="12" height="6" fill="#111315"/></g></svg>';
