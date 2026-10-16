@@ -2032,6 +2032,30 @@ window.siteContent = {
 
   timeline: [
     {
+      date: "2026.10.16",
+      title: "Curva を 3D モデル作品に追加",
+      summary:
+        "曲面を活かした Curva chair を BOOTH の販売ページと複数の公式画像付きで掲載。",
+    },
+    {
+      date: "2026.10.16",
+      title: "公式サムネイルを作品ページに反映",
+      summary:
+        "Crabhouse、Crabhouse Opus、FlowSwitch、Steam Image Exporter の公式ページ由来の画像を作品一覧に反映。",
+    },
+    {
+      date: "2026.10.15",
+      title: "Lira Sofa を 3D モデル作品に追加",
+      summary:
+        "Lira Sofa を BOOTH の販売ページと公式画像付きで 3D セクションに掲載。",
+    },
+    {
+      date: "2026.10.15",
+      title: "3D モデル作品を掲載",
+      summary:
+        "ジャガイモ、ファンタジーダンジョン、グルメハンバーガー、昭和の駄菓子屋を BOOTH の販売ページと公式画像付きで掲載。",
+    },
+    {
       date: "2026.09",
       title: "AI Games セクションを新設して Crabhouse Opus を掲載",
       summary:
