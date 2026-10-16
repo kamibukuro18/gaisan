@@ -149,6 +149,8 @@ window.siteContent = {
       slug: "star-finch",
       meta: "Web Game",
       title: "STAR FINCH",
+      cover: "assets/games/star-finch-real.png",
+      thumbnailSource: "games/star-finch/index.html",
       summary:
         "ファミコン風の横型シューティング。2つのステージを進み、負荷と熱量を管理しながらボスを撃破するブラウザゲーム。",
       year: "2026.10",
@@ -217,6 +219,8 @@ window.siteContent = {
       slug: "flow-switch",
       meta: "Desktop App",
       title: "FlowSwitch",
+      cover: "assets/projects/flowswitch-gumroad.jpg",
+      thumbnailSource: "https://kamibukuro.gumroad.com/l/flowswitch",
       summary:
         "作業コンテキストをワンクリックで切り替えるための Tauri デスクトップアプリ。URL、アプリ、ファイル、フォルダ、コマンドをモード単位でまとめて起動できる。",
       year: "2026.04",
@@ -307,6 +311,8 @@ window.siteContent = {
       slug: "steam-image-exporter",
       meta: "Desktop App",
       title: "Steam Image Exporter",
+      cover: "assets/projects/steam-image-exporter-gumroad.jpg",
+      thumbnailSource: "https://kamibukuro.gumroad.com/l/steamimageexporter",
       summary:
         "1枚のキーアートから Steam ストア向け画像セットをまとめて生成するデスクトップアプリ。ロゴ配置、フォーカスポイント調整、書き出し前チェックまで含めて扱える。",
       year: "2026.04",
@@ -642,6 +648,69 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "curva-chair",
+      meta: "3D Model / Furniture",
+      title: "Curva",
+      summary:
+        "参考画像から再構成した、曲面がつながる彫刻的なフォルムのチェア。4色のGLBとBlender形式を収録。",
+      status: "BOOTH",
+      tags: ["3D", "Blender", "GLB", "Furniture"],
+      href: "https://kamibukuro18.booth.pm/items/8996856",
+      cover: "assets/3d/curva/curva-01-listing.jpg",
+      cta: "BOOTHで購入",
+      details: [
+        "ホワイトストーン、マットブラック、テラコッタ、オリーブグリーンの4色",
+        "1脚 82,406 triangles",
+        "幅780 × 奥行840 × 高さ900mm / 座面中央 約420mm",
+        "Curva_Chair.blend と4色のGLBを収録",
+      ],
+      page: {
+        eyebrow: "3D Model / Curva",
+        intro:
+          "曲面がつながる彫刻的なフォルムのチェア。参考画像から再構成したデザインで、4色の仕上げと .blend / .glb データを収録しています。",
+        highlights: [
+          "ホワイトストーン、マットブラック、テラコッタ、オリーブグリーンの4色",
+          ".blend と4色の .glb を収録",
+          "1脚 82,406 triangles / 座面中央 約420mm",
+        ],
+        gallery: [
+          { src: "assets/3d/curva/curva-01-listing.jpg", alt: "Curvaのメインビジュアル" },
+          { src: "assets/3d/curva/curva-02-listing.jpg", alt: "Curvaの背面ビジュアル" },
+          { src: "assets/3d/curva/curva-03-listing.jpg", alt: "Curvaのディテールビジュアル" },
+          { src: "assets/3d/curva/curva-04-listing.jpg", alt: "Curvaの正面ビジュアル" },
+          { src: "assets/3d/curva/curva-05-listing.jpg", alt: "Curvaの側面ビジュアル" },
+          { src: "assets/3d/curva/curva-06_black_clean.jpg", alt: "マットブラックのCurva" },
+          { src: "assets/3d/curva/curva-07_terracotta_clean.jpg", alt: "テラコッタのCurva" },
+          { src: "assets/3d/curva/curva-08_olive_clean.jpg", alt: "オリーブグリーンのCurva" },
+        ],
+        sections: [
+          {
+            title: "収録内容",
+            bullets: [
+              "Curva_Chair.blend（4色のマテリアルを選べる編集用シーン）",
+              "Curva_01_White_Stone.glb / Curva_02_Matte_Black.glb",
+              "Curva_03_Terracotta.glb / Curva_04_Olive_Green.glb",
+              "GLBは各色1メッシュ・1マテリアル",
+            ],
+          },
+          {
+            title: "サイズ・仕様",
+            bullets: [
+              "幅780 × 奥行840 × 高さ900mm",
+              "座面中央 約420mm",
+              "1脚 82,406 triangles",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで購入", href: "https://kamibukuro18.booth.pm/items/8996856" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [
@@ -649,6 +718,8 @@ window.siteContent = {
       slug: "crabhouse-opus",
       meta: "AI Game",
       title: "Crabhouse Opus",
+      cover: "assets/games/crabhouse-opus-official.jpg",
+      thumbnailSource: "https://kamibukuro18.github.io/opuscrabhouse/",
       summary:
         "Claude Opus と一緒に作った Web 版 Crabhouse。ブラウザで開くだけで、カニのおうちを眺めるオリジナル版の空気感をそのまま楽しめる。",
       year: "2026.09",

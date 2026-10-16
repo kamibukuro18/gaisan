@@ -6,15 +6,16 @@
   const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind})));
   const styles = {
     'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'image'},
-    'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'crab'},
-    'star-finch': {accent:'violet',caption:'STAR FINCH / 2 STAGES',visual:'star'},
+    'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'image'},
+    'star-finch': {accent:'violet',caption:'STAR FINCH / 2 STAGES',visual:'image'},
     'potato-collection': {accent:'coral',caption:'POTATO COLLECTION',visual:'image'},
     'fantasy-dungeon': {accent:'blue',caption:'FANTASY DUNGEON',visual:'image'},
     'gourmet-hamburger': {accent:'coral',caption:'GOURMET HAMBURGER',visual:'image'},
     'showa-candy-shop': {accent:'mint',caption:'SHOWA CANDY SHOP',visual:'image'},
     'lira-sofa': {accent:'blue',caption:'LIRA SOFA',visual:'image'},
-    'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'windows'},
-    'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'export'}
+    'curva-chair': {accent:'mint',caption:'CURVA',visual:'image'},
+    'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'image'},
+    'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'image'}
   };
   const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
   function primaryAction(item) {
