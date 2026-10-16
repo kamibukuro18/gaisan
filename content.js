@@ -2033,6 +2033,12 @@ window.siteContent = {
   timeline: [
     {
       date: "2026.10.16",
+      title: "作品詳細ページに公式画像ギャラリーを追加",
+      summary:
+        "各作品のヒーロー画像と公式ページ由来のギャラリーを詳細ページに追加し、STAR FINCH の縦スクロール弾幕STG表記も正確に更新。",
+    },
+    {
+      date: "2026.10.16",
       title: "Curva を 3D モデル作品に追加",
       summary:
         "曲面を活かした Curva chair を BOOTH の販売ページと複数の公式画像付きで掲載。",
