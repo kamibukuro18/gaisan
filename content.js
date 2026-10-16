@@ -30,6 +30,9 @@ window.siteContent = {
       meta: "Mobile Game",
       title: "Crabhouse",
       cover: "assets/games/crabhouse-thumbnail.png",
+      gallery: [
+        { src: "assets/games/crabhouse-store.jpg", alt: "Google Play公式のCrabhouseアプリアイコン", caption: "Google Play / Crabhouse" },
+      ],
       summary:
         "2021年に話題化した、カニのおうちを眺めるだけのゆるいスマホゲーム。iOS と Android で展開し、メディア掲載やストア上での反響も大きかった代表作のひとつ。",
       year: "2021.02",
@@ -152,7 +155,7 @@ window.siteContent = {
       cover: "assets/games/star-finch-real.png",
       thumbnailSource: "games/star-finch/index.html",
       summary:
-        "ファミコン風の横型シューティング。2つのステージを進み、負荷と熱量を管理しながらボスを撃破するブラウザゲーム。",
+        "ファミコン風の横長画面で遊ぶ、縦スクロール弾幕STG。2つのステージを進み、負荷と熱量を管理しながらボスを撃破するブラウザゲーム。",
       year: "2026.10",
       status: "Playable",
       tags: ["Game", "Web", "Shooter", "Godot"],
@@ -166,7 +169,7 @@ window.siteContent = {
       page: {
         eyebrow: "Web Game / 2026.10",
         intro:
-          "STAR FINCH は、512×320の内部解像度で描くファミコン風の横型シューティングです。敵弾を避けながら、射撃と冷却を切り替え、限られたボムを使って2つのステージを攻略します。",
+          "STAR FINCH は、512×320の内部解像度で描く、横長画面の縦スクロール弾幕STGです。敵弾を避けながら、射撃と冷却を切り替え、限られたボムを使って2つのステージを攻略します。",
         highlights: [
           "ブラウザ上でそのまま遊べる Godot 4 Web ビルド",
           "2ステージと2体のボスを収録",
@@ -176,7 +179,7 @@ window.siteContent = {
           {
             title: "ゲーム概要",
             paragraphs: [
-              "右側のHUDに負荷メーターやボム残数を表示する、横型のアーケードシューティングです。ステージ中は射撃を止めて冷却する判断も重要になります。",
+              "右側のHUDに負荷メーターやボム残数を表示する、横長画面の縦スクロール弾幕STGです。ステージ中は射撃を止めて冷却する判断も重要になります。",
               "開始時のボムは1発。ステージを進みながら、画面全体を一掃するタイミングを見極めてください。",
             ],
           },
@@ -220,6 +223,9 @@ window.siteContent = {
       meta: "Desktop App",
       title: "FlowSwitch",
       cover: "assets/projects/flowswitch-gumroad.jpg",
+      gallery: [
+        { src: "assets/projects/flowswitch-repo.png", alt: "FlowSwitch公式リポジトリの紹介画像", caption: "FlowSwitch / official repository" },
+      ],
       thumbnailSource: "https://kamibukuro.gumroad.com/l/flowswitch",
       summary:
         "作業コンテキストをワンクリックで切り替えるための Tauri デスクトップアプリ。URL、アプリ、ファイル、フォルダ、コマンドをモード単位でまとめて起動できる。",
@@ -312,6 +318,9 @@ window.siteContent = {
       meta: "Desktop App",
       title: "Steam Image Exporter",
       cover: "assets/projects/steam-image-exporter-gumroad.jpg",
+      gallery: [
+        { src: "assets/projects/steam-image-exporter-repo.png", alt: "Steam Image Exporter公式リポジトリの紹介画像", caption: "Steam Image Exporter / official repository" },
+      ],
       thumbnailSource: "https://kamibukuro.gumroad.com/l/steamimageexporter",
       summary:
         "1枚のキーアートから Steam ストア向け画像セットをまとめて生成するデスクトップアプリ。ロゴ配置、フォーカスポイント調整、書き出し前チェックまで含めて扱える。",
@@ -719,6 +728,9 @@ window.siteContent = {
       meta: "AI Game",
       title: "Crabhouse Opus",
       cover: "assets/games/crabhouse-opus-official.jpg",
+      gallery: [
+        { src: "assets/games/crabhouse-opus-room.png", alt: "Crabhouse Opusのゲーム画面", caption: "Crabhouse Opus / in-game" },
+      ],
       thumbnailSource: "https://kamibukuro18.github.io/opuscrabhouse/",
       summary:
         "Claude Opus と一緒に作った Web 版 Crabhouse。ブラウザで開くだけで、カニのおうちを眺めるオリジナル版の空気感をそのまま楽しめる。",

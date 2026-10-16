@@ -8,6 +8,7 @@ const entryIntro = document.getElementById("entry-intro");
 const highlightsList = document.getElementById("entry-highlights");
 const sectionsRoot = document.getElementById("entry-sections");
 const backLink = document.getElementById("back-link");
+const heroMedia = document.getElementById("entry-hero-media");
 
 function escapeHtml(value) {
   return String(value)
@@ -50,8 +51,15 @@ function renderNotFound() {
 function renderEntry(entry) {
   const page = entry.page || {};
 
+  if (heroMedia) {
+    heroMedia.hidden = !entry.cover;
+    heroMedia.innerHTML = entry.cover
+      ? `<img src="${escapeHtml(entry.cover)}" alt="${escapeHtml(page.heroAlt || entry.title)}">`
+      : "";
+  }
+
   const galleryRoot = document.getElementById("entry-gallery");
-  const gallery = page.gallery || [];
+  const gallery = (page.gallery || entry.gallery || []).filter((image) => image.src !== entry.cover);
   if (galleryRoot) {
     galleryRoot.hidden = gallery.length === 0;
     galleryRoot.innerHTML = gallery.length
@@ -60,6 +68,7 @@ function renderEntry(entry) {
             (image) => `
               <figure class="entry-gallery-item">
                 <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || entry.title)}" loading="lazy">
+                ${image.caption ? `<figcaption>${escapeHtml(image.caption)}</figcaption>` : ""}
               </figure>
             `
           )
