@@ -13,5 +13,6 @@ Thumbnail changes in this update were limited to official pages for the matching
 | Steam Image Exporter detail gallery | `assets/projects/steam-image-exporter-repo.png` | https://github.com/kamibukuro18/SteamImageExporter | Official repository README image. |
 | STAR FINCH | `assets/games/star-finch-real.png` | `games/star-finch/index.html` | Existing verified gameplay capture retained for the local web game; no external store page was used. |
 | Curva | `assets/3d/curva/curva-01-listing.jpg` and the Curva gallery assets | https://kamibukuro18.booth.pm/items/8996856 | Library-materialized sales images from the matching BOOTH product. |
+| NEO-YORU | `assets/3d/neo-yoru/*.jpg` | https://kamibukuro18.booth.pm/items/9001329 | User-provided `NEO_YORU_BOOTH_Images_11.zip` from Downloads; 11 permitted sales images were resized to 1400px and JPEG quality 82. The requested BOOTH page was rechecked as publicly reachable (HTTP 200) on 2026-10-17. |
 
 Crabhouse and the previously published 3D thumbnails were retained. STAR FINCH keeps the existing verified gameplay capture; no external store image was substituted. No model files were added.

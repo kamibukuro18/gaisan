@@ -720,6 +720,72 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "neo-yoru",
+      meta: "3D Model / Environment",
+      title: "NEO-YORU",
+      summary:
+        "サイバーパンク街づくり素材集。建物・大型構造物20種類と小物・外装モジュール80種類、合計100種類を収録。",
+      status: "BOOTH",
+      tags: ["3D", "Environment", "Blender", "FBX", "VRChat"],
+      href: "https://kamibukuro18.booth.pm/items/9001329",
+      cover: "assets/3d/neo-yoru/neo-yoru-cover.jpg",
+      cta: "BOOTHで見る",
+      details: [
+        "建物・大型構造物20種類 + 小物・外装モジュール80種類",
+        "合計100種類のサイバーパンク街づくり素材（BOOTH掲載名: NEO YORU 100）",
+        "Blender / FBX / PNGテクスチャを想定した収録形式",
+        "完成ワールド、Unity動作、Quest対応は保証なし",
+      ],
+      page: {
+        eyebrow: "3D Model / NEO-YORU",
+        intro:
+          "NEO-YORU は、サイバーパンクの街並みを組み立てるための3D素材集です。販売用紹介画像では、建物・大型構造物20種類と小物・外装モジュール80種類、合計100種類の収録内容が案内されています。",
+        highlights: [
+          "建物・大型構造物20種類 + 小物・外装モジュール80種類",
+          "合計100種類の街づくり用3D素材",
+          "Blender / FBX / PNGテクスチャを想定した構成",
+        ],
+        gallery: [
+          { src: "assets/3d/neo-yoru/neo-yoru-cover.jpg", alt: "NEO-YORUサイバーパンク街づくり素材集の販売表紙" },
+          { src: "assets/3d/neo-yoru/neo-yoru-architecture.jpg", alt: "NEO-YORUの建物20種類紹介画像" },
+          { src: "assets/3d/neo-yoru/neo-yoru-street-props.jpg", alt: "NEO-YORUの小物・外装80種類紹介画像" },
+          { src: "assets/3d/neo-yoru/neo-yoru-material-closeups.jpg", alt: "NEO-YORUの素材ディテール紹介画像" },
+          { src: "assets/3d/neo-yoru/neo-yoru-inventory-b01-b20.jpg", alt: "NEO-YORUの建物一覧画像" },
+          { src: "assets/3d/neo-yoru/neo-yoru-inventory-01-15.jpg", alt: "NEO-YORUの小物一覧01から15" },
+          { src: "assets/3d/neo-yoru/neo-yoru-inventory-16-30.jpg", alt: "NEO-YORUの小物一覧16から30" },
+          { src: "assets/3d/neo-yoru/neo-yoru-inventory-p31-p50.jpg", alt: "NEO-YORUの小物一覧P31からP50" },
+          { src: "assets/3d/neo-yoru/neo-yoru-inventory-p51-p65.jpg", alt: "NEO-YORUの小物一覧P51からP65" },
+          { src: "assets/3d/neo-yoru/neo-yoru-inventory-p66-p80.jpg", alt: "NEO-YORUの小物一覧P66からP80" },
+          { src: "assets/3d/neo-yoru/neo-yoru-contents-notes.jpg", alt: "NEO-YORUの収録内容と導入前の注意" },
+        ],
+        sections: [
+          {
+            title: "収録内容",
+            bullets: [
+              "建物・大型構造物20種類と小物・外装モジュール80種類、合計100種類",
+              "店舗、集合住宅、高架構造、屋上設備、生活用品、設備、サイン、街路素材を含む構成",
+              "販売画像に記載された形式: Blender / FBX / PNGテクスチャ",
+            ],
+          },
+          {
+            title: "導入前の注意",
+            bullets: [
+              "掲載画像は販売用の実モデルレンダーで、導入環境により見え方が変わる",
+              "Unity / VRChatでの動作、衝突、負荷検証は未実施",
+              "unitypackage形式の配布やQuest対応を保証する商品ではない",
+              "モデル本体はこのサイトから配布せず、指定BOOTHページへ案内する",
+            ],
+          },
+          {
+            title: "商品ページ",
+            links: [
+              { label: "BOOTHで見る", href: "https://kamibukuro18.booth.pm/items/9001329" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [
@@ -2031,6 +2097,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.17",
+      title: "NEO-YORU を3Dモデル作品に追加",
+      summary:
+        "BOOTH掲載名「NEO YORU 100」の公式商品ページへ導く、建物20種類 + 小物・外装80種類の計100種類の作品詳細を追加。",
+    },
     {
       date: "2026.10.16",
       title: "作品詳細ページに公式画像ギャラリーを追加",
