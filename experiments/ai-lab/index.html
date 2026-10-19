@@ -33,11 +33,16 @@
         </h1>
         <p class="hero-intro">観察する。折りたたむ。ほどく。<br>AI制作の途中にある、まだ名前のない判断をブラウザに移植する。</p>
         <p class="hero-note">これは生成AIサービスではありません。<br>図形・文章・動きで制作プロセスを記録する、ローカルな実験作品です。</p>
+        <div class="hero-guide" aria-label="操作ガイド">
+          <span>TRY / 30 SEC</span>
+          <p>フィールドを動かすと信号の中心が変わります。RECOMBINEで配置を変え、スクロールで3つの状態を読み替えます。</p>
+        </div>
       </div>
 
       <div class="hero-stage" id="signal" data-phase="observe">
         <div class="stage-label stage-label-top">SIGNAL FIELD <span>001</span></div>
-        <canvas id="signal-canvas" width="720" height="720" aria-label="ポインターに反応する信号フィールド"></canvas>
+        <canvas id="signal-canvas" width="720" height="720" role="img" tabindex="0" aria-describedby="signal-help" aria-label="ポインターに反応する信号フィールド"></canvas>
+        <p id="signal-help" class="visually-hidden">ポインターまたはタッチで中心を動かせます。矢印キーでも中心を移動できます。</p>
         <div class="field-fallback" role="img" aria-label="静止した信号フィールド">
           <svg viewBox="0 0 720 720" aria-hidden="true">
             <path d="M48 544 186 160l226 382L615 82" />
@@ -68,19 +73,19 @@
       </div>
 
       <div class="story-beats" aria-label="実験の3段階">
-        <article class="story-beat is-active" data-phase="observe" tabindex="0">
+        <article class="story-beat is-active" data-phase="observe" role="button" aria-pressed="true" tabindex="0">
           <div class="beat-number">01</div><div class="beat-word">OBSERVE</div>
           <div class="beat-jp">観測</div>
           <p>画面に現れたものを、すぐに評価しない。ズレ、余白、反復だけを拾う。</p>
           <span class="beat-arrow" aria-hidden="true">↓</span>
         </article>
-        <article class="story-beat" data-phase="fold" tabindex="0">
+        <article class="story-beat" data-phase="fold" role="button" aria-pressed="false" tabindex="0">
           <div class="beat-number">02</div><div class="beat-word">FOLD</div>
           <div class="beat-jp">折りたたむ</div>
           <p>拾った断片を一度、粗いルールにする。意味を固定せず、別の配置に置いてみる。</p>
           <span class="beat-arrow" aria-hidden="true">↓</span>
         </article>
-        <article class="story-beat" data-phase="release" tabindex="0">
+        <article class="story-beat" data-phase="release" role="button" aria-pressed="false" tabindex="0">
           <div class="beat-number">03</div><div class="beat-word">RELEASE</div>
           <div class="beat-jp">解放</div>
           <p>最後に残ったものだけを、次の問いとして返す。完成ではなく、次の観測へ。</p>

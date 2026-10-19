@@ -9,25 +9,29 @@
   const interactionStatus = document.getElementById('interaction-status');
   const recombine = document.getElementById('recombine');
   const beats = [...document.querySelectorAll('.story-beat')];
-  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const motionQuery = window.matchMedia?.('(prefers-reduced-motion: reduce)') || { matches: false };
   const palette = ['#d6ff46', '#ff685c', '#8ebdff', '#f4f0e8'];
+  const phaseCopy = {
+    observe: 'OBSERVE · watch the field respond to your position.',
+    fold: 'FOLD · rearrange the signal and hold the ambiguity.',
+    release: 'RELEASE · return what remains as a question.',
+  };
   let seed = 1;
   let pointer = { x: .52, y: .47, active: false };
+  let pointerPressed = false;
   let frame = 0;
   let reducedMotion = motionQuery.matches;
   let animationId;
-
-  const phaseCopy = {
-    observe: 'フィールドをなぞって、観察の角度を変える。',
-    fold: '断片を折りたたむ。意味はまだ固定しない。',
-    release: '残ったものを、次の問いとして返す。',
-  };
 
   function setPhase(phase) {
     const safePhase = phaseCopy[phase] ? phase : 'observe';
     body.dataset.phase = safePhase;
     if (stage) stage.dataset.phase = safePhase;
-    beats.forEach((beat) => beat.classList.toggle('is-active', beat.dataset.phase === safePhase));
+    beats.forEach((beat) => {
+      const active = beat.dataset.phase === safePhase;
+      beat.classList.toggle('is-active', active);
+      beat.setAttribute('aria-pressed', String(active));
+    });
     if (phaseLabel) phaseLabel.textContent = safePhase.toUpperCase();
     if (interactionStatus && !pointer.active) interactionStatus.textContent = phaseCopy[safePhase];
   }
@@ -35,12 +39,9 @@
   function setMotion() {
     reducedMotion = motionQuery.matches;
     body.classList.toggle('reduced-motion', reducedMotion);
-    if (reducedMotion) {
-      cancelAnimationFrame(animationId);
-      draw();
-    } else {
-      animate();
-    }
+    cancelAnimationFrame(animationId);
+    if (reducedMotion) draw();
+    else animate();
   }
 
   function resizeCanvas() {
@@ -103,16 +104,35 @@
   function setPointer(event) {
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
-    pointer = { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)), active: true };
-    if (interactionStatus) interactionStatus.textContent = `signal x ${(pointer.x * 100).toFixed(0)} / y ${(pointer.y * 100).toFixed(0)} — 角度を更新しました。`;
+    pointer = {
+      x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)),
+      y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)),
+      active: true,
+    };
+    if (interactionStatus) interactionStatus.textContent = `SIGNAL X ${(pointer.x * 100).toFixed(0)} / Y ${(pointer.y * 100).toFixed(0)} · pointer updated`;
+    draw();
+  }
+
+  function endPointer(event) {
+    pointerPressed = false;
+    if (canvas?.hasPointerCapture?.(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+    pointer.active = false;
+    if (interactionStatus) interactionStatus.textContent = phaseCopy[body.dataset.phase] || phaseCopy.observe;
+    draw();
+  }
+
+  function nudgePointer(dx, dy) {
+    pointer = { x: Math.max(0, Math.min(1, pointer.x + dx)), y: Math.max(0, Math.min(1, pointer.y + dy)), active: true };
+    if (interactionStatus) interactionStatus.textContent = `SIGNAL X ${(pointer.x * 100).toFixed(0)} / Y ${(pointer.y * 100).toFixed(0)} · keyboard updated`;
     draw();
   }
 
   function recombineField() {
     seed = seed % 9 + 1;
-    seedReadout.textContent = `SEED / ${String(seed).padStart(2, '0')}`;
-    cardSeed.textContent = `seed: ${String(seed).padStart(2, '0')}`;
-    if (interactionStatus) interactionStatus.textContent = `組み替え ${String(seed).padStart(2, '0')} — 新しい配置を観察する。`;
+    const value = String(seed).padStart(2, '0');
+    if (seedReadout) seedReadout.textContent = `SEED / ${value}`;
+    if (cardSeed) cardSeed.textContent = `seed: ${value}`;
+    if (interactionStatus) interactionStatus.textContent = `RECOMBINE ${value} · local pattern reconfigured`;
     draw();
   }
 
@@ -127,8 +147,21 @@
   if (!canvas || !ctx) body.classList.add('no-canvas');
   if (canvas) {
     canvas.addEventListener('pointermove', setPointer, { passive: true });
-    canvas.addEventListener('pointerdown', setPointer, { passive: true });
-    canvas.addEventListener('pointerleave', () => { pointer.active = false; if (interactionStatus) interactionStatus.textContent = phaseCopy[body.dataset.phase] || phaseCopy.observe; draw(); });
+    canvas.addEventListener('pointerdown', (event) => {
+      pointerPressed = true;
+      setPointer(event);
+      canvas.setPointerCapture?.(event.pointerId);
+    }, { passive: true });
+    canvas.addEventListener('pointerup', endPointer, { passive: true });
+    canvas.addEventListener('pointercancel', endPointer, { passive: true });
+    canvas.addEventListener('pointerleave', (event) => { if (!pointerPressed) endPointer(event); }, { passive: true });
+    canvas.addEventListener('keydown', (event) => {
+      const moves = { ArrowLeft: [-.06, 0], ArrowRight: [.06, 0], ArrowUp: [0, -.06], ArrowDown: [0, .06] };
+      const move = moves[event.key];
+      if (!move) return;
+      event.preventDefault();
+      nudgePointer(move[0], move[1]);
+    });
   }
   if (recombine) recombine.addEventListener('click', recombineField);
   if (recombine) recombine.addEventListener('keydown', (event) => {
@@ -139,7 +172,19 @@
   });
   motionQuery.addEventListener?.('change', setMotion);
   window.addEventListener('resize', resizeCanvas, { passive: true });
-  beats.forEach((beat) => beat.addEventListener('focus', () => setPhase(beat.dataset.phase)));
+  beats.forEach((beat) => {
+    beat.addEventListener('focus', () => setPhase(beat.dataset.phase));
+    beat.addEventListener('click', () => setPhase(beat.dataset.phase));
+    beat.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      setPhase(beat.dataset.phase);
+    });
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) cancelAnimationFrame(animationId);
+    else setMotion();
+  });
   setPhase('observe');
   resizeCanvas();
   observeBeats();
