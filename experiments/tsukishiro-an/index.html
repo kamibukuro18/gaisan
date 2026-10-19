@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="月白庵 — 山あいの一棟宿を想定した、高級旅館のコンセプトサイト。">
+  <title>月白庵｜静けさを、泊まる。</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <div class="concept-ribbon" role="note">CONCEPT SITE / FICTIONAL RYOKAN</div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="月白庵トップへ">
+      <span class="brand-jp">月白庵</span>
+      <span class="brand-en">TSUKISHIRO-AN</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+      <span></span><span></span><span></span><b>メニュー</b>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="主要ナビゲーション">
+      <a href="#rooms">客室</a>
+      <a href="#cuisine">料理</a>
+      <a href="#onsen">湯と滞在</a>
+      <a href="#plans">宿泊プラン</a>
+      <a class="nav-book" href="#booking">予約デモ <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="../../assets/ryokan/tsukishiro-an-hero.png" alt="山あいの渓流沿いに佇む、夕暮れの月白庵" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content page-wrap">
+        <p class="overline light">山あいの一棟宿 <span>/</span> TSUKISHIRO-AN</p>
+        <h1 id="hero-title">静けさを、<br><em>泊まる。</em></h1>
+        <p class="hero-lead">川音が、夜の輪郭をつくる。<br>余白を味わうための、ひと晩。</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#rooms">客室を見る <span>↘</span></a>
+          <a class="text-button light" href="#booking">滞在を相談する <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-caption page-wrap" aria-hidden="true"><span>PRIVATE RYOKAN / KONSEPT</span><span>01 — 05</span></div>
+      <a class="scroll-cue" href="#philosophy" aria-label="次のセクションへスクロール"><span>SCROLL</span><i></i></a>
+    </section>
+
+    <section id="philosophy" class="philosophy section-pad page-wrap reveal">
+      <div class="section-index"><span>01</span><i></i><span>STORY</span></div>
+      <div class="philosophy-copy">
+        <p class="overline">月白庵について</p>
+        <h2>旅の目的を、<br><em>静けさに戻す。</em></h2>
+        <p class="lead-copy">月白庵は、山と水のあいだにある一棟宿を想定したコンセプトです。予定を詰め込むのではなく、湯に浸かり、季節の皿をひとつずつ味わい、窓の外の明るさが変わるのを眺める。</p>
+        <p>目に見えるものを少なくすることで、聞こえるもの、香るもの、手に触れるものが立ち上がる。日常を離れるのではなく、日常の感覚を取り戻すための滞在を設計しています。</p>
+        <div class="signature"><span>月白庵</span><small>静けさの設計</small></div>
+      </div>
+      <aside class="philosophy-note"><span>THE ART OF<br>STAYING STILL</span><strong>余白</strong><small>YOHaku / space between things</small></aside>
+    </section>
+
+    <section id="rooms" class="rooms section-dark section-pad reveal" aria-labelledby="rooms-title">
+      <div class="page-wrap">
+        <div class="section-heading light-heading">
+          <div><p class="overline light">客室 / ROOMS</p><h2 id="rooms-title">眠りのための、<br><em>三つの景色。</em></h2></div>
+          <p>すべての客室に、庭を切り取る窓と、深く息をつける余白を。選んだ客室の詳細が下に表示されます。</p>
+        </div>
+        <div class="room-explorer">
+          <div class="room-list" role="tablist" aria-label="客室を選ぶ">
+            <button class="room-tab is-active" type="button" role="tab" aria-selected="true" data-room="kasumi"><span>01</span><strong>霞 — KASUMI</strong><small>庭を望む / 2–4名</small><i>→</i></button>
+            <button class="room-tab" type="button" role="tab" aria-selected="false" data-room="tsuki"><span>02</span><strong>月 — TSUKI</strong><small>川音のそば / 2名</small><i>→</i></button>
+            <button class="room-tab" type="button" role="tab" aria-selected="false" data-room="ai"><span>03</span><strong>藍 — AI</strong><small>離れ / 2–3名</small><i>→</i></button>
+          </div>
+          <div class="room-detail" aria-live="polite">
+            <div class="room-image-wrap"><img id="room-image" src="../../assets/ryokan/tsukishiro-an-room.png" alt="霞の客室" loading="lazy"></div>
+            <div class="room-detail-copy"><p class="overline light" id="room-eyebrow">ROOM 01 / KASUMI</p><h3 id="room-title">霞</h3><p id="room-description">朝の光が、庭の苔をゆっくりと起こす。畳の間と低い寝台、窓辺の小さな読書席を備えた、月白庵の基準室です。</p><dl class="room-specs"><div><dt>広さ</dt><dd id="room-size">67㎡</dd></div><div><dt>定員</dt><dd id="room-capacity">2–4名</dd></div><div><dt>眺め</dt><dd id="room-view">苔庭</dd></div></dl><a class="text-button light" href="#booking">この客室で相談する <span>→</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cuisine" class="feature feature-cuisine section-pad page-wrap reveal" aria-labelledby="cuisine-title">
+      <div class="feature-image"><img src="../../assets/ryokan/tsukishiro-an-cuisine.png" alt="月白庵の季節の料理を想定した会席料理" loading="lazy"><span class="image-note">SEASONAL TABLE / 02</span></div>
+      <div class="feature-copy"><p class="overline">料理 / CUISINE</p><h2 id="cuisine-title">山の時間を、<br><em>一皿ずつ。</em></h2><p class="lead-copy">夕食は、土地の季節を写し取る小さなコース。焼き物の香り、椀のふたを開ける瞬間、器に残る余韻までを一食の流れとして設計します。</p><p>献立は季節ごとに変わる想定です。ここに掲載している料理は、月白庵のコンセプトを伝えるためのイメージです。</p><div class="menu-list"><div><span>01</span><strong>山の前菜</strong><small>旬の野菜 / 木の芽 / 発酵</small></div><div><span>02</span><strong>清流の椀</strong><small>澄んだ出汁 / 香りの蓋</small></div><div><span>03</span><strong>炭火の主菜</strong><small>焼き魚 / 山の薬味</small></div></div></div>
+    </section>
+
+    <section id="onsen" class="onsen section-pad reveal" aria-labelledby="onsen-title">
+      <div class="page-wrap onsen-grid"><div class="onsen-copy"><p class="overline">湯と滞在 / RITUALS</p><h2 id="onsen-title">湯にほどけ、<br><em>朝を迎える。</em></h2><p class="lead-copy">窓を開けると、森の湿度が入ってくる。檜の湯に身体を預け、明るさが戻るまでの時間を、自分のために使う。</p><div class="ritual-list"><div><span>夕</span><p><strong>チェックイン</strong><small>お茶と季節の香りで迎える</small></p></div><div><span>夜</span><p><strong>月白の湯</strong><small>貸切風呂で、山の音を聴く</small></p></div><div><span>朝</span><p><strong>朝の庭</strong><small>湯上がりの一服と、静かな読書</small></p></div></div></div><figure class="onsen-image"><img src="../../assets/ryokan/tsukishiro-an-onsen.png" alt="森と山を望む月白庵の檜風呂を想定した風景" loading="lazy"><figcaption>PRIVATE BATH / DAWN</figcaption></figure></div>
+    </section>
+
+    <section class="stay-section section-dark section-pad reveal" aria-labelledby="stay-title"><div class="page-wrap"><div class="section-heading light-heading"><div><p class="overline light">滞在の流れ / THE STAY</p><h2 id="stay-title">時間を、<br><em>ほどいていく。</em></h2></div><p>旅館で過ごす一日を、予定表ではなく、感覚の変化としてご提案します。</p></div><div class="stay-flow"><div><span>15:00</span><strong>到着</strong><p>渓流沿いのアプローチを歩き、部屋で一服。</p></div><div><span>17:30</span><strong>湯</strong><p>夕暮れの光が残るうちに、檜の湯へ。</p></div><div><span>19:00</span><strong>夕食</strong><p>季節の皿を、会話の速度で味わう。</p></div><div><span>07:00</span><strong>朝</strong><p>庭を眺めながら、目覚めの一杯。</p></div></div><div class="stay-image"><img src="../../assets/ryokan/tsukishiro-an-ritual.png" alt="雨上がりの庭に面した縁側と朝の茶" loading="lazy"><span>THE MORNING AFTER RAIN</span></div></div></section>
+
+    <section id="plans" class="plans section-pad page-wrap reveal" aria-labelledby="plans-title"><div class="section-heading"><div><p class="overline">宿泊プラン / PLANS</p><h2 id="plans-title">選ぶのは、<br><em>過ごし方。</em></h2></div><p>以下はコンセプトサイト用のデモ表示です。実際の料金・空室・予約受付は行っていません。</p></div><div class="plan-grid" role="group" aria-label="宿泊プランを選ぶ"><button class="plan-card is-selected" type="button" aria-pressed="true" data-plan="seasonal"><span class="plan-number">01 / MOST REQUESTED</span><strong>季節の二食</strong><p>客室、夕食、朝食、貸切風呂。月白庵の一泊を一通り味わう標準プラン。</p><small>コンセプト上の参考価格　¥48,000〜 / 2名</small></button><button class="plan-card" type="button" aria-pressed="false" data-plan="stay"><span class="plan-number">02 / SLOW STAY</span><strong>月白の連泊</strong><p>二泊目から料理と滞在のリズムを変え、何もしない時間を深くする連泊プラン。</p><small>コンセプト上の参考価格　¥86,000〜 / 2名</small></button><button class="plan-card" type="button" aria-pressed="false" data-plan="breakfast"><span class="plan-number">03 / LIGHT</span><strong>朝食と湯</strong><p>夕食は町で、朝は宿で。遅い到着にも合わせやすい軽やかな滞在。</p><small>コンセプト上の参考価格　¥34,000〜 / 2名</small></button></div><div class="plan-selection" id="plan-selection" aria-live="polite"><span>SELECTED PLAN</span><strong>季節の二食</strong><p>客室・夕食・朝食・貸切風呂を含む想定。日程を選ぶと、予約デモの確認欄へ反映されます。</p><a class="button button-dark" href="#booking">このプランで相談する <span>↘</span></a></div></section>
+
+    <section id="booking" class="booking section-dark section-pad reveal" aria-labelledby="booking-title"><div class="page-wrap booking-grid"><div class="booking-copy"><p class="overline light">予約デモ / DEMO ONLY</p><h2 id="booking-title">次の週末を、<br><em>静けさに。</em></h2><p>ここから先はデモです。入力内容は送信されず、空室照会・決済・個人情報の保存は行いません。</p><div class="booking-note"><strong>架空施設について</strong><span>月白庵はこのコンセプトサイトのための架空の旅館です。住所・料金・営業状況・受賞歴・口コミは実在情報ではありません。</span></div></div><form class="booking-form" id="booking-form"><div class="form-heading"><span>STAY REQUEST / DEMO</span><b>NO SUBMISSION</b></div><label>希望日<input id="stay-date" name="stay-date" type="date"></label><div class="form-row"><label>人数<select id="guests" name="guests"><option>2名</option><option>3名</option><option>4名</option></select></label><label>客室<select id="room-select" name="room"><option value="霞 — KASUMI">霞 — KASUMI</option><option value="月 — TSUKI">月 — TSUKI</option><option value="藍 — AI">藍 — AI</option></select></label></div><label>連絡先（デモ）<input name="contact" type="text" placeholder="入力は保存されません"></label><button class="button button-light full-button" type="submit">予約デモを確認する <span>→</span></button><p class="form-status" id="form-status" aria-live="polite"></p></form></div></section>
+
+    <section id="access" class="access section-pad page-wrap reveal" aria-labelledby="access-title"><div class="section-heading"><div><p class="overline">アクセス / FAQ</p><h2 id="access-title">旅の前後まで、<br><em>整えておく。</em></h2></div><p>実在施設ではないため、ここでは商用サイトに必要な案内要素をコンセプトとして配置しています。</p></div><div class="access-grid"><div class="access-map"><div class="map-lines" aria-hidden="true"></div><span class="map-label">FICTIONAL<br>MOUNTAIN VALLEY</span><div class="map-pin">月白庵</div><small>実在の地図ではありません</small></div><div class="faq-list"><details open><summary>どこにある宿ですか？</summary><p>月白庵は架空の施設です。実在の住所・最寄り駅・送迎時刻は設定していません。</p></details><details><summary>食事のアレルギー対応はできますか？</summary><p>実運営情報ではありません。実際の宿泊施設では、予約時に宿へ直接ご相談ください。</p></details><details><summary>予約デモで入力した内容は保存されますか？</summary><p>保存・送信されません。フォームの確認メッセージを表示するだけのフロントエンドデモです。</p></details><details><summary>このサイトの写真について</summary><p>すべてこのコンセプトサイト用に生成したオリジナル素材です。第三者旅館の写真は使用していません。</p></details></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div><span class="footer-brand">月白庵</span><span>TSUKISHIRO-AN / CONCEPT SITE</span></div><div><span>FICTIONAL RYOKAN</span><span>NO ACTUAL RESERVATIONS</span><a href="../../index.html#works">gaisanへ戻る ↗</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
