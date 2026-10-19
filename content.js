@@ -219,6 +219,70 @@ window.siteContent = {
 
   projects: [
     {
+      slug: "residual-signal-lab",
+      meta: "Interactive AI Experiment",
+      title: "RESIDUAL SIGNAL",
+      cover: "assets/projects/residual-signal-lab.png",
+      summary:
+        "AI制作の観察・組み替え・解放を、Canvasとタイポグラフィで体験するブラウザ内の実験室。実運用サービスではなく、制作プロセスを記録する作品。",
+      year: "2026.10",
+      status: "Experimental",
+      tags: ["AI", "Interactive", "Canvas", "Typography"],
+      href: "experiments/ai-lab/index.html",
+      cta: "Open experiment",
+      details: [
+        "ポインターやタッチで信号フィールドの読み方が変わる",
+        "RECOMBINEでローカルなシードを組み替え、視覚パターンを更新",
+        "スクロールで OBSERVE / FOLD / RELEASE の3状態を切り替え",
+        "外部API・アカウント・音声を使わない静的なブラウザ作品",
+      ],
+      page: {
+        eyebrow: "Interactive AI Experiment / 2026.10",
+        intro:
+          "RESIDUAL SIGNALは、生成AIを魔法の箱として見せるのではなく、人間の観察と編集が残る場所として扱うインタラクティブなポートフォリオ実験です。図形、文章、動きの組み合わせから、制作途中の判断の揺れを記録しています。",
+        highlights: [
+          "Canvasの信号フィールドがポインターとタッチに反応",
+          "RECOMBINEでローカルシードを更新し、配置を組み替え",
+          "prefers-reduced-motionとCanvas非対応時の静止SVGフォールバックに対応",
+        ],
+        sections: [
+          {
+            title: "作品として",
+            paragraphs: [
+              "サイト全体をAI制作の前後にある観察装置として設計しました。大きな日本語と英字、線の重なり、3つの状態を使って、答えが出る前の余白を見せています。",
+              "表示されるパターンはデモ用のローカルな視覚表現であり、AIモデルの推論結果や実運用機能を表すものではありません。",
+            ],
+          },
+          {
+            title: "操作",
+            bullets: [
+              "SIGNAL FIELDをポインターまたはタッチでなぞる",
+              "RECOMBINEボタンでシードを更新する",
+              "スクロール、またはキーボードフォーカスでOBSERVE / FOLD / RELEASEを読む",
+            ],
+          },
+          {
+            title: "技術と制約",
+            bullets: [
+              "依存パッケージなしのHTML / CSS / JavaScript",
+              "Canvas非対応時は静止SVGを表示",
+              "prefers-reduced-motionではアニメーションを停止",
+              "外部API、ログイン、決済、音声、自動再生なし",
+            ],
+          },
+          {
+            title: "実験を開く",
+            links: [
+              {
+                label: "RESIDUAL SIGNAL / AI LAB",
+                href: "experiments/ai-lab/index.html",
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
       slug: "flow-switch",
       meta: "Desktop App",
       title: "FlowSwitch",
@@ -2225,6 +2289,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.19",
+      title: "RESIDUAL SIGNAL / AI LAB をインタラクティブ実験作品として公開",
+      summary:
+        "AI制作の観察・組み替え・解放を、Canvas、タイポグラフィ、スクロール状態で表現する独立サイトを追加。外部APIを使わない静的なブラウザ作品として作品一覧と詳細ページに収録。",
+    },
     {
       date: "2026.10.19",
       title: "AGED GRIMOIRES を3Dモデル作品に追加",

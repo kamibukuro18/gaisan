@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI制作の観察・組み替え・解放を体験する、ブラウザ内のインタラクティブ実験室。">
+  <title>RESIDUAL SIGNAL / AI LAB</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-phase="observe">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <div class="lab-noise" aria-hidden="true"></div>
+
+  <header class="lab-header">
+    <a class="lab-mark" href="../../index.html#works" aria-label="gaisanの作品一覧へ">
+      <span>gaisan</span><i>×</i><b>lab/01</b>
+    </a>
+    <div class="lab-header-meta">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span>LOCAL SPECIMEN / 2026.10</span>
+      <span class="header-index">01—03</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-lab" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>AI LABORATORY</span> / 残像の設計</p>
+        <h1 id="hero-title">
+          <span class="hero-line hero-line-jp">思考の<span class="ink">残像</span>を</span>
+          <span class="hero-line hero-line-en">RESIDUAL<br><em>SIGNAL</em></span>
+        </h1>
+        <p class="hero-intro">観察する。折りたたむ。ほどく。<br>AI制作の途中にある、まだ名前のない判断をブラウザに移植する。</p>
+        <p class="hero-note">これは生成AIサービスではありません。<br>図形・文章・動きで制作プロセスを記録する、ローカルな実験作品です。</p>
+      </div>
+
+      <div class="hero-stage" id="signal" data-phase="observe">
+        <div class="stage-label stage-label-top">SIGNAL FIELD <span>001</span></div>
+        <canvas id="signal-canvas" width="720" height="720" aria-label="ポインターに反応する信号フィールド"></canvas>
+        <div class="field-fallback" role="img" aria-label="静止した信号フィールド">
+          <svg viewBox="0 0 720 720" aria-hidden="true">
+            <path d="M48 544 186 160l226 382L615 82" />
+            <path d="M86 120 580 604M34 344 676 344M158 690 558 30" />
+            <circle cx="361" cy="346" r="146" /><circle cx="361" cy="346" r="38" />
+          </svg>
+        </div>
+        <div class="stage-core" aria-hidden="true"><span>残</span><b>NO<br>OUTPUT</b></div>
+        <div class="stage-label stage-label-bottom">POINTER / TOUCH / KEYBOARD<br><span>MOVE THROUGH THE NOISE</span></div>
+        <span class="stage-cross cross-a" aria-hidden="true"></span><span class="stage-cross cross-b" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="command-strip" aria-label="実験コントロール">
+      <div class="command-id"><span>COMMAND</span><strong id="seed-readout">SEED / 01</strong></div>
+      <p id="interaction-status" class="interaction-status" aria-live="polite">フィールドをなぞって、観察の角度を変える。</p>
+      <button class="recombine-button" id="recombine" type="button">
+        <span>RECOMBINE</span><b aria-hidden="true">↗</b>
+      </button>
+    </section>
+
+    <section class="story" id="process" aria-labelledby="process-title">
+      <div class="section-marker"><span>PROCESS</span><span>02—03</span></div>
+      <div class="story-intro">
+        <p class="eyebrow">THREE STATES / ひとつの判断</p>
+        <h2 id="process-title">正解を出す前の<br><em>揺れ</em>を残す。</h2>
+        <p>スクロールで、同じフィールドの読み方が変わります。下の3つの視点は、AIに答えを求めるための機能ではなく、問いをつくるための順序です。</p>
+      </div>
+
+      <div class="story-beats" aria-label="実験の3段階">
+        <article class="story-beat is-active" data-phase="observe" tabindex="0">
+          <div class="beat-number">01</div><div class="beat-word">OBSERVE</div>
+          <div class="beat-jp">観測</div>
+          <p>画面に現れたものを、すぐに評価しない。ズレ、余白、反復だけを拾う。</p>
+          <span class="beat-arrow" aria-hidden="true">↓</span>
+        </article>
+        <article class="story-beat" data-phase="fold" tabindex="0">
+          <div class="beat-number">02</div><div class="beat-word">FOLD</div>
+          <div class="beat-jp">折りたたむ</div>
+          <p>拾った断片を一度、粗いルールにする。意味を固定せず、別の配置に置いてみる。</p>
+          <span class="beat-arrow" aria-hidden="true">↓</span>
+        </article>
+        <article class="story-beat" data-phase="release" tabindex="0">
+          <div class="beat-number">03</div><div class="beat-word">RELEASE</div>
+          <div class="beat-jp">解放</div>
+          <p>最後に残ったものだけを、次の問いとして返す。完成ではなく、次の観測へ。</p>
+          <span class="beat-arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="specimen-section" aria-labelledby="specimen-title">
+      <div class="specimen-copy">
+        <p class="eyebrow">SPECIMEN / 02</p>
+        <h2 id="specimen-title">画面の中に<br><span class="outlined">問いを置く。</span></h2>
+        <p>このページの図形は、入力したポインター位置と、ボタンで組み替えたシードだけで変化します。サーバーへの送信、アカウント、音声、外部APIはありません。</p>
+        <dl class="specimen-specs">
+          <div><dt>INPUT</dt><dd>pointer / touch</dd></div>
+          <div><dt>OUTPUT</dt><dd>canvas / type / motion</dd></div>
+          <div><dt>MODE</dt><dd>local, reversible</dd></div>
+        </dl>
+      </div>
+      <div class="specimen-card" aria-label="現在の実験状態">
+        <div class="card-top"><span>RESIDUAL LOG</span><span id="phase-label">OBSERVE</span></div>
+        <div class="card-glyph" aria-hidden="true"><span>?</span><i></i><b></b></div>
+        <div class="card-bottom"><span id="card-seed">seed: 01</span><span>no final answer</span></div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="about" aria-labelledby="manifesto-title">
+      <div class="manifesto-stamp" aria-hidden="true">LOCAL<br>ONLY</div>
+      <div>
+        <p class="eyebrow">FIELD NOTES / 制約も作品の一部</p>
+        <h2 id="manifesto-title">つくられたものを、<br><em>つくられたまま</em>見る。</h2>
+        <p class="manifesto-lead">RESIDUAL SIGNALは、AIを魔法の箱として見せるのではなく、人間の観察と編集が残る場所として扱う小さなポートフォリオ実験です。</p>
+        <p>Canvasが使えない環境では静止SVGに切り替わり、動きを減らす設定ではフィールドのアニメーションを止めます。どの環境でも文章と状態の変化は読めるようにしています。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lab-footer">
+    <div><span class="footer-mark">R/S</span><span>RESIDUAL SIGNAL — AI LAB 01</span></div>
+    <div><a href="../../index.html#works">gaisanへ戻る ↗</a><span>NO AUDIO / NO LOGIN / NO API</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

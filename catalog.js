@@ -15,7 +15,8 @@
     'lira-sofa': {accent:'blue',caption:'LIRA SOFA',visual:'image'},
     'curva-chair': {accent:'mint',caption:'CURVA',visual:'image'},
     'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'image'},
-    'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'image'}
+    'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'image'},
+    'residual-signal-lab': {accent:'mint',caption:'RESIDUAL SIGNAL',visual:'image',source:'LOCAL SPECIMEN'}
   };
   const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
   function primaryAction(item) {
@@ -30,7 +31,8 @@
   function illustration(item) {
     const style = styles[item.slug] || {accent:'blue',caption:item.title,visual:'export'};
     if (style.visual === 'image' && item.cover) {
-      return `<span class="visual-image-wrap"><img class="visual-image" src="${esc(item.cover)}" alt="" loading="lazy"><span class="visual-image-shade"></span></span><span class="visual-label">${esc(style.caption)}</span><span class="visual-source">BOOTH / 3D MODEL</span>`;
+      const source = style.source || 'BOOTH / 3D MODEL';
+      return `<span class="visual-image-wrap"><img class="visual-image" src="${esc(item.cover)}" alt="" loading="lazy"><span class="visual-image-shade"></span></span><span class="visual-label">${esc(style.caption)}</span><span class="visual-source">${esc(source)}</span>`;
     }
     let art;
     if (style.visual === 'crab') {
