@@ -849,6 +849,71 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "aged-grimoires",
+      meta: "3D Model / Props",
+      title: "AGED GRIMOIRES",
+      summary:
+        "革の擦れや古びた金具まで作り込んだ、ファンタジーの書庫や魔術師の机に置ける古書・魔術書5冊セット。",
+      status: "BOOTH",
+      tags: ["3D", "Props", "Blender", "FBX", "PBR"],
+      href: "https://kamibukuro18.booth.pm/items/9012607",
+      cover: "assets/3d/aged-grimoires/aged-grimoires-cover.jpg",
+      cta: "BOOTHで見る",
+      details: [
+        "Astra、Vesper、Viridia、Solis、Umbraの5冊",
+        "各冊のBlender／FBXデータと5冊集合のBlenderシーン",
+        "革、金具、紙の層まで立体で作り込んだ古書・魔術書モデル",
+        "モデル本体は配布せず、BOOTH商品ページへ案内",
+      ],
+      page: {
+        eyebrow: "3D Model / AGED GRIMOIRES",
+        intro:
+          "AGED GRIMOIRES は、革の擦れ、古びた金具、不揃いに重なる紙の層まで立体で作り込んだ古書・魔術書の5冊セットです。商品ページでは、収録モデルをBlenderでレンダリングした紹介画像と、各冊のBlender／FBXデータが案内されています。",
+        highlights: [
+          "Astra、Vesper、Viridia、Solis、Umbraの5冊",
+          "各冊のBlender／FBXデータと5冊集合のBlenderシーン（照明・カメラ付き）",
+          "ファンタジーの書庫や魔術師の机に置ける装飾用3Dモデル",
+        ],
+        gallery: [
+          { src: "assets/3d/aged-grimoires/aged-grimoires-cover.jpg", alt: "AGED GRIMOIRESの5冊集合レンダー" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-astra.jpg", alt: "AGED GRIMOIRESのAstra" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-vesper.jpg", alt: "AGED GRIMOIRESのVesper" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-viridia.jpg", alt: "AGED GRIMOIRESのViridia" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-solis.jpg", alt: "AGED GRIMOIRESのSolis" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-umbra.jpg", alt: "AGED GRIMOIRESのUmbra" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-details-1.jpg", alt: "AGED GRIMOIRESの装丁ディテール" },
+          { src: "assets/3d/aged-grimoires/aged-grimoires-details-2.jpg", alt: "AGED GRIMOIRESの紙と金具のディテール" },
+        ],
+        sections: [
+          {
+            title: "収録モデル",
+            bullets: [
+              "Astra：紺革、天球環と星の真鍮装飾",
+              "Vesper：赤革、尖頭アーチと赤い宝石",
+              "Viridia：緑革、植物レリーフと革ベルト",
+              "Solis：象牙色の装丁、太陽の幾何模様と交差綴じ",
+              "Umbra：黒紫革、銀色の星環と装飾鎖",
+            ],
+          },
+          {
+            title: "データ内容・注意",
+            bullets: [
+              "各冊のBlender／FBXデータ5種と、5冊集合のBlenderシーン（照明・カメラ付き）",
+              "表紙・背表紙・金具・紙の層まで立体で作り込んだPBR向けモデル",
+              "掲載画像は収録モデルをBlenderでレンダリングしたもの",
+              "モデル本体はこのサイトから配布せず、指定BOOTHページへ案内する",
+            ],
+          },
+          {
+            title: "商品ページ",
+            links: [
+              { label: "BOOTHで見る", href: "https://kamibukuro18.booth.pm/items/9012607" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [
@@ -2160,6 +2225,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.19",
+      title: "AGED GRIMOIRES を3Dモデル作品に追加",
+      summary:
+        "古書・魔術書5冊セットを、各冊の特徴、公式販売画像ギャラリー、BOOTH商品ページへの導線付きで追加。",
+    },
     {
       date: "2026.10.19",
       title: "FOLIO Bookstore を3Dモデル作品に追加",
