@@ -219,7 +219,79 @@ window.siteContent = {
 
   projects: [
     {
+      slug: "yoru-no-niwa",
+      category: "site",
+      meta: "Site制作 / Concept",
+      title: "ヨルノニワ｜夜間植物園 コンセプトサイト",
+      summary:
+        "日没に開園し、夜明けに閉園する架空の植物園「ヨルノニワ」のブランドサイト。青・蛍光ピンク・黄の3色によるリソグラフ印刷風のビジュアルで、“夜の庭を歩く体験”をWeb上で表現しました。",
+      year: "2026",
+      status: "Published sample",
+      tags: ["Site制作", "Brand", "HTML", "CSS", "JavaScript"],
+      href: "https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5",
+      thumbnailSource: "https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5",
+      cta: "公開サンプルを見る",
+      details: [
+        "夜にだけ花をひらく7種の植物を集めた架空の植物園のブランドサイト",
+        "花時計、標本ボード、網点の月、入園券などの体験型インタラクション",
+        "HTML / CSS / JavaScript（Canvas、SVG、Pointer Events）",
+        "企画、アートディレクション、デザイン、フロントエンド実装を担当",
+      ],
+      page: {
+        eyebrow: "Site制作 / Concept / 2026",
+        intro:
+          "夜にだけ花をひらく7種の植物を集めた、架空の植物園「ヨルノニワ」のブランドサイト。「夜の庭を、ひと晩かけて歩く」体験をWebに落とし込むため、リソグラフ3色刷りをモチーフに、版ズレ、網点、混色、トンボを画面上の表現へ翻訳しています。",
+        highlights: [
+          "花時計の針を回して、時間帯ごとに咲く花を確認",
+          "標本ボードの切り抜き風の花をドラッグし、時計と開閉を連動",
+          "網点の月の月齢計算、入園券の半券をドラッグでちぎる体験",
+          "マウスとスクロールに反応するタイトルの版ズレ表現",
+        ],
+        sections: [
+          {
+            title: "コンセプト",
+            paragraphs: [
+              "日没に開園し、夜明けに閉園する架空の植物園を舞台に、ページを読むのではなく、夜の庭を歩くように情報へ触れる体験を設計しています。",
+              "青・蛍光ピンク・黄の3色によるリソグラフ印刷風のビジュアルで、版ズレ、網点、混色、トンボをブランドの手触りとして再現しました。",
+            ],
+          },
+          {
+            title: "主なインタラクション",
+            bullets: [
+              "花時計：針を回して咲く花を確認",
+              "標本ボード：切り抜き風の花をドラッグし、時計と開閉を連動",
+              "網点の月：月齢計算をビジュアルに反映",
+              "入園券：半券をドラッグでちぎる",
+              "マウス / スクロール：タイトルの版ズレが変化",
+            ],
+          },
+          {
+            title: "制作情報",
+            bullets: [
+              "担当：企画 / アートディレクション / デザイン / フロントエンド実装",
+              "技術：HTML / CSS / JavaScript（Canvas、SVG、Pointer Events）",
+              "制作：GAIBAKO, 2026",
+            ],
+          },
+          {
+            title: "確認範囲と公開サンプル",
+            paragraphs: [
+              "植物の性質についてはユーザー提供の説明を掲載しています。こちらで植物学的な正確性を検証済みとは主張していません。",
+              "現在、ユーザー提供URLはHTTP上では応答しますが、実ブラウザでは「Page not found – Claude」となり、本体表示や機能を確認できませんでした。別サイト画像での代用は行っていません。",
+            ],
+            links: [
+              {
+                label: "ヨルノニワ 公開サンプル（ユーザー提供URL）",
+                href: "https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5",
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
       slug: "residual-signal-lab",
+      category: "site",
       meta: "Interactive AI Experiment",
       title: "RESIDUAL SIGNAL",
       cover: "assets/projects/residual-signal-lab.png",
@@ -2289,6 +2361,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.19",
+      title: "サイト制作カテゴリを追加し、ヨルノニワを掲載",
+      summary:
+        "ユーザー提供のヨルノニワ公開サンプルを、説明と外部リンク付きで掲載。実ページはブラウザでPage not foundとなったため、別サイト画像によるサムネイル代用は行わず制約を記録。",
+    },
     {
       date: "2026.10.19",
       title: "RESIDUAL SIGNAL / AI LAB をインタラクティブ実験作品として公開",

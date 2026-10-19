@@ -17,5 +17,6 @@ Thumbnail changes in this update were limited to official pages for the matching
 | FOLIO Bookstore | `assets/3d/folio/*.jpg` | https://kamibukuro18.booth.pm/items/9011742 | Official BOOTH product images fetched from the matching public product page on 2026-10-19; 6 images were resized to max 1400px and converted to JPEG quality 82. No model files were added. |
 | AGED GRIMOIRES | `assets/3d/aged-grimoires/*.jpg` | https://kamibukuro18.booth.pm/items/9012607 | Official BOOTH product images fetched from the matching public product page on 2026-10-19; 8 images were resized to max 1400px and converted to JPEG quality 82. No model files were added. |
 | RESIDUAL SIGNAL | `assets/projects/residual-signal-lab.png` | `experiments/ai-lab/index.html` | Screenshot of the actual local interactive experiment, generated from its Canvas/SVG/CSS rendering; no external assets were used. |
+| ヨルノニワ | *(not captured)* | https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5 | User-provided URL returned an HTTP shell, but Chromium displayed `Page not found – Claude`; no third-party image was substituted and no screenshot was saved. |
 
 Crabhouse and the previously published 3D thumbnails were retained. STAR FINCH keeps the existing verified gameplay capture; no external store image was substituted. No model files were added.

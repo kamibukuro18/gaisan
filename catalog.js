@@ -3,7 +3,7 @@
   const content = window.siteContent || {};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const collections = [['games','game'],['aiGames','game'],['projects','tool'],['models3d','3d']];
-  const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind})));
+  const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind:item.category || kind})));
   const styles = {
     'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'image'},
     'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'image'},
@@ -16,7 +16,8 @@
     'curva-chair': {accent:'mint',caption:'CURVA',visual:'image'},
     'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'image'},
     'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'image'},
-    'residual-signal-lab': {accent:'mint',caption:'RESIDUAL SIGNAL',visual:'image',source:'LOCAL SPECIMEN'}
+    'residual-signal-lab': {accent:'mint',caption:'RESIDUAL SIGNAL',visual:'image',source:'LOCAL SPECIMEN'},
+    'yoru-no-niwa': {accent:'violet',caption:'YORU NO NIWA',visual:'export'}
   };
   const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
   function primaryAction(item) {

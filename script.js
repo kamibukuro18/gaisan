@@ -12,6 +12,15 @@ function card(item) {
 const selected = ['crabhouse','star-finch','flow-switch'].map(slug => works.find(item => item.slug === slug)).filter(Boolean);
 document.getElementById('featured-grid').innerHTML = selected.map(card).join('');
 const grid = document.getElementById('works-grid'), empty = document.getElementById('empty-state');
+const filterRow = document.querySelector('.filter-row');
+if (filterRow && !filterRow.querySelector('[data-filter="site"]')) {
+  const siteFilter = document.createElement('button');
+  siteFilter.className = 'filter';
+  siteFilter.dataset.filter = 'site';
+  siteFilter.textContent = 'サイト制作';
+  siteFilter.type = 'button';
+  filterRow.append(siteFilter);
+}
 const filters = [...document.querySelectorAll('.filter')];
 function render(filter='all') {
   const items = filter === 'all' ? works : works.filter(item => item.kind === filter);
