@@ -150,37 +150,40 @@ window.siteContent = {
     },
     {
       slug: "star-finch",
-      meta: "Web Game",
+      meta: "Web Game / FLUX 10",
       title: "STAR FINCH",
       cover: "assets/games/star-finch-real.png",
       thumbnailSource: "games/star-finch/index.html",
       summary:
-        "ファミコン風の横長画面で遊ぶ、縦スクロール弾幕STG。2つのステージを進み、負荷と熱量を管理しながらボスを撃破するブラウザゲーム。",
+        "ファミコン風の横長画面で遊ぶ、全4面の縦スクロール弾幕STG。3面までの従来作に、4面「NOCTURNE ENGINE」、新ボス「ECLIPSE REGENT」、専用BGM2曲を加えたFLUX 10版。",
       year: "2026.10",
       status: "Playable",
-      tags: ["Game", "Web", "Shooter", "Godot"],
+      tags: ["Game", "Web", "Shooter", "Godot", "FLUX 10", "4 Stages"],
       href: "games/star-finch/index.html",
       cta: "Play game",
       details: [
         "インストール不要でブラウザからプレイ可能",
-        "2ステージ構成。IRIS MOTH と SOLAR WARDEN に挑戦",
-        "移動・射撃・ボム・冷却を使い分けるアーケードシューティング",
+        "全4面構成。3面までの既存内容に、NOCTURNE ENGINEとECLIPSE REGENTを追加",
+        "専用BGM2曲、移動・射撃・ボム・冷却を使い分けるアーケードシューティング",
+        "224自動テストと自然開始5通し・4面武器別9試行はPASS。4面到達の実ブラウザ確認は未実施",
       ],
       page: {
-        eyebrow: "Web Game / 2026.10",
+        eyebrow: "Web Game / FLUX 10 / 2026.10",
         intro:
-          "STAR FINCH は、512×320の内部解像度で描く、横長画面の縦スクロール弾幕STGです。敵弾を避けながら、射撃と冷却を切り替え、限られたボムを使って2つのステージを攻略します。",
+          "STAR FINCHは、512×320の内部解像度で描く、横長画面の縦スクロール弾幕STGです。FLUX 10では3面までの内容に4面「NOCTURNE ENGINE」と新ボス「ECLIPSE REGENT」を加え、専用BGM2曲を含む全4面のキャンペーンに更新しました。",
         highlights: [
           "ブラウザ上でそのまま遊べる Godot 4 Web ビルド",
-          "2ステージと2体のボスを収録",
+          "全4面と4面ボス「ECLIPSE REGENT」を収録。3面までの内容も同梱",
+          "4面「NOCTURNE ENGINE」と専用BGM2曲を追加",
           "オート射撃、低速移動、冷却、ボムを組み合わせた操作感",
+          "224自動テスト、自然開始5通し、4面武器別9試行はPASS。人間による4面到達は未検証",
         ],
         sections: [
           {
             title: "ゲーム概要",
             paragraphs: [
               "右側のHUDに負荷メーターやボム残数を表示する、横長画面の縦スクロール弾幕STGです。ステージ中は射撃を止めて冷却する判断も重要になります。",
-              "開始時のボムは1発。ステージを進みながら、画面全体を一掃するタイミングを見極めてください。",
+              "3面までの既存ステージに、4面「NOCTURNE ENGINE」とECLIPSE REGENT戦を追加。4面到達と実ブラウザでの通しプレイは、今回の確認範囲では未検証です。",
             ],
           },
           {
@@ -197,10 +200,11 @@ window.siteContent = {
           {
             title: "ビルド",
             bullets: [
-              "Godot 4.6.3 Web export",
+              "Godot 4.6.3 Web export / FLUX 10",
               "WebAssembly + WebGL2 / single-thread",
               "内部解像度 512×320、横画面向け",
-              "音声は開始操作後に有効化",
+              "専用BGM2曲。音声は開始操作後に有効化",
+              "224自動テスト、自然開始5通し、4面武器別9試行はPASS",
             ],
           },
           {
@@ -296,7 +300,7 @@ window.siteContent = {
       title: "月白庵｜静けさを、泊まる。",
       cover: "assets/projects/tsukishiro-an.png",
       summary:
-        "架空の高級旅館「月白庵」の商用受託サイト相当のコンセプト。客室・料理・湯・宿泊プラン・予約デモまで、静かな滞在の検討導線を設計。",
+        "架空の高級旅館「月白庵」を題材に、写真で惹きつけ、客室と過ごし方を選び、宿泊プランと予約デモへ自然につなぐ商用サイト相当のコンセプト。",
       year: "2026.10",
       status: "Concept site",
       tags: ["Site制作", "Brand", "Responsive", "HTML", "CSS", "JavaScript"],
@@ -304,19 +308,19 @@ window.siteContent = {
       thumbnailSource: "experiments/tsukishiro-an/index.html",
       cta: "サイトを開く",
       details: [
-        "架空の旅館ブランドを、ファーストビューから滞在検討まで一つの長い導線に整理",
-        "客室3種の切替、宿泊プラン3種の選択、予約デモのフィードバックを実装",
-        "1440px / 390pxの実ブラウザで横溢れ、画像読み込み、モバイルナビを検証",
+        "写真の魅力から客室、過ごし方、宿泊プラン、予約デモへ自然につながる導線を設計",
+        "客室3種の切替、宿泊プラン3種の選択、送信しない予約デモのフィードバックを実装",
+        "1440px / 390pxの実ブラウザで横溢れ、画像読み込み、スマホナビを検証",
         "写真5点はこのコンセプトのために生成したオリジナル素材。実在施設や予約機能ではありません",
       ],
       page: {
         eyebrow: "Site制作 / Ryokan Concept / 2026.10",
         intro:
-          "月白庵は、静かな山あいの滞在を想定した架空の高級旅館コンセプトです。強い装飾に頼らず、写真・余白・タイポグラフィを軸に、客室を選び、過ごし方を想像し、予約デモを確認するまでの体験を設計しました。",
+          "月白庵は、静かな山あいの滞在を想定した架空の高級旅館コンセプトです。まず写真と余白で魅力を伝え、客室を選び、過ごし方を想像し、宿泊プランと予約デモへ自然に進める体験を設計しました。",
         highlights: [
-          "ヒーローから客室、料理、湯、滞在の流れ、予約デモへ続く商用サイト相当の導線",
+          "写真の印象から客室、料理、湯、滞在の流れ、宿泊プラン、予約デモへ続く導線",
           "霞 / 月 / 藍の客室タブと、季節の夕餉 / 余白の二泊 / 朝食と湯のプラン選択",
-          "モバイルナビ、reveal、ヘッダー追従、reduced-motion、フォームのデモフィードバック",
+          "スマホナビ、reveal、ヘッダー追従、reduced-motion、フォームのデモフィードバック",
           "予約送信・空室照会・価格確定・実在住所・第三者写真は含まない架空の提案",
         ],
         sections: [
@@ -2433,6 +2437,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.19",
+      title: "STAR FINCHを4面版FLUX 10へ更新",
+      summary:
+        "3面までの内容に4面「NOCTURNE ENGINE」、新ボス「ECLIPSE REGENT」、専用BGM2曲を追加。224自動テストと自然開始5通し・4面武器別9試行はPASSしたが、4面到達の実ブラウザ確認は未実施として記録。",
+    },
     {
       date: "2026.10.19",
       title: "RESIDUAL SIGNAL / AI LAB の操作導線を改善",
