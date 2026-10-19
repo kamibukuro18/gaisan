@@ -786,6 +786,69 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "folio-bookstore",
+      meta: "3D Model / Environment",
+      title: "FOLIO Bookstore",
+      summary:
+        "木の書架と深いグリーンの壁、読書ラウンジを備えた書店の3Dモデルセット。建築・家具・本・小物の独立モデル37種を収録。",
+      status: "BOOTH",
+      tags: ["3D", "Environment", "Blender", "FBX", "Architecture"],
+      href: "https://kamibukuro18.booth.pm/items/9011742",
+      cover: "assets/3d/folio/folio-cover.jpg",
+      cta: "BOOTHで見る",
+      details: [
+        "独立モデル37種（建築8種・家具9種・本13種・小物7種）",
+        "完成配置シーン／独立アセットライブラリのBlenderデータを収録",
+        "FBX38点、PNGテクスチャ16点（1024×1024）",
+        "Unity・Unreal専用データやVRChat設定は含まれない",
+      ],
+      page: {
+        eyebrow: "3D Model / FOLIO Bookstore",
+        intro:
+          "FOLIO Bookstore は、木の温もりを感じる書架、深いグリーンの壁、読書ラウンジを組み合わせた書店の3Dモデルセットです。商品ページでは、建築・家具・本・小物の独立モデル37種と完成配置シーンが案内されています。",
+        highlights: [
+          "独立モデル37種（建築8種・家具9種・本13種・小物7種）",
+          "完成配置シーンと独立アセットライブラリのBlenderデータ",
+          "FBX38点、PNGテクスチャ16点（1024×1024）",
+        ],
+        gallery: [
+          { src: "assets/3d/folio/folio-cover.jpg", alt: "FOLIO Bookstoreの完成配置シーン" },
+          { src: "assets/3d/folio/folio-exterior.jpg", alt: "FOLIO Bookstoreの外観" },
+          { src: "assets/3d/folio/folio-interior.jpg", alt: "FOLIO Bookstoreの店内と書架" },
+          { src: "assets/3d/folio/folio-assets.jpg", alt: "FOLIO Bookstoreの本と小物" },
+          { src: "assets/3d/folio/folio-inventory.jpg", alt: "FOLIO Bookstoreの37種類の独立モデル内訳" },
+          { src: "assets/3d/folio/folio-specifications.jpg", alt: "FOLIO BookstoreのBlenderとFBX仕様" },
+        ],
+        sections: [
+          {
+            title: "収録内容",
+            bullets: [
+              "独立モデル37種（建築8種・家具9種・本13種・小物7種）",
+              "完成配置シーン／独立アセットライブラリのBlenderデータ2点",
+              "FBX38点（単体37種＋完成配置シーン）、PNGテクスチャ16点（1024×1024）",
+              "README、素材一覧、導入ガイドを含む商品データ8ファイル",
+              "全ZIPを同じ場所に展開して使用。ZIP同士の結合は不要",
+            ],
+          },
+          {
+            title: "仕様・注意",
+            bullets: [
+              "Blender 4.3.2、1 unit = 1 m。建物本体は約8×7 m、室内高は3.4 m",
+              "完成配置シーンは740メッシュ／7,299,834三角形の高密度モデル",
+              "静的な背景モデル。Unity・Unreal専用データやVRChat設定は含まれず、他ソフトではマテリアル調整が必要",
+              "モデル本体はこのサイトから配布せず、指定BOOTHページへ案内する",
+            ],
+          },
+          {
+            title: "商品ページ",
+            links: [
+              { label: "BOOTHで見る", href: "https://kamibukuro18.booth.pm/items/9011742" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [
@@ -2097,6 +2160,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.19",
+      title: "FOLIO Bookstore を3Dモデル作品に追加",
+      summary:
+        "木の温もりを感じる書店モデルを、独立モデル37種の仕様説明、公式販売画像ギャラリー、BOOTH商品ページへの導線付きで追加。",
+    },
     {
       date: "2026.10.17",
       title: "NEO-YORU を3Dモデル作品に追加",
