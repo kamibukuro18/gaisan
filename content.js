@@ -219,6 +219,72 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "neon-ikebukuro-run",
+      meta: "Web Game / 3D Run",
+      title: "NEON IKEBUKURO RUN",
+      cover: "games/neon-ikebukuro-run/thumbnail.png",
+      thumbnailSource: "games/neon-ikebukuro-run/index.html",
+      summary:
+        "Blender 制作の人型ランナーで、架空の池袋北口風商店街を駆け抜ける会話迎撃ランゲーム。白い三角パネル門、縦看板、雑居ビル、室外機、自販機、頭上配線を組み合わせた夜の路地を、客引きの吹き出しをかわしながら進みます。",
+      year: "2026.10",
+      status: "Playable",
+      tags: ["Game", "Web", "Godot", "Blender", "3D", "Run"],
+      href: "games/neon-ikebukuro-run/index.html",
+      cta: "Play game",
+      details: [
+        "ブラウザですぐ遊べる Godot 4 Web ビルド",
+        "Blender で制作した人型ランナーと架空の客引きモデルを収録",
+        "架空の北口風商店街、白いパネル門、縦看板、電線、室外機、自販機を立体化",
+        "会話 / SPACE で吹き出しを迎撃し、800m 先の駅を目指す",
+      ],
+      page: {
+        eyebrow: "Web Game / 3D Run / 2026.10",
+        intro:
+          "NEON IKEBUKURO RUN は、Blender 制作の人型ランナーで、池袋北口周辺の雑多な夜の路地を抽象化した架空商店街を走る会話迎撃ゲームです。実在店舗名や実在人物は使わず、白い三角パネルの門、赤白黄色の縦看板、混在する建物高さ、室外機、自販機、電線、斜め舗装をゲーム向けに再構成しました。",
+        highlights: [
+          "頭・顔・髪・胴体・腕・脚・靴が見える Blender 製人型モデル",
+          "架空の NEON GATE と、縦看板・店先・室外機・自販機・電線の街路モジュール",
+          "会話 / SPACE で客引きの吹き出しを迎撃。外すと FOCUS が減少",
+          "日本語フォント、音声ガード、音量・ミュート、モバイル操作、Retry を維持",
+        ],
+        sections: [
+          {
+            title: "ゲーム概要",
+            paragraphs: [
+              "細い中央通路を走りながら、近づいてくる架空の客引きの吹き出しにタイミングを合わせて返答します。左右移動でレーンを変え、会話を当てるとコンボが伸び、800m でゴールです。",
+              "街のモデルは実在の店舗や人物を再現せず、北口周辺で見られる路地の密度、看板、門、電線、混在する建物スケールをゲーム用の架空景観として制作しています。",
+            ],
+          },
+          {
+            title: "操作",
+            bullets: [
+              "移動: A / D または ← / →",
+              "会話迎撃: SPACE / J / 画面中央の会話ボタン",
+              "スマートフォン: 左右ボタンと会話ボタン",
+              "リトライ: SPACE / ENTER または画面のリトライボタン",
+            ],
+          },
+          {
+            title: "更新履歴",
+            bullets: [
+              "2026.10: Blender 制作の人型ランナー、客引き、街路、架空ゲートを追加",
+              "2026.10: 斜め舗装、白い横断帯、縦看板、暖色店内光、電線、室外機、自販機を追加",
+              "2026.10: Web 音声ガード、音量・ミュート、モバイル UI、Retry の既存修正を維持",
+            ],
+          },
+          {
+            title: "プレイ",
+            links: [
+              {
+                label: "NEON IKEBUKURO RUNをブラウザでプレイ",
+                href: "games/neon-ikebukuro-run/index.html",
+              },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   projects: [
@@ -2437,6 +2503,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.20",
+      title: "NEON IKEBUKURO RUN を Blender 製 3D ランゲームへ更新",
+      summary:
+        "人型ランナー、架空の客引き、白い三角パネル門、縦看板、混在する雑居ビル、室外機、自販機、頭上配線、斜め舗装を Web ビルドへ統合。実在店舗名や人物を使わない架空景観として公開。",
+    },
     {
       date: "2026.10.19",
       title: "STAR FINCHを4面版FLUX 10へ更新",

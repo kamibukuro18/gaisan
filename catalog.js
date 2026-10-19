@@ -8,6 +8,7 @@
     'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'image'},
     'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'image'},
     'star-finch': {accent:'violet',caption:'STAR FINCH / FLUX 10',visual:'image'},
+    'neon-ikebukuro-run': {accent:'coral',caption:'NEON IKEBUKURO RUN / 3D',visual:'image'},
     'potato-collection': {accent:'coral',caption:'POTATO COLLECTION',visual:'image'},
     'fantasy-dungeon': {accent:'blue',caption:'FANTASY DUNGEON',visual:'image'},
     'gourmet-hamburger': {accent:'coral',caption:'GOURMET HAMBURGER',visual:'image'},
