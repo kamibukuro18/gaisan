@@ -348,7 +348,7 @@ window.siteContent = {
             title: "確認範囲と公開サンプル",
             paragraphs: [
               "植物の性質についてはユーザー提供の説明を掲載しています。こちらで植物学的な正確性を検証済みとは主張していません。",
-              "Verified in a cloud browser without login at 2026-10-20 04:22 UTC: the live page displayed the title YORU NO NIWA, hero text 夜にひらく庭。, flower clock, plant specimens, night walking guide, and admission ticket. The supplied hero image is from the live site. Other functionality remains unverified.",
+              "夜間植物園をテーマにした架空のWebサイトです。花時計、植物の標本ボード、夜の歩き方、入園券の案内を掲載しています。掲載画像は実際のサイト画面です。掲載内容はデモです。",
             ],
             links: [
               {
