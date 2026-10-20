@@ -299,6 +299,7 @@ window.siteContent = {
       status: "Published sample",
       tags: ["Site制作", "Brand", "HTML", "CSS", "JavaScript"],
       href: "https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5",
+      cover: "assets/projects/yoru-no-niwa-hero-2026-10-20.png",
       thumbnailSource: "https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5",
       cta: "公開サンプルを見る",
       details: [
@@ -347,7 +348,7 @@ window.siteContent = {
             title: "確認範囲と公開サンプル",
             paragraphs: [
               "植物の性質についてはユーザー提供の説明を掲載しています。こちらで植物学的な正確性を検証済みとは主張していません。",
-              "現在、ユーザー提供URLはHTTP上では応答しますが、実ブラウザでは「Page not found – Claude」となり、本体表示や機能を確認できませんでした。別サイト画像での代用は行っていません。",
+              "Verified in a cloud browser without login at 2026-10-20 04:22 UTC: the live page displayed the title YORU NO NIWA, hero text 夜にひらく庭。, flower clock, plant specimens, night walking guide, and admission ticket. The supplied hero image is from the live site. Other functionality remains unverified.",
             ],
             links: [
               {
