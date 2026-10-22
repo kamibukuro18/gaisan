@@ -2635,6 +2635,12 @@ window.siteContent = {
   timeline: [
     {
       date: "2026.10.22",
+      title: "Lantern Court を3Dモデル作品として掲載",
+      summary:
+        "指定BOOTH商品の商品説明・仕様と4点の公式画像を確認し、一覧カバーと詳細ギャラリーへ反映。Blender／GLBの収録内容、モデル仕様、利用上の注意、商品ページへの導線を追加。",
+    },
+    {
+      date: "2026.10.22",
       title: "Retro Bowling Alley を3Dモデル作品として掲載",
       summary:
         "指定BOOTH商品の実際のタイトル・説明・商品画像を確認し、12枚のレンダーを一覧カバーと詳細ギャラリーへ反映。販売リンクも商品ページへ接続。",
