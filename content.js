@@ -1322,6 +1322,65 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "pyramid",
+      meta: "3D Model / Environment",
+      title: "PYRAMID｜内部構造付きピラミッド 3Dモデル【Blender / GLB】",
+      summary:
+        "ピラミッドの外観モデルと、内部を見られる断面モデルを収録。資料を参考にした創作表現で、考古学的な正確性を保証するものではありません。",
+      status: "BOOTH",
+      tags: ["3D", "Environment", "Blender", "GLB"],
+      href: "https://kamibukuro18.booth.pm/items/9027942",
+      cover: "assets/3d/pyramid/pyramid-01.jpg",
+      cta: "BOOTHで見る",
+      details: [
+        "Blenderプロジェクト、外観モデルGLB、断面モデルGLBを収録",
+        "検証レポートと内部通路の確認資料を同梱",
+        "Unity・VRChatでの動作は未確認",
+      ],
+      page: {
+        eyebrow: "3D Model / PYRAMID",
+        intro:
+          "外観モデルに加え、内部を見られる断面モデルを同梱したピラミッドの3Dモデルです。資料を参考にした創作表現であり、考古学的な正確性を保証するものではありません。",
+        highlights: [
+          "外観モデルと内部を見られる断面モデル",
+          "Blender用データとglTF 2.0形式を収録",
+          "Unity・VRChatでの動作は未確認",
+        ],
+        gallery: [
+          { src: "assets/3d/pyramid/pyramid-01.jpg", alt: "ピラミッドの断面モデルと内部構造" },
+          { src: "assets/3d/pyramid/pyramid-02.jpg", alt: "ピラミッド外観モデル" },
+          { src: "assets/3d/pyramid/pyramid-03.jpg", alt: "ピラミッド内部空間のディテール" },
+          { src: "assets/3d/pyramid/pyramid-04.jpg", alt: "ピラミッドの収録データと利用上の注意" },
+        ],
+        sections: [
+          {
+            title: "BOOTH掲載の収録データ",
+            bullets: [
+              "Blenderプロジェクト: Pyramid_Reference_Reconstruction.blend",
+              "外観モデルGLB: Pyramid_Intact.glb",
+              "断面モデルGLB: Pyramid_Cutaway.glb",
+              "検証レポート、内部通路の確認資料",
+              "販売ページ記載価格: ¥2,000",
+            ],
+          },
+          {
+            title: "利用上の注意",
+            bullets: [
+              "資料を参考にした創作モデルで、考古学的な正確性は保証されません",
+              "Unity・VRChatでの動作は未確認です",
+              "背景、映像、ゲーム制作、鑑賞用素材として案内されています",
+            ],
+          },
+          {
+            title: "BOOTH",
+            links: [
+              { label: "BOOTHで商品を見る", href: "https://kamibukuro18.booth.pm/items/9027942" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [

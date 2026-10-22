@@ -24,7 +24,8 @@
     'folio-bookstore': {accent:'mint',caption:'FOLIO BOOKSTORE',visual:'image'},
     'aged-grimoires': {accent:'coral',caption:'AGED GRIMOIRES',visual:'image'},
     'retro-bowling-alley': {accent:'coral',caption:'RETRO BOWLING ALLEY',visual:'image'},
-    'lantern-court': {accent:'blue',caption:'LANTERN COURT',visual:'image'}
+    'lantern-court': {accent:'blue',caption:'LANTERN COURT',visual:'image'},
+    'pyramid': {accent:'coral',caption:'PYRAMID',visual:'image'}
   };
   const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
   function primaryAction(item) {
