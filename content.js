@@ -221,16 +221,16 @@ window.siteContent = {
     },
     {
       slug: "neon-ikebukuro-run",
-      meta: "Web Game / 3D Run",
-      title: "NEON IKEBUKURO RUN",
-      cover: "games/neon-ikebukuro-run/thumbnail.png",
-      thumbnailSource: "games/neon-ikebukuro-run/index.html",
+      meta: "Web Game / Three.js Run",
+      title: "IKEBUKURO RUN — TERMINAL SPRINT",
+      cover: "assets/games/ikebukuro-run-thumb-1280x720-20261022.png",
+      thumbnailSource: "https://kamibukuro18.github.io/ikebukuro-run/",
       summary:
         "Blender 制作の人型ランナーで、架空の池袋北口風商店街を駆け抜ける会話迎撃ランゲーム。白い三角パネル門、縦看板、雑居ビル、室外機、自販機、頭上配線を組み合わせた夜の路地を、客引きの吹き出しをかわしながら進みます。",
       year: "2026.10",
       status: "Playable",
-      tags: ["Game", "Web", "Godot", "Blender", "3D", "Run"],
-      href: "games/neon-ikebukuro-run/index.html",
+      tags: ["Game", "Web", "Three.js", "3D", "Run"],
+      href: "https://kamibukuro18.github.io/ikebukuro-run/",
       cta: "Play game",
       details: [
         "ブラウザですぐ遊べる Godot 4 Web ビルド",
@@ -278,7 +278,7 @@ window.siteContent = {
             links: [
               {
                 label: "NEON IKEBUKURO RUNをブラウザでプレイ",
-                href: "games/neon-ikebukuro-run/index.html",
+                href: "https://kamibukuro18.github.io/ikebukuro-run/",
               },
             ],
           },
@@ -2505,6 +2505,12 @@ window.siteContent = {
 
   timeline: [
     {
+      date: "2026.10.22",
+      title: "IKEBUKURO RUN を独立リポジトリ版へ差し替え",
+      summary:
+        "ユーザー作成の Three.js 製池袋ランゲームを gaisan の掲載対象に切り替え、公開プレイ URL と実プレイ中のデスクトップ・モバイル画像を詳細ページと一覧カードへ反映。",
+    },
+    {
       date: "2026.10.20",
       title: "NEON IKEBUKURO RUN を Blender 製 3D ランゲームへ更新",
       summary:
@@ -2700,3 +2706,91 @@ window.siteContent = {
 
   footer: "記録を足していくためのシンプルな静的ページ。",
 };
+
+// The game is maintained in its own repository; keep the historical local build
+// in place while pointing the portfolio entry at the current public release.
+const currentIkebukuroRun = window.siteContent.games?.find(
+  (item) => item.slug === "neon-ikebukuro-run"
+);
+if (currentIkebukuroRun) {
+  Object.assign(currentIkebukuroRun, {
+    meta: "Web Game / Three.js Run",
+    title: "IKEBUKURO RUN — TERMINAL SPRINT",
+    cover: "assets/games/ikebukuro-run-thumb-1280x720-20261022.png",
+    thumbnailSource: "https://kamibukuro18.github.io/ikebukuro-run/",
+    summary:
+      "池袋のネオン街を走り、客引きをかわしながら終電までに駅を目指す、Three.js製の3Dランゲームです。",
+    year: "2026.10",
+    status: "Playable",
+    tags: ["Game", "Web", "Three.js", "3D", "Run"],
+    href: "https://kamibukuro18.github.io/ikebukuro-run/",
+    cta: "Play game",
+    details: [
+      "ブラウザですぐ遊べる Three.js 製の3Dランゲーム",
+      "池袋風のネオン街を走り、客引きをかわして終電を目指す構成",
+      "キーボードとスマートフォンの左右操作・断るアクションに対応",
+      "公開中のゲーム画面をそのまま撮影した実プレイ画像を掲載",
+    ],
+    page: {
+      eyebrow: "Web Game / Three.js Run / 2026.10",
+      heroAlt: "池袋ランの実プレイ画面。ネオン街の道路を走るゲーム画面",
+      intro:
+        "IKEBUKURO RUN — TERMINAL SPRINT は、池袋のネオン街を走り抜け、客引きをかわしながら終電までに駅を目指すブラウザーゲームです。掲載画像は公開中のゲームを Chrome で実際にプレイして撮影しました。",
+      highlights: [
+        "Three.js で描かれた奥行きのあるネオン街と3レーンのランゲーム",
+        "客引きを避ける左右移動と「断る！」アクション",
+        "PC とスマートフォンの両方で遊べるレスポンシブな操作 UI",
+        "公開 URL の実プレイ画面を使った紹介ビジュアル",
+      ],
+      gallery: [
+        {
+          src: "assets/games/ikebukuro-run-play-1440x900-20261022.png",
+          alt: "IKEBUKURO RUN の1440×900実プレイ画面",
+          caption: "Desktop / 1440×900 — 実プレイ中の画面",
+        },
+        {
+          src: "assets/games/ikebukuro-run-play-390x844-20261022.png",
+          alt: "IKEBUKURO RUN の390×844実プレイ画面",
+          caption: "Mobile / 390×844 — 実プレイ中の画面",
+        },
+      ],
+      sections: [
+        {
+          title: "ゲーム概要",
+          paragraphs: [
+            "プレイヤーは池袋の夜道を走り、迫ってくる客引きや障害物を避けながら駅までの距離を縮めます。コインを集めたり客引きをかわしたりしながら、残り時間の中でゴールを目指します。",
+            "ゲーム本体はユーザー作成の独立リポジトリで管理され、gaisan は作品紹介と公開プレイ URL の案内に専念しています。",
+          ],
+        },
+        {
+          title: "操作",
+          bullets: [
+            "PC: ← → / A D でレーン移動",
+            "PC: Space / ↑ で「断る！」アクション",
+            "スマートフォン: 左右スワイプと画面ボタン",
+            "ゲーム画面の「スタート」から開始、リトライにも対応",
+          ],
+        },
+        {
+          title: "実プレイ画像",
+          paragraphs: [
+            "デスクトップ 1440×900、横長 1280×720、モバイル 390×844 の公開ページを Chrome で読み込み、スタート操作と移動操作を行った状態を撮影しています。",
+          ],
+        },
+        {
+          title: "Play",
+          links: [
+            {
+              label: "IKEBUKURO RUN をブラウザーでプレイ",
+              href: "https://kamibukuro18.github.io/ikebukuro-run/",
+            },
+            {
+              label: "ikebukuro-run / GitHub repository",
+              href: "https://github.com/kamibukuro18/ikebukuro-run",
+            },
+          ],
+        },
+      ],
+    },
+  });
+}
