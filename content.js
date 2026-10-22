@@ -1193,6 +1193,74 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "retro-bowling-alley",
+      meta: "3D Model / Environment",
+      title: "Retro Bowling Alley | ボウリング場3Dモデル",
+      summary:
+        "レトロな6レーンのボウリング場を再現した、詳細な3D背景モデル。木製レーン、ガター、ピン、ボール、返却機、ラウンジ、受付、ネオン装飾まで収録しています。",
+      status: "BOOTH",
+      tags: ["3D", "Environment", "Blender", "GLB"],
+      href: "https://kamibukuro18.booth.pm/items/8993429",
+      cover: "assets/3d/bowling-alley/bowling-alley-01.jpg",
+      cta: "BOOTHで見る",
+      details: [
+        "レトロな6レーンのボウリング場を再現した3D背景モデル",
+        "木製レーンとガター、ピン60本、ボール18個、返却機3台を収録",
+        "スコアモニター6台、ラウンジソファ4台、テーブル4台、受付、レンタルシューズ棚、ネオン装飾を収録",
+      ],
+      page: {
+        eyebrow: "3D Model / Retro Bowling Alley",
+        intro:
+          "Retro Bowling Alley は、木製レーンとガターを中心に、ボウリング場のプレイエリア、ラウンジ、受付、レンタルシューズ棚まで立体で構成した背景モデルです。商品ページの実際の紹介画像をギャラリーに使用しています。",
+        highlights: [
+          "6レーン、ピン60本、ボール18個、返却機3台",
+          "スコアモニター6台、ラウンジソファ4台、テーブル4台、受付、レンタルシューズ棚、ネオン装飾",
+          "背景美術、映像、ゲーム用ベース、空間イメージ検討向け",
+        ],
+        gallery: [
+          { src: "assets/3d/bowling-alley/bowling-alley-01.jpg", alt: "ボウリング場のメインレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-02.jpg", alt: "ボール返却機とレーンのレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-03.jpg", alt: "ラウンジと受付のレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-04.jpg", alt: "6レーン全体の俯瞰レンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-05.jpg", alt: "レンタルシューズ棚のレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-06.jpg", alt: "ボウリングレーン正面のレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-07.jpg", alt: "ピンのクローズアップレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-08.jpg", alt: "シューズ棚と受付のレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-09.jpg", alt: "ボウリングのネオンサイン" },
+          { src: "assets/3d/bowling-alley/bowling-alley-10.jpg", alt: "ラウンジソファのレンダー" },
+          { src: "assets/3d/bowling-alley/bowling-alley-11.jpg", alt: "ボウリングボールのクローズアップ" },
+          { src: "assets/3d/bowling-alley/bowling-alley-12.jpg", alt: "ボウリング場モデルのマテリアル確認画像" },
+        ],
+        sections: [
+          {
+            title: "商品ページ記載の内容",
+            bullets: [
+              "同梱ファイル: retro_bowling_alley.blend / retro_bowling_alley.glb / README・モデル統計・検証情報",
+              "テクスチャ画像はファイルに内蔵",
+              "Blender 4.3.2で再オープン確認済み、GLBは再インポート確認済み",
+              "規模: 約814,404 triangles / メッシュオブジェクト7,167個",
+              "目安寸法: 約15m × 30m / 天井高約3.5m",
+            ],
+          },
+          {
+            title: "注意",
+            bullets: [
+              "動作アニメーションは含まれません",
+              "ピンセッター内部機構やバックヤードは含まれません",
+              "施工図・施設認証・実際の競技設備としての使用には対応しません",
+              "モデル本体はこのサイトから配布せず、指定BOOTHページへ案内します",
+            ],
+          },
+          {
+            title: "購入ページ",
+            links: [
+              { label: "BOOTHで見る", href: "https://kamibukuro18.booth.pm/items/8993429" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [
@@ -2504,6 +2572,12 @@ window.siteContent = {
   ],
 
   timeline: [
+    {
+      date: "2026.10.22",
+      title: "Retro Bowling Alley を3Dモデル作品として掲載",
+      summary:
+        "指定BOOTH商品の実際のタイトル・説明・商品画像を確認し、12枚のレンダーを一覧カバーと詳細ギャラリーへ反映。販売リンクも商品ページへ接続。",
+    },
     {
       date: "2026.10.22",
       title: "IKEBUKURO RUN を独立リポジトリ版へ差し替え",
