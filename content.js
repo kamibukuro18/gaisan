@@ -1261,6 +1261,67 @@ window.siteContent = {
         ],
       },
     },
+    {
+      slug: "lantern-court",
+      meta: "3D Model / Environment",
+      title: "Lantern Court｜九龍城風・立体都市 3D環境モデル【Blender / GLB】",
+      summary:
+        "九龍城を思わせる路地・屋上・店舗・空中通路が連なる、オリジナルの密集都市環境モデル。Blender編集用シーンとglTF 2.0モデルを収録しています。",
+      status: "BOOTH",
+      tags: ["3D", "Environment", "Blender", "GLB"],
+      href: "https://kamibukuro18.booth.pm/items/9027511",
+      cover: "assets/3d/lantern-court/lantern-court-01.jpg",
+      cta: "BOOTHで見る",
+      details: [
+        "Blender 4.3.2で制作・再読込確認済み",
+        "394メッシュオブジェクト、約516,000頂点、約396,000ポリゴン",
+        "主棟12棟と低層棟1棟、20店舗、窓1,104か所、階段26フライト、空中通路3本",
+      ],
+      page: {
+        eyebrow: "3D Model / Lantern Court",
+        intro:
+          "路地、屋上、店舗、空中通路が折り重なる、九龍城を思わせる密集都市の環境モデルです。史実の九龍城を厳密に再現したものではなく、オリジナルの架空都市として制作されています。",
+        highlights: [
+          "Blender編集用シーン（Lantern_Court.blend）とglTF 2.0モデル（Lantern_Court.glb）を収録",
+          "13アングルの販売用JPG画像集、モデル概要、テクスチャ、検証レポート、制作・再生成用スクリプトを同梱",
+          "394メッシュオブジェクト、約516,000頂点、約396,000ポリゴン",
+        ],
+        gallery: [
+          { src: "assets/3d/lantern-court/lantern-court-01.jpg", alt: "Lantern Courtの全景レンダー" },
+          { src: "assets/3d/lantern-court/lantern-court-02.jpg", alt: "Lantern Courtの別角度レンダー" },
+          { src: "assets/3d/lantern-court/lantern-court-03.jpg", alt: "Lantern Courtの屋上俯瞰" },
+          { src: "assets/3d/lantern-court/lantern-court-04.jpg", alt: "Lantern Courtの路地と店舗" },
+        ],
+        sections: [
+          {
+            title: "商品ページ記載のモデル仕様",
+            bullets: [
+              "Blender 4.3.2で制作・再読込確認",
+              "394メッシュオブジェクト、約516,000頂点、約396,000ポリゴン",
+              "主棟12棟＋路地奥の低層棟1棟、20店舗、窓1,104か所",
+              "階段26フライト、空中通路3本",
+              "UV設定済み、画像テクスチャはBlend内にパック。単位はメートル",
+            ],
+          },
+          {
+            title: "収録内容と利用上の注意",
+            bullets: [
+              "Lantern_Court_Complete.zip と Lantern_Court_13_Views_JPG.zip",
+              "ゲーム用プロジェクト、衝突判定、NavMesh、LOD、プレイヤー制御は含まれません",
+              "GLBではBlenderのWorldやエリアライトがそのまま移行しないため、表示環境により見た目が変わる場合があります",
+              "建築施工・避難安全の設計資料ではありません",
+            ],
+          },
+          {
+            title: "BOOTH",
+            paragraphs: ["ダウンロード商品 / ¥4,800"],
+            links: [
+              { label: "BOOTHで商品を見る", href: "https://kamibukuro18.booth.pm/items/9027511" },
+            ],
+          },
+        ],
+      },
+    },
   ],
 
   aiGames: [
