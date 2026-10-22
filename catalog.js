@@ -18,7 +18,11 @@
     'flow-switch': {accent:'mint',caption:'WORKSPACE SWITCH',visual:'image'},
     'steam-image-exporter': {accent:'blue',caption:'ONE IMAGE → MANY SIZES',visual:'image'},
     'residual-signal-lab': {accent:'mint',caption:'RESIDUAL SIGNAL',visual:'image',source:'LOCAL SPECIMEN'},
-    'yoru-no-niwa': {accent:'violet',caption:'YORU NO NIWA',visual:'export'}
+    'yoru-no-niwa': {accent:'violet',caption:'YORU NO NIWA',visual:'image',source:'SITE CAPTURE'},
+    'tsukishiro-an': {accent:'blue',caption:'TSUKISHIRO-AN',visual:'image',source:'SITE CAPTURE'},
+    'neo-yoru': {accent:'violet',caption:'NEO-YORU',visual:'image'},
+    'folio-bookstore': {accent:'mint',caption:'FOLIO BOOKSTORE',visual:'image'},
+    'aged-grimoires': {accent:'coral',caption:'AGED GRIMOIRES',visual:'image'}
   };
   const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
   function primaryAction(item) {
