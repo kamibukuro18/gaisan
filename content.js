@@ -2693,6 +2693,12 @@ window.siteContent = {
 
   timeline: [
     {
+      date: "2026.10.23",
+      title: "PYRAMID｜内部構造付きピラミッドを3Dモデル作品として掲載",
+      summary:
+        "指定BOOTH商品のタイトル・説明・収録内容と4点の公式画像を確認し、一覧カバーと詳細ギャラリーへ反映。Blenderプロジェクト、外観・断面GLB、検証資料を掲載し、創作表現とUnity・VRChat未確認の注意を明記。",
+    },
+    {
       date: "2026.10.22",
       title: "Lantern Court を3Dモデル作品として掲載",
       summary:
