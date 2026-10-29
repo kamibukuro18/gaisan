@@ -1,0 +1,2501 @@
+{
+  "version": 1,
+  "updated": "2026-10-29",
+  "count": 103,
+  "models": [
+    {
+      "id": "M300-001",
+      "name": "ドリップスタンド",
+      "nameEn": "Pour over stand",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "木製台座と開いたドリッパーリングを備えた、カフェの抽出台まわり用小物。",
+      "tags": [
+        "コーヒー",
+        "coffee",
+        "木製",
+        "wood"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "ドリッパー・サーバーは含みません。",
+        "LOD0のみ。コライダーは設計案です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-001.webp"
+    },
+    {
+      "id": "M300-002",
+      "name": "業務用コーヒーグラインダー",
+      "nameEn": "Coffee grinder",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "豆ホッパー、粒度ダイヤル、開口のある粉出口と受け皿を備えたカフェ用グラインダー。",
+      "tags": [
+        "コーヒー",
+        "coffee",
+        "器具",
+        "equipment"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "電動動作・粉のシミュレーションはありません。",
+        "透明部分は屈折を再現しないalpha近似です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-002.webp"
+    },
+    {
+      "id": "M300-003",
+      "name": "卓上メニュースタンド",
+      "nameEn": "Menu stand",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "木製台座と前後の透明板、差し替え用の独立した紙面を持つ卓上メニュースタンド。",
+      "tags": [
+        "メニュー",
+        "menu",
+        "卓上",
+        "tabletop"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "透明板はalpha近似。取り込み先で材質調整が必要な場合があります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-003.webp"
+    },
+    {
+      "id": "M300-004",
+      "name": "返却口付きカフェカウンター",
+      "nameEn": "Return counter",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "石調天板、木製腰板、前後に貫通する返却口と背面の2段棚を持つ接客用カウンター。",
+      "tags": [
+        "カウンター",
+        "counter",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "歩行・当たり判定は未実装／未検証。完成Unity Prefabではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-004.webp"
+    },
+    {
+      "id": "M300-005",
+      "name": "食器返却ワゴン",
+      "nameEn": "Dish cart",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "3段のステンレストレー、押し手、ゴム車輪を備えた食器返却エリア向けワゴン。",
+      "tags": [
+        "ワゴン",
+        "cart",
+        "食器",
+        "dishes"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "自動走行・物理・ネットワーク同期はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-005.webp"
+    },
+    {
+      "id": "M300-006",
+      "name": "二連エスプレッソマシン",
+      "nameEn": "Dual espresso",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "2つの抽出ヘッド、独立ポルタフィルター、給湯管と排水グリルを備えるカフェ背景用マシン。",
+      "tags": [
+        "コーヒー",
+        "coffee",
+        "エスプレッソ",
+        "espresso"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "音・蒸気・抽出アニメーションは含みません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-006.webp"
+    },
+    {
+      "id": "M300-007",
+      "name": "タンパーステーション",
+      "nameEn": "Tamper station",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "木製台座とゴムマット、タンパー収納のくぼみとU字受けを持つコーヒー抽出用小物。",
+      "tags": [
+        "コーヒー",
+        "coffee",
+        "タンパー",
+        "tamper"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "58mmタンパー付き。ポルタフィルターは含みません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-007.webp"
+    },
+    {
+      "id": "M300-008",
+      "name": "コーヒー豆スコップ",
+      "nameEn": "Bean scoop",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "空の薄い金属ボウルと長い柄、実際の吊り穴を持つコーヒー豆用スコップ。",
+      "tags": [
+        "コーヒー",
+        "coffee",
+        "スコップ",
+        "scoop"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "豆・内容物は含みません。物理操作は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-008.webp"
+    },
+    {
+      "id": "M300-009",
+      "name": "カフェ用ケーキドーム",
+      "nameEn": "Cake dome",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "縁付き木皿とベル型の透明ドームを組み合わせた、卓上の食品展示用カバー。",
+      "tags": [
+        "ケーキ",
+        "cake",
+        "ガラス",
+        "glass"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "食品モデルは含みません。",
+        "GLB／FBXはalpha近似。別の物理ガラス版とは見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-009.webp"
+    },
+    {
+      "id": "M300-010",
+      "name": "焼き菓子陳列トレー",
+      "nameEn": "Pastry tray",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "傾斜した内床、前方落下止め、取り外せる2枚の間仕切りを備える三列の陳列用木箱。",
+      "tags": [
+        "トレー",
+        "tray",
+        "焼き菓子",
+        "pastry"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "空箱です。焼き菓子は含みません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-010.webp"
+    },
+    {
+      "id": "M300-011",
+      "name": "三段アフタヌーンティースタンド",
+      "nameEn": "Tea stand",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "大小3枚の陶器皿と真鍮色の支柱、持ち運び用リングを組み合わせたティースタンド。",
+      "tags": [
+        "紅茶",
+        "tea",
+        "食器",
+        "tableware"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な展示小物です。物理・持ち上げ操作は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-011.webp"
+    },
+    {
+      "id": "M300-012",
+      "name": "ドリンクピッチャー",
+      "nameEn": "Drink pitcher",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "開いた注ぎ口と実際の取手穴を持つ、飲食シーン向けの透明ピッチャー。",
+      "tags": [
+        "ピッチャー",
+        "pitcher",
+        "ガラス",
+        "glass"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "標準は空の本体。水・氷は別差分です。",
+        "画像の物理ガラスとGLB／FBXのalpha近似は見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-012.webp"
+    },
+    {
+      "id": "M300-013",
+      "name": "4杯テイクアウトカップホルダー",
+      "nameEn": "Cup holder",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "4つの空洞の受け口と指穴付きハンドルを持つ、クラフト色のテイクアウト用トレー。",
+      "tags": [
+        "テイクアウト",
+        "takeaway",
+        "カップ",
+        "cup"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "カップは含みません。ハンドルの自動アニメーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-013.webp"
+    },
+    {
+      "id": "M300-014",
+      "name": "カウンターサービスベル",
+      "nameEn": "Service bell",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "黒い台座、クローム色の中空ベルと独立ボタンを備えたカウンター用小物。",
+      "tags": [
+        "ベル",
+        "bell",
+        "接客",
+        "service"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "音響機構や音の再生を実装したモデルではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-014.webp"
+    },
+    {
+      "id": "M300-015",
+      "name": "コーヒー豆保存キャニスター",
+      "nameEn": "Coffee canister",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "独立した蓋と前ラッチ、差し替え用の無地ラベルを備えた角丸の保存缶。",
+      "tags": [
+        "コーヒー",
+        "coffee",
+        "保存",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "蓋・ラッチは編集用の部品分けで、ゲーム内機構は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-015.webp"
+    },
+    {
+      "id": "M300-016",
+      "name": "ウォーターディスペンサーステーション",
+      "nameEn": "Water dispenser",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "空のガラスタンク、木製支持棚、中空の蛇口と取り外しトレーを備える給水ステーション。",
+      "tags": [
+        "給水",
+        "dispenser",
+        "ガラス",
+        "glass"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "水・注水シミュレーションは含みません。",
+        "画像の物理ガラスとGLB／FBXのalpha近似は見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-016.webp"
+    },
+    {
+      "id": "M300-017",
+      "name": "壁付けカップラック",
+      "nameEn": "Wall cup rack",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "オーク調の背板と棚、6本の開いたJフックを備える壁付けカップ収納。",
+      "tags": [
+        "カップ",
+        "cup",
+        "壁付け",
+        "wall-mounted"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "カップは含みません。配置時に壁面の高さ調整が必要です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-017.webp"
+    },
+    {
+      "id": "M300-018",
+      "name": "テラスオーニング",
+      "nameEn": "Terrace awning",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "クリーム／セージ色の布、前桟、2本の関節アームを持つ展開姿勢のテラス用日よけ。",
+      "tags": [
+        "テラス",
+        "terrace",
+        "日よけ",
+        "awning"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "折り畳みアニメーション・機構シミュレーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-018.webp"
+    },
+    {
+      "id": "M300-019",
+      "name": "中庭カフェ店舗シェル",
+      "nameEn": "Courtyard cafe shell",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "白壁、大窓、石調床、客室とスタッフ帯を備える平屋カフェの建物シェル。",
+      "tags": [
+        "建物",
+        "building",
+        "カフェ",
+        "cafe"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "家具・外部地面は含みません。歩行・衝突は導入先で設定が必要です。",
+        "画像の物理ガラスとGLB／FBXのalpha近似は見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-019.webp"
+    },
+    {
+      "id": "M300-020",
+      "name": "テイクアウト販売キオスク",
+      "nameEn": "Takeaway kiosk",
+      "category": "カフェ接客・抽出",
+      "categoryEn": "Cafe",
+      "description": "販売窓、カウンター、上げたシャッター、後部ドアを備える小型のテイクアウト店舗。",
+      "tags": [
+        "建物",
+        "building",
+        "キオスク",
+        "kiosk"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "開／閉は静止姿勢の差分で、アニメーションではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-020.webp"
+    },
+    {
+      "id": "M300-021",
+      "name": "業務用二槽シンク",
+      "nameEn": "Double sink",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "二槽の空のシンク、蛇口、排水管、背板と四脚を備える厨房背景用の設備。",
+      "tags": [
+        "シンク",
+        "sink",
+        "水回り",
+        "plumbing"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "流体・物理・実際の給排水性能は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-021.webp"
+    },
+    {
+      "id": "M300-022",
+      "name": "業務用調理台",
+      "nameEn": "Prep table",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "金属天板、下棚、角パイプ脚と補強桟を備える厨房の作業台。",
+      "tags": [
+        "調理台",
+        "worktable",
+        "ステンレス",
+        "stainless"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な背景モデルです。耐荷重や実用品としての安全性は保証しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-022.webp"
+    },
+    {
+      "id": "M300-023",
+      "name": "アンダーカウンター冷蔵庫",
+      "nameEn": "Undercounter fridge",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "2室の内部空間と棚、左右の独立扉を備えるカウンター下収納型の冷蔵庫。",
+      "tags": [
+        "冷蔵庫",
+        "refrigerator",
+        "厨房",
+        "kitchen"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "食品・冷却機能は含みません。開／閉は静止姿勢です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-023.webp"
+    },
+    {
+      "id": "M300-024",
+      "name": "業務用製氷機",
+      "nameEn": "Ice machine",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "空の収納ビン、傾斜蓋、内壁のスクープ受けを備える厨房用製氷機。",
+      "tags": [
+        "製氷機",
+        "ice-machine",
+        "厨房",
+        "kitchen"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "氷・スクープ本体は付属しません。製氷や給排水動作はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-024.webp"
+    },
+    {
+      "id": "M300-025",
+      "name": "四口レンジ",
+      "nameEn": "Four burner range",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "4つの独立バーナーと五徳、凹んだ炉台、四脚と下棚を備える厨房背景用レンジ。",
+      "tags": [
+        "レンジ",
+        "stove",
+        "調理",
+        "cooking"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "オーブン・炎・ガス動作は含みません。操作アニメーションは未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-025.webp"
+    },
+    {
+      "id": "M300-026",
+      "name": "排気フード",
+      "nameEn": "Exhaust hood",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "下面の開いた金属フード、中空ダクト、取り外しフィルターと照明意匠を持つ壁付け設備。",
+      "tags": [
+        "排気",
+        "ventilation",
+        "厨房",
+        "kitchen"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "排気・発光・実照度を再現する機能はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-026.webp"
+    },
+    {
+      "id": "M300-027",
+      "name": "吊り下げ調理器具レール",
+      "nameEn": "Utensil rail",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "2つの壁台座で支える丸棒と、独立した6本のSフックを備える調理器具用レール。",
+      "tags": [
+        "フック",
+        "hook",
+        "壁付け",
+        "wall-mounted"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "木板・棚・食器は含みません。フックの物理動作は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-027.webp"
+    },
+    {
+      "id": "M300-028",
+      "name": "包丁差し付きまな板",
+      "nameEn": "Cutting board",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "木口寄木調の厚い板、浅い汁溝、後部の3つの包丁スロットを備えた厨房小物。",
+      "tags": [
+        "まな板",
+        "cutting-board",
+        "木製",
+        "wood"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "包丁は付属しません。食品衛生・実用品の安全性は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-028.webp"
+    },
+    {
+      "id": "M300-029",
+      "name": "蓋付き寸胴鍋",
+      "nameEn": "Stockpot",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "実内腔、左右のループ取手、取り外せるドーム状の蓋を持つステンレス調の寸胴鍋。",
+      "tags": [
+        "鍋",
+        "pot",
+        "調理",
+        "cooking"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "水・食品・炎は含みません。調理や熱のシミュレーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-029.webp"
+    },
+    {
+      "id": "M300-030",
+      "name": "蒸籠",
+      "nameEn": "Bamboo steamer",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "竹の巻層、隙間のあるすのこ、立体編みの蓋を持つ二段の蒸籠。",
+      "tags": [
+        "蒸籠",
+        "steamer",
+        "竹",
+        "bamboo"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "食品は含みません。蒸気・熱・物理動作は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-030.webp"
+    },
+    {
+      "id": "M300-031",
+      "name": "金属ざる",
+      "nameEn": "Metal colander",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "側面と底面の実貫通孔、巻縁、3つの底足を持つ空の金属ざる。",
+      "tags": [
+        "ざる",
+        "colander",
+        "調理",
+        "cooking"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "食品・取手は含みません。液体や排水動作はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-031.webp"
+    },
+    {
+      "id": "M300-032",
+      "name": "調味料ボトルラック",
+      "nameEn": "Condiment rack",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "傾斜した金属台と3つの水平支持座に、大小の容器と別キャップを組み合わせたラック。",
+      "tags": [
+        "調味料",
+        "seasoning",
+        "ラック",
+        "rack"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "内容物・液体・ねじ山・注ぎ口の弁は表現していません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-032.webp"
+    },
+    {
+      "id": "M300-033",
+      "name": "パン生地発酵かご",
+      "nameEn": "Proofing basket",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "連続する籐の立体コイル、太い楕円縁と留め籐を備えるパン作りの背景用かご。",
+      "tags": [
+        "パン",
+        "bread",
+        "かご",
+        "basket"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "蓋・パン・粉は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-033.webp"
+    },
+    {
+      "id": "M300-034",
+      "name": "ピザピール",
+      "nameEn": "Pizza peel",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "薄いアルミ調の頭部と長い木柄、ソケット、後端の吊り穴を持つピザ用道具。",
+      "tags": [
+        "ピザ",
+        "pizza",
+        "調理",
+        "cooking"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "料理は含みません。吊るす物理制御・アニメーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-034.webp"
+    },
+    {
+      "id": "M300-035",
+      "name": "業務用食器洗浄機",
+      "nameEn": "Commercial dishwasher",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "上昇するフード、内部の槽とラックを持つ業務用食器洗浄機の意匠モデル。",
+      "tags": [
+        "食器洗浄機",
+        "dishwasher",
+        "厨房",
+        "kitchen"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "洗浄・熱・駆動機能はありません。ラック引出画像は検品姿勢です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-035.webp"
+    },
+    {
+      "id": "M300-036",
+      "name": "米びつ",
+      "nameEn": "Rice bin",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "実内槽と漏斗、前面窓、独立蓋と引出トレーを備える空の米収納小物。",
+      "tags": [
+        "米びつ",
+        "rice-bin",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "米粒・粒子動作は含みません。",
+        "画像のガラスとGLB／FBXのalpha近似は見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-036.webp"
+    },
+    {
+      "id": "M300-037",
+      "name": "厨房用ペダルごみ箱",
+      "nameEn": "Pedal bin",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "金属外胴、取り外せる内箱、独立した蓋と前ペダルを持つ厨房用ごみ箱。",
+      "tags": [
+        "ごみ箱",
+        "bin",
+        "ペダル",
+        "pedal"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "内容物・袋は含みません。物理・ばね・自動アニメーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-037.webp"
+    },
+    {
+      "id": "M300-038",
+      "name": "配膳用保温キャビネット",
+      "nameEn": "Warming cabinet",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "空の庫内、3枚の穴あき棚、ガラス付き扉を備えた配膳エリア用キャビネット。",
+      "tags": [
+        "保温庫",
+        "warming-cabinet",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "食品・熱源・実保温機能は含みません。",
+        "GLB／FBXのガラスは画像と異なるalpha近似です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-038.webp"
+    },
+    {
+      "id": "M300-039",
+      "name": "業務用厨房区画シェル",
+      "nameEn": "Commercial kitchen shell",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "搬入口、裏出口、サービス腰壁、排水溝を備えるゲーム・映像向けの屋内厨房シェル。",
+      "tags": [
+        "建物",
+        "building",
+        "厨房",
+        "kitchen"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "画像は屋根を非表示にした内観。モデルには屋根があります。",
+        "厨房器具・家具・外部接続床・ランプは付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-039.webp"
+    },
+    {
+      "id": "M300-040",
+      "name": "屋外炊事場",
+      "nameEn": "Outdoor cooking pavilion",
+      "category": "厨房・食の準備",
+      "categoryEn": "Kitchen",
+      "description": "6本の木柱と屋根、中央の対面四槽流し、左右ランプを備える屋外の共同炊事棟。",
+      "tags": [
+        "建物",
+        "building",
+        "屋外",
+        "outdoor"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "食品・水・外部地面は含みません。歩行・給排水は実機未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-040.webp"
+    },
+    {
+      "id": "M300-041",
+      "name": "組子の置き行灯",
+      "nameEn": "Kumiko lantern",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "4面の木格子と和紙、取り外せる上蓋、内側の電灯意匠を持つ和室用の行灯。",
+      "tags": [
+        "照明",
+        "lighting",
+        "和紙",
+        "washi"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "GLB／FBXは不透明紙と発光の近似。画像と同じ透過・照明効果は保証しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-041.webp"
+    },
+    {
+      "id": "M300-042",
+      "name": "茶釜と五徳",
+      "nameEn": "Tea kettle trivet",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "鋳鉄調の釜、独立蓋、左右の輪と三脚の五徳を組み合わせた和風背景用小物。",
+      "tags": [
+        "茶道",
+        "tea",
+        "鉄器",
+        "ironware"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "火・灰・炉床・食品は含みません。加熱機能はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-042.webp"
+    },
+    {
+      "id": "M300-043",
+      "name": "急須",
+      "nameEn": "Kyusu teapot",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "横手、実内腔につながる注ぎ口、濾し孔と独立蓋を備える陶器調の急須。",
+      "tags": [
+        "茶道",
+        "tea",
+        "陶器",
+        "ceramic"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "茶葉・水は含みません。注水や流量のシミュレーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-043.webp"
+    },
+    {
+      "id": "M300-044",
+      "name": "折脚ちゃぶ台",
+      "nameEn": "Folding chabudai",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "丸い木天板と4本の折脚、ヒンジ金具とロック意匠を持つ和室用の低いテーブル。",
+      "tags": [
+        "テーブル",
+        "table",
+        "折り畳み",
+        "folding"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "使用／収納は別姿勢。物理・ばね・自動アニメーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-044.webp"
+    },
+    {
+      "id": "M300-045",
+      "name": "重ね座布団",
+      "nameEn": "Stacked zabuton",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "藍・生成り・灰緑の5枚を積み、中央のへこみや縫い目を表現した和室用の座布団セット。",
+      "tags": [
+        "座布団",
+        "cushion",
+        "布",
+        "fabric"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "5枚で1セット。布の物理シミュレーション・荷重変形は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-045.webp"
+    },
+    {
+      "id": "M300-046",
+      "name": "桐衣装箪笥",
+      "nameEn": "Paulownia chest",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "淡い桐色の筐体、3段の空の引出しと黒い輪引手を持つ衣装箪笥。",
+      "tags": [
+        "箪笥",
+        "chest",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "引出し・輪のゲーム内アニメーションや物理設定は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-046.webp"
+    },
+    {
+      "id": "M300-047",
+      "name": "長火鉢",
+      "nameEn": "Long hibachi",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "濃茶の木枠、空の銅内張り炉、右側の2段引出しを備える和室用小物。",
+      "tags": [
+        "火鉢",
+        "hibachi",
+        "和家具",
+        "furniture"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "火・煙・炭・灰は含みません。火気・断熱性能は保証しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-047.webp"
+    },
+    {
+      "id": "M300-048",
+      "name": "衣桁",
+      "nameEn": "Kimono rack",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "2本の丸柱、横棒、下貫と台脚を木製部材で構成した自立型の衣桁。",
+      "tags": [
+        "衣桁",
+        "kimono-rack",
+        "木製",
+        "wood"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "衣服・布・ハンガーは含みません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-048.webp"
+    },
+    {
+      "id": "M300-049",
+      "name": "文机",
+      "nameEn": "Writing desk",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "低い木製天板、筆返し、右側の空の引出しを備えた座位用の文机。",
+      "tags": [
+        "机",
+        "desk",
+        "和家具",
+        "furniture"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "引出しの物理動作・耐荷重は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-049.webp"
+    },
+    {
+      "id": "M300-050",
+      "name": "硯箱",
+      "nameEn": "Suzuribako",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "漆風の箱と別蓋、石の硯、筆受け、陶器の水滴容器を組み合わせた書道用の背景小物。",
+      "tags": [
+        "書道",
+        "calligraphy",
+        "文具",
+        "stationery"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "筆・墨液・水は含みません。液体挙動は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-050.webp"
+    },
+    {
+      "id": "M300-051",
+      "name": "手織り籠の裁縫箱",
+      "nameEn": "Sewing basket",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "立体の編み帯、生成り布の内張り、別蓋と2室トレーを備える裁縫箱。",
+      "tags": [
+        "裁縫",
+        "sewing",
+        "かご",
+        "basket"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "針・糸は含みません。蓋の布ループは見た目用変形で、布物理ではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-051.webp"
+    },
+    {
+      "id": "M300-052",
+      "name": "竹すだれ",
+      "nameEn": "Bamboo blind",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "実形状の竹桟100本、前後の紐、上下の竹軸と吊り輪を持つ展開状態のすだれ。",
+      "tags": [
+        "すだれ",
+        "blind",
+        "竹",
+        "bamboo"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "巻上げ版・巻上げアニメーションはありません。壁・建屋は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-052.webp"
+    },
+    {
+      "id": "M300-053",
+      "name": "障子建具",
+      "nameEn": "Shoji doors",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "外枠、敷居、鴨居と2枚の格子戸を備える和室向けの引違い障子。",
+      "tags": [
+        "障子",
+        "shoji",
+        "建具",
+        "door"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "GLB／FBXは不透明和紙の近似。画像と同じ透過は保証しません。",
+        "ゲーム内のスライド操作・物理は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-053.webp"
+    },
+    {
+      "id": "M300-054",
+      "name": "襖建具",
+      "nameEn": "Fusuma doors",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "生成りの両面紙、黒褐色の縁、表裏のくぼんだ丸引手を持つ交換用の襖1枚。",
+      "tags": [
+        "襖",
+        "fusuma",
+        "建具",
+        "door"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "外枠・敷居・自立脚・スライド機構は含みません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-054.webp"
+    },
+    {
+      "id": "M300-055",
+      "name": "床の間ユニット",
+      "nameEn": "Tokonoma alcove",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "濃茶の木床、左右の柱、落掛と淡い左官壁を組み合わせた飾り床ユニット。",
+      "tags": [
+        "床の間",
+        "alcove",
+        "和室",
+        "japanese-room"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "120mmの段差がある飾り床で、通路ではありません。掛軸・花瓶・畳は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-055.webp"
+    },
+    {
+      "id": "M300-056",
+      "name": "欄間",
+      "nameEn": "Ranma transom",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "厚い木枠と、雲・波をかたどった実際の透かし彫りを持つ和室向け欄間。",
+      "tags": [
+        "欄間",
+        "transom",
+        "木彫り",
+        "carving"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "装飾用のゲームモデルです。施工・強度・安全性は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-056.webp"
+    },
+    {
+      "id": "M300-057",
+      "name": "縁側デッキ",
+      "nameEn": "Engawa deck",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "木床と床下支持材、右後方の固定雨戸収納を備える和風建物の接続部材。",
+      "tags": [
+        "縁側",
+        "deck",
+        "木製",
+        "wood"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "床高450mm。家屋・階段・ランプは付属しません。",
+        "雨戸は固定姿勢で、引抜アニメーションはありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-057.webp"
+    },
+    {
+      "id": "M300-058",
+      "name": "土間の上がり框",
+      "nameEn": "Doma threshold",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "靴脱ぎ石、厚い木框、奥の木床と短い土壁を組み合わせた玄関まわりの段差部材。",
+      "tags": [
+        "玄関",
+        "entrance",
+        "段差",
+        "threshold"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "120mmと180mmの段差があります。建物全体・ランプ・履物は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-058.webp"
+    },
+    {
+      "id": "M300-059",
+      "name": "囲炉裏のある古民家",
+      "nameEn": "Irori farmhouse",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "土間・板間、実開口の囲炉裏、独立した瓦屋根と前後の戸を備える古民家。",
+      "tags": [
+        "建物",
+        "building",
+        "古民家",
+        "farmhouse"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "約83k三角形。VRChat最適化済みではありません。",
+        "裏口には地面へ降りるランプがなく、外部床の接続が必要です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-059.webp"
+    },
+    {
+      "id": "M300-060",
+      "name": "離れの四畳半茶室",
+      "nameEn": "Detached tea room",
+      "category": "和室・古民家",
+      "categoryEn": "Japanese interiors",
+      "description": "全畳4枚と半畳1枚、低いくぐり口、側面出口と外ランプを備える独立した茶室。",
+      "tags": [
+        "建物",
+        "building",
+        "茶室",
+        "tea-room"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "正面は立って通れないくぐり口です。",
+        "GLB／FBXの紙は不透明近似で、画像の透過表現と異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-060.webp"
+    },
+    {
+      "id": "M300-061",
+      "name": "玄関シューズキャビネット",
+      "nameEn": "Shoe cabinet",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "淡いオーク調のルーバー扉、左右の棚と天板トレーを備える空の玄関収納。",
+      "tags": [
+        "玄関",
+        "entrance",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "収納物は含みません。扉の物理・ゲーム内操作は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-061.webp"
+    },
+    {
+      "id": "M300-062",
+      "name": "陶器の傘立て",
+      "nameEn": "Ceramic umbrella stand",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "紺青の陶器筒、8つの下部透かし、取り外し水受けと小さなゴム足を持つ傘立て。",
+      "tags": [
+        "傘立て",
+        "umbrella-stand",
+        "陶器",
+        "ceramic"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "傘・水は付属しません。水密性・耐荷重は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-062.webp"
+    },
+    {
+      "id": "M300-063",
+      "name": "郵便受け付き玄関扉",
+      "nameEn": "Mail slot front door",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "木製扉、レバー、実郵便スロットと内側受箱、覗きレンズを備える玄関建具。",
+      "tags": [
+        "玄関",
+        "entrance",
+        "扉",
+        "door"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "覗きレンズはGLB／FBXではalpha近似。撮影・監視機能はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-063.webp"
+    },
+    {
+      "id": "M300-064",
+      "name": "壁付けインターホン",
+      "nameEn": "Wall intercom",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "カメラ窓、実スピーカー孔、独立ボタンと背面取付板を持つ壁付け小物。",
+      "tags": [
+        "インターホン",
+        "intercom",
+        "壁付け",
+        "wall-mounted"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "撮影・録画・通信・音声機能はありません。",
+        "画像の壁は付属せず、ガラスは形式によって表現が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-064.webp"
+    },
+    {
+      "id": "M300-065",
+      "name": "宅配ボックス",
+      "nameEn": "Parcel box",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "二重壁の空の庫内、棚、左ヒンジの扉と無地銘板を備える宅配収納ボックス。",
+      "tags": [
+        "宅配",
+        "parcel",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "鍵・ボタンは装飾です。電子錠やゲーム内操作は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-065.webp"
+    },
+    {
+      "id": "M300-066",
+      "name": "壁掛けエアコン",
+      "nameEn": "Wall air conditioner",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "白い中空筐体、実吹出口、独立ルーバーと上部吸気スリットを備える壁掛け設備。",
+      "tags": [
+        "エアコン",
+        "air-conditioner",
+        "家電",
+        "appliance"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "壁取付用。壁・長い外部配管は含みません。冷暖房機能はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-066.webp"
+    },
+    {
+      "id": "M300-067",
+      "name": "ドラム式洗濯機",
+      "nameEn": "Front loading washer",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "白い筐体、実内ドラム、円形ガラス扉と3室の洗剤引出しを持つ空の洗濯機。",
+      "tags": [
+        "洗濯",
+        "laundry",
+        "家電",
+        "appliance"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "水・衣類・洗剤・洗浄動作は含みません。",
+        "GLB／FBXのガラスはalpha近似で、画像と見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-067.webp"
+    },
+    {
+      "id": "M300-068",
+      "name": "室内物干しラック",
+      "nameEn": "Indoor drying rack",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "2組のX脚とゴム足、2本の中空伸縮竿を持つ室内干し用ラック。",
+      "tags": [
+        "洗濯",
+        "laundry",
+        "ラック",
+        "rack"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "衣類・ハンガーは含みません。物理・耐荷重・安全性は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-068.webp"
+    },
+    {
+      "id": "M300-069",
+      "name": "ランドリーバスケット",
+      "nameEn": "Laundry basket",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "白灰のポリマー帯を立体に編み、2本の布ループ取手を付けた楕円形の洗濯かご。",
+      "tags": [
+        "洗濯",
+        "laundry",
+        "かご",
+        "basket"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "空のかごです。衣類・蓋・仕切り・布物理は含みません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-069.webp"
+    },
+    {
+      "id": "M300-070",
+      "name": "アイロン台",
+      "nameEn": "Ironing board",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "淡青グレーの布台、鉄板置台とX脚を備える折り畳み式アイロン台。",
+      "tags": [
+        "洗濯",
+        "laundry",
+        "折り畳み",
+        "folding"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "アイロンは付属しません。収納姿勢は床から浮いた基準座標で、配置調整が必要です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-070.webp"
+    },
+    {
+      "id": "M300-071",
+      "name": "洗面化粧台",
+      "nameEn": "Vanity unit",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "陶器の洗面器、下部2扉収納と上部の三面鏡収納を組み合わせた水回り設備。",
+      "tags": [
+        "洗面",
+        "vanity",
+        "鏡",
+        "mirror"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "上部鏡収納は壁に固定する別ユニットです。給排水・実機物理は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-071.webp"
+    },
+    {
+      "id": "M300-072",
+      "name": "浴室シャワーユニット",
+      "nameEn": "Shower unit",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "壁取付バー、手持ちヘッド、中空ホースと混合栓を組み合わせた浴室用小物。",
+      "tags": [
+        "浴室",
+        "bathroom",
+        "シャワー",
+        "shower"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "壁・浴室箱・水は付属しません。水流や温度調整は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-072.webp"
+    },
+    {
+      "id": "M300-073",
+      "name": "蓋付き家庭用バスタブ",
+      "nameEn": "Covered bathtub",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "空の浴槽、2枚の取り外し蓋と独立した排水栓を持つ家庭用浴室の背景モデル。",
+      "tags": [
+        "浴室",
+        "bathroom",
+        "浴槽",
+        "bathtub"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "水・人・蛇口は含みません。蓋は自動開閉しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-073.webp"
+    },
+    {
+      "id": "M300-074",
+      "name": "トイレ手洗い器",
+      "nameEn": "Toilet handwash basin",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "陶器の空鉢、単水栓、中空の排水管と背面ブラケットを持つ壁付け手洗い器。",
+      "tags": [
+        "水回り",
+        "plumbing",
+        "手洗い",
+        "basin"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "床置きではありません。壁の適切な高さへ配置が必要です。水は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-074.webp"
+    },
+    {
+      "id": "M300-075",
+      "name": "ルーターと配線トレー",
+      "nameEn": "Router cable tray",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "3本アンテナのルーター、金属トレー、プラグと配線を組み合わせた生活感のある小物。",
+      "tags": [
+        "ルーター",
+        "router",
+        "配線",
+        "cable"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "通信・電気機能、アンテナ可動、ケーブル物理はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-075.webp"
+    },
+    {
+      "id": "M300-076",
+      "name": "家庭用救急箱",
+      "nameEn": "First aid box",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "アイボリーの空ケース、別蓋、3室トレーと折り畳み把手を備える家庭用収納箱。",
+      "tags": [
+        "救急箱",
+        "first-aid-box",
+        "収納",
+        "storage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "薬品・器具は含みません。医療効果や安全性能を示すものではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-076.webp"
+    },
+    {
+      "id": "M300-077",
+      "name": "ベランダの室外機",
+      "nameEn": "Outdoor ac unit",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "白灰の金属ケース、実ファン格子、静止した5枚羽根と背面薄板列を持つ室外機。",
+      "tags": [
+        "エアコン",
+        "air-conditioner",
+        "ベランダ",
+        "balcony"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "運転アニメーション・音・風・冷媒動作はありません。壁や長いホースは付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-077.webp"
+    },
+    {
+      "id": "M300-078",
+      "name": "集合住宅階段ユニット",
+      "nameEn": "Apartment stair unit",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "木踏板、手すり、鋼支持梁と中間踊り場を備える2フライトの折返し階段。",
+      "tags": [
+        "階段",
+        "stairs",
+        "建築",
+        "architecture"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "踏面中央で丸底カプセルに干渉します。歩行用コライダー・段差設定が必要です。",
+        "下接続床は地面より150mm高く、外部ランプは付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-078.webp"
+    },
+    {
+      "id": "M300-079",
+      "name": "入れるワンルーム住戸",
+      "nameEn": "Compact apartment shell",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "主居室、空の水回り用途室、収納凹部とベランダを備えるワンルーム住戸シェル。",
+      "tags": [
+        "建物",
+        "building",
+        "住居",
+        "apartment"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "内装設備・家具・水・人は付属しません。",
+        "GLB／FBXのガラスはalpha近似で、画像と見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-079.webp"
+    },
+    {
+      "id": "M300-080",
+      "name": "二戸一棟の小住宅",
+      "nameEn": "Compact house shell",
+      "category": "住居・生活感",
+      "categoryEn": "Home and living",
+      "description": "左右の住戸を界壁で分け、各玄関とランプ、窓を備える二戸一棟の住宅シェル。",
+      "tags": [
+        "建物",
+        "building",
+        "住宅",
+        "house"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "家具・水回り設備は付属しません。左右二戸で1モデルです。",
+        "ガラスは形式によって異なり、歩行・衝突設定は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-080.webp"
+    },
+    {
+      "id": "M300-081",
+      "name": "モンステラの鉢植え",
+      "nameEn": "Potted monstera",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "成葉7枚と巻いた若葉、曲がった葉柄、深緑の陶器鉢を持つ室内観葉植物。",
+      "tags": [
+        "観葉植物",
+        "houseplant",
+        "葉",
+        "foliage"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的モデルです。風揺れ・成長・落葉は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-081.webp"
+    },
+    {
+      "id": "M300-082",
+      "name": "フィカスの室内樹",
+      "nameEn": "Indoor ficus tree",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "曲がった幹と非対称な枝、48枚の楕円葉、テラコッタ鉢を持つ室内樹。",
+      "tags": [
+        "観葉植物",
+        "houseplant",
+        "樹木",
+        "tree"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な創作植栽で、特定品種の同定資料ではありません。風揺れは未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-082.webp"
+    },
+    {
+      "id": "M300-083",
+      "name": "垂れ下がるポトス",
+      "nameEn": "Hanging pothos",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "40枚のハート形の葉を持つ5本のツルと、3本のひもで吊る白い鉢のセット。",
+      "tags": [
+        "観葉植物",
+        "houseplant",
+        "吊り下げ",
+        "hanging"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "吊り下げ専用で床置きではありません。風揺れ・ひも物理は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-083.webp"
+    },
+    {
+      "id": "M300-084",
+      "name": "オリーブの鉢植え",
+      "nameEn": "Potted olive",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "細い湾曲幹と96枚の細長い葉、土と石風鉢を持つ静的なオリーブ風の植栽。",
+      "tags": [
+        "観葉植物",
+        "houseplant",
+        "オリーブ",
+        "olive"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "実・花は付属しません。風揺れ・成長は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-084.webp"
+    },
+    {
+      "id": "M300-085",
+      "name": "アジアンタム",
+      "nameEn": "Potted maidenhair fern",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "9本の弓状の細い柄と100枚の扇形小葉、薄灰の鉢を持つ静的な創作植栽。",
+      "tags": [
+        "観葉植物",
+        "houseplant",
+        "シダ",
+        "fern"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "風揺れ・成長は未実装。特定品種の同定資料ではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-085.webp"
+    },
+    {
+      "id": "M300-086",
+      "name": "サンスベリア",
+      "nameEn": "Snake plant",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "3株12枚の実厚の剣葉、横斑と黄緑の縁、砂色の陶器鉢を持つ植栽。",
+      "tags": [
+        "観葉植物",
+        "houseplant",
+        "サンスベリア",
+        "snake-plant"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的モデルです。風揺れ・植物物理・栽培用途は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-086.webp"
+    },
+    {
+      "id": "M300-087",
+      "name": "エケベリア寄せ植え",
+      "nameEn": "Echeveria arrangement",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "浅い楕円の素焼き鉢に、大小3株の肉厚ロゼットと小石を寄せた多肉植物。",
+      "tags": [
+        "多肉植物",
+        "succulent",
+        "鉢植え",
+        "potted"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な創作植栽です。成長・植物物理は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-087.webp"
+    },
+    {
+      "id": "M300-088",
+      "name": "柱サボテン",
+      "nameEn": "Columnar cactus",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "8稜の主柱、左右2本の腕、細かな棘と陶器鉢を持つサボテン風の創作植栽。",
+      "tags": [
+        "サボテン",
+        "cactus",
+        "鉢植え",
+        "potted"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的モデルです。植物学的な種の同定・安全情報を示すものではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-088.webp"
+    },
+    {
+      "id": "M300-089",
+      "name": "ハーブ苗トレー",
+      "nameEn": "Herb seedling tray",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "バジル風・ローズマリー風・ミント風を各2株、6つのポットに分けた苗トレー。",
+      "tags": [
+        "ハーブ",
+        "herb",
+        "苗",
+        "seedling"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "6ポットで1モデル。静的植栽で、食用・栽培資料ではありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-089.webp"
+    },
+    {
+      "id": "M300-090",
+      "name": "つぼみ付きアジサイ",
+      "nameEn": "Potted hydrangea",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "鋸歯の葉、2つの開花群と18個のつぼみを持つ、アジサイ風の鉢植え。",
+      "tags": [
+        "花",
+        "flower",
+        "アジサイ",
+        "hydrangea"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な創作植栽です。風揺れ・成長は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-090.webp"
+    },
+    {
+      "id": "M300-091",
+      "name": "小型盆栽",
+      "nameEn": "Creative bonsai",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "S字の幹、3層の枝棚と小葉、根張り、苔と青緑の楕円鉢を備える小型盆栽。",
+      "tags": [
+        "盆栽",
+        "bonsai",
+        "和風",
+        "japanese"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な創作広葉盆栽です。成長・植物物理は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-091.webp"
+    },
+    {
+      "id": "M300-092",
+      "name": "ガラスのテラリウム",
+      "nameEn": "Glass terrarium",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "真鍮色の枠と切妻ガラス屋根、開戸、砂利・土・苔・石を備える小型の飾り容器。",
+      "tags": [
+        "テラリウム",
+        "terrarium",
+        "ガラス",
+        "glass"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "GLB／FBXはalpha近似。別の物理ガラス版と見た目が異なります。",
+        "植物の生育・密閉・防水性能は保証しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-092.webp"
+    },
+    {
+      "id": "M300-093",
+      "name": "真鍮じょうろ",
+      "nameEn": "Brass watering can",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "空の金属容器、独立蓋、連通する細い注ぎ口と丸棒取手を持つ真鍮色のじょうろ。",
+      "tags": [
+        "園芸",
+        "gardening",
+        "じょうろ",
+        "watering-can"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "注水・漏水のシミュレーションはありません。原点は容器の底中央とは異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-093.webp"
+    },
+    {
+      "id": "M300-094",
+      "name": "園芸用土入れ",
+      "nameEn": "Gardening soil scoop",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "円筒の後部を握る構造と、斜めに開いた前口、閉じた後端を持つ金属製の土入れ。",
+      "tags": [
+        "園芸",
+        "gardening",
+        "スコップ",
+        "scoop"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "動的な土の流れ・物理操作は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-094.webp"
+    },
+    {
+      "id": "M300-095",
+      "name": "植替え作業台",
+      "nameEn": "Potting bench",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "木製作業面、抜き取れる金属土受け、下棚とJフックを備える園芸用の作業台。",
+      "tags": [
+        "園芸",
+        "gardening",
+        "作業台",
+        "workbench"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "空の台です。土・鉢・道具は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-095.webp"
+    },
+    {
+      "id": "M300-096",
+      "name": "苗床ラック",
+      "nameEn": "Seedling rack",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "金属の4支柱、3段の空トレーと散水ホース意匠を備える苗床用ラック。",
+      "tags": [
+        "園芸",
+        "gardening",
+        "ラック",
+        "rack"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "植物・土は付属しません。トレー抜去は静止姿勢で、散水や物理制御はありません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-096.webp"
+    },
+    {
+      "id": "M300-097",
+      "name": "つる植物のトレリス",
+      "nameEn": "Wooden ivy trellis",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "縦横の木格子、足と後方控えに、3本のツルと60枚の葉を添えた独立式トレリス。",
+      "tags": [
+        "園芸",
+        "gardening",
+        "格子",
+        "trellis"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "静的な背景モデルです。風・植物物理・実物の耐荷重は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-097.webp"
+    },
+    {
+      "id": "M300-098",
+      "name": "花壇縁石",
+      "nameEn": "Flowerbed edging",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "同じ断面の直線1本と90度曲線1本を組み合わせる、石調の花壇縁石セット。",
+      "tags": [
+        "園芸",
+        "gardening",
+        "縁石",
+        "edging"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "2形で1モデル。高さ200mmの縁石で、歩行床ではありません。土・花は付属しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-098.webp"
+    },
+    {
+      "id": "M300-099",
+      "name": "小型ガラス温室",
+      "nameEn": "Small glass greenhouse",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "3m角の空の温室に、片引戸、天窓、排水溝と前面ランプを備える園芸用建物。",
+      "tags": [
+        "建物",
+        "building",
+        "温室",
+        "greenhouse"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "植物・棚は付属しません。ゲーム側の開閉操作は未実装です。",
+        "GLB／FBXのガラスはalpha近似で、画像と見た目が異なります。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-099.webp"
+    },
+    {
+      "id": "M300-100",
+      "name": "園芸店の作業小屋",
+      "nameEn": "Garden shop work shed",
+      "category": "植物・温室",
+      "categoryEn": "Plants and garden",
+      "description": "木板外壁、切妻金属屋根、片引戸と2つの側窓、後壁の道具掛けを持つ作業小屋。",
+      "tags": [
+        "建物",
+        "building",
+        "小屋",
+        "shed"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "工具・植物・机・家具は付属しません。",
+        "GLB／FBXのガラスはalpha近似。ゲーム内の開閉操作は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-100.webp"
+    },
+    {
+      "id": "M300-101",
+      "name": "ソフトボックスライト",
+      "nameEn": "Studio softbox",
+      "category": "撮影・展示",
+      "categoryEn": "Studio and display",
+      "description": "拡散布と反射フード、中空支柱、三脚とケーブルを備える撮影スタジオの展示用小物。",
+      "tags": [
+        "撮影",
+        "photography",
+        "照明",
+        "lighting"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "固定展示姿勢で、伸縮・折畳みアニメーションはありません。",
+        "Blendは表示用発光あり、GLB／FBXは非発光です。光学性能は再現しません。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-101.webp"
+    },
+    {
+      "id": "M300-102",
+      "name": "撮影用レフ板",
+      "nameEn": "Photography reflector",
+      "category": "撮影・展示",
+      "categoryEn": "Studio and display",
+      "description": "銀色の正面と白布の背面、U字支持枠と4本の脚を備える直径1mの撮影用レフ板。",
+      "tags": [
+        "撮影",
+        "photography",
+        "反射板",
+        "reflector"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "折り畳むのは脚のみ。収納時の自立・物理・実測反射性能は未検証です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-102.webp"
+    },
+    {
+      "id": "M300-103",
+      "name": "ブームマイクスタンド",
+      "nameEn": "Boom microphone stand",
+      "category": "撮影・展示",
+      "categoryEn": "Studio and display",
+      "description": "三脚、ブーム、マイクの実グリルとC型クリップ、ケーブルを備える固定展示用小物。",
+      "tags": [
+        "撮影",
+        "photography",
+        "マイク",
+        "microphone"
+      ],
+      "notes": [
+        "Unity / VRChat 実機未検証",
+        "脚折畳み・伸縮・ブーム旋回・録音／音声入力機能は未実装です。"
+      ],
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "image": "assets/models/previews/M300-103.webp"
+    }
+  ]
+}

@@ -28,3 +28,7 @@ Thumbnail changes in this update were limited to official pages for the matching
 | ヨルノニワ | *(not captured)* | https://claude.ai/artifact/G6EGqVynidvfXef9btxaU5 | User-provided URL returned an HTTP shell, but Chromium displayed `Page not found – Claude`; no third-party image was substituted and no screenshot was saved. |
 
 Crabhouse and the previously published 3D thumbnails were retained. STAR FINCH keeps the existing verified gameplay capture; no external store image was substituted. No model files were added.
+
+## M300 model catalog previews
+
+`assets/models/previews/M300-001.webp` through `M300-103.webp` are derived from the corresponding 103 saved models' existing hero renders, not concept/reference images. Each source image was checked against its recorded hash, then resized without cropping to a maximum dimension of 640px and encoded as WebP (quality 82). No new image generation, model modification, or re-rendering was performed. Only the web-sized previews and display metadata are included; original model files and private production materials are not published. Material or inspection-pose differences relevant to a preview are noted in the catalog.

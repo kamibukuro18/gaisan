@@ -5,6 +5,7 @@
   const collections = [['games','game'],['aiGames','game'],['projects','tool'],['models3d','3d']];
   const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind:item.category || kind})));
   const styles = {
+    'production-model-catalog': {accent:'mint',caption:'3D MODEL INDEX / 103',visual:'image',source:'MODEL PREVIEW'},
     'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'image'},
     'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'image'},
     'star-finch': {accent:'violet',caption:'STAR FINCH / FLUX 10',visual:'image'},
@@ -27,7 +28,7 @@
     'lantern-court': {accent:'blue',caption:'LANTERN COURT',visual:'image'},
     'pyramid': {accent:'coral',caption:'PYRAMID',visual:'image'}
   };
-  const entryHref = (item,collection=item.collection) => item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || '');
+  const entryHref = (item,collection=item.collection) => item.catalogHref || (item.slug ? `entry.html?type=${encodeURIComponent(collection)}&slug=${encodeURIComponent(item.slug)}` : (item.href || ''));
   function primaryAction(item) {
     if (item.href) return {href:item.href,label:item.collection === 'models3d' ? 'BOOTHで購入' : (item.collection === 'aiGames' ? '遊ぶ' : '開く')};
     const links = (item.page?.sections || []).flatMap(section => section.links || []);

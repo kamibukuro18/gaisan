@@ -698,6 +698,17 @@ window.siteContent = {
 
   models3d: [
     {
+      slug: "production-model-catalog",
+      meta: "3D Model / Catalog",
+      title: "3Dモデルの制作カタログ",
+      summary: "制作・保存済みの103モデルを一ページに。実モデルの画像を、名前・ID・日本語と英語のタグ・カテゴリで検索できます。",
+      year: "2026.10",
+      status: "103 Models",
+      tags: ["3D", "Blender", "Catalog", "Search"],
+      catalogHref: "models.html",
+      cover: "assets/models/previews/M300-001.webp",
+    },
+    {
       slug: "potato-collection",
       meta: "3D Model / じゃがいも",
       title: "Potato Collection",
