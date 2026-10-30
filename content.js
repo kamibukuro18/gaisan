@@ -26,6 +26,54 @@ window.siteContent = {
 
   games: [
     {
+      slug: "shisha-spin",
+      meta: "Web App / Flavor Mixer",
+      title: "SHISHA SPIN — 今日のミックス",
+      cover: "assets/games/shisha-spin-result-20261030.jpg",
+      thumbnailSource: "shisha-spin/",
+      summary:
+        "選んだフレーバーから、今日の3種を。スロット演出で組み合わせを見つける、スマートフォン向けのフレーバーミキサーです。インストール・ログイン不要で開けます。",
+      year: "2026.10",
+      status: "公開中",
+      tags: ["Web", "Mobile", "Slot", "Flavor"],
+      href: "shisha-spin/",
+      cta: "Open app",
+      page: {
+        eyebrow: "Web App / SHISHA SPIN / 2026.10",
+        intro:
+          "SHISHA SPINは、使いたいフレーバーを選び、SPINで3種類の組み合わせを見つけるブラウザーアプリです。華やかなリールと結果演出を楽しみながら、ミックスのアイデアを探せます。",
+        heroAlt: "SHISHA SPINの実画面。ライチ・ザクロ・レモンの3種類が表示された結果画面",
+        highlights: [
+          "スマートフォンとPCのブラウザーから、ログイン不要で利用",
+          "55種類からフレーバーを選択。名前検索とカテゴリ絞り込みに対応",
+          "SPINとRE-SPIN、結果履歴、サウンド・演出設定を搭載",
+        ],
+        sections: [
+          {
+            title: "使い方",
+            bullets: [
+              "「フレーバー」から使用する候補を選択します。名前やカテゴリで絞り込めます。",
+              "SPINを押すと3種類の組み合わせを表示。RE-SPINでもう一度試せます。",
+              "「設定」でサウンドと演出を調整し、「履歴」で過去の結果を確認できます。",
+            ],
+          },
+          {
+            title: "利用について",
+            paragraphs: [
+              "20歳以上の方向けの試作アプリです。フレーバーの組み合わせを考えるためのツールで、賭け金・賞金・購入機能はありません。",
+              "設定と履歴は利用中のブラウザーに保存されます。端末・ブラウザー間の同期や、別URLの旧版からの自動移行はありません。",
+            ],
+          },
+          {
+            title: "アプリを開く",
+            links: [
+              { label: "SHISHA SPINをブラウザーで開く", href: "shisha-spin/" },
+            ],
+          },
+        ],
+      },
+    },
+    {
       slug: "crabhouse",
       meta: "Mobile Game",
       title: "Crabhouse",

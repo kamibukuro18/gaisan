@@ -5,6 +5,7 @@
   const collections = [['games','game'],['aiGames','game'],['projects','tool'],['models3d','3d']];
   const works = collections.flatMap(([collection,kind]) => (content[collection] || []).map(item => ({...item,collection,kind:item.category || kind})));
   const styles = {
+    'shisha-spin': {accent:'violet',caption:'SHISHA SPIN / FLAVOR MIXER',visual:'image',source:'APP CAPTURE'},
     'production-model-catalog': {accent:'mint',caption:'3D MODEL INDEX / 103',visual:'image',source:'MODEL PREVIEW'},
     'crabhouse': {accent:'coral',caption:'CRABHOUSE',visual:'image'},
     'crabhouse-opus': {accent:'violet',caption:'CRABHOUSE / WEB',visual:'image'},

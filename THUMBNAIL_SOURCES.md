@@ -32,3 +32,7 @@ Crabhouse and the previously published 3D thumbnails were retained. STAR FINCH k
 ## M300 model catalog previews
 
 `assets/models/previews/M300-001.webp` through `M300-103.webp` are derived from the corresponding 103 saved models' existing hero renders, not concept/reference images. Each source image was checked against its recorded hash, then resized without cropping to a maximum dimension of 640px and encoded as WebP (quality 82). No new image generation, model modification, or re-rendering was performed. Only the web-sized previews and display metadata are included; original model files and private production materials are not published. Material or inspection-pose differences relevant to a preview are noted in the catalog.
+
+## SHISHA SPIN
+
+`assets/games/shisha-spin-result-20261030.jpg` reuses a verified 400×606 capture of the public app at https://kamibukuro18.github.io/gaisan/shisha-spin/ on 2026-10-30. It shows an actual sample result (lychee, pomegranate, lemon), not a concept mockup. The image is reused unchanged; no new generation or private source assets are included.
