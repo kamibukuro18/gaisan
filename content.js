@@ -1468,6 +1468,126 @@ window.siteContent = {
 
   ideas: [
     {
+      "slug": "stone-currency-management",
+      "meta": "Game Idea",
+      "title": "石のでかい通貨を持ち運んでやりとりする原始時代経営ゲーム",
+      "summary": "石のでかい通貨を持ち運んでやりとりする原始時代経営ゲーム",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "Game"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "Game Idea / 2026.11",
+        "intro": "石のでかい通貨を持ち運んでやりとりする原始時代経営ゲーム",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "石のでかい通貨を持ち運んでやりとりする原始時代経営ゲーム"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "wall-climbing-game",
+      "meta": "Game Idea",
+      "title": "壁を登るゲーム",
+      "summary": "壁を登るゲーム",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "Game"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "Game Idea / 2026.11",
+        "intro": "壁を登るゲーム",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "壁を登るゲーム"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "wizardry-backpack-battles",
+      "meta": "Game Idea",
+      "title": "ウィザードリィ✖️バックパックバトル",
+      "summary": "ウィザードリィ✖️バックパックバトル",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "Game"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "Game Idea / 2026.11",
+        "intro": "ウィザードリィ✖️バックパックバトル",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "ウィザードリィ✖️バックパックバトル"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "presbyopia-battle",
+      "meta": "Game Idea",
+      "title": "老眼バトル",
+      "summary": "老眼バトル",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "Game"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "Game Idea / 2026.11",
+        "intro": "老眼バトル",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "老眼バトル"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "typing-game",
+      "meta": "Game Idea",
+      "title": "タイピングゲーム",
+      "summary": "タイピングゲーム",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "Game"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "Game Idea / 2026.11",
+        "intro": "タイピングゲーム",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "タイピングゲーム"
+            ]
+          }
+        ]
+      }
+    },
+    {
       slug: "spend-100-billion-yen",
       meta: "App Idea",
       title: "1000億円の使い方",
