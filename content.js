@@ -1468,6 +1468,54 @@ window.siteContent = {
 
   ideas: [
     {
+      "slug": "geotagged-photo-travel-video",
+      "meta": "App Idea",
+      "title": "位置情報付きの写真から旅の記録映像を作るアプリ",
+      "summary": "位置情報付きの写真をアップするだけで、googleマップと、AI生成を連携して、旅の記録映像を作ってくれるアプリ",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "App"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "App Idea / 2026.11",
+        "intro": "位置情報付きの写真をアップするだけで、googleマップと、AI生成を連携して、旅の記録映像を作ってくれるアプリ",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "位置情報付きの写真をアップするだけで、googleマップと、AI生成を連携して、旅の記録映像を作ってくれるアプリ"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "flick-career-portfolio",
+      "meta": "App Idea",
+      "title": "フリックで経歴を選んでスキルシートやポートフォリオを作るアプリ",
+      "summary": "フリックで経歴を選択しているだけでスキルシートやポートフォリオを作成できるアプリ",
+      "year": "2026.11",
+      "status": "アイデア",
+      "tags": [
+        "App"
+      ],
+      "cta": "Read detail",
+      "page": {
+        "eyebrow": "App Idea / 2026.11",
+        "intro": "フリックで経歴を選択しているだけでスキルシートやポートフォリオを作成できるアプリ",
+        "sections": [
+          {
+            "title": "アイデアメモ",
+            "paragraphs": [
+              "フリックで経歴を選択しているだけでスキルシートやポートフォリオを作成できるアプリ"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "slug": "stone-currency-management",
       "meta": "Game Idea",
       "title": "石のでかい通貨を持ち運んでやりとりする原始時代経営ゲーム",
