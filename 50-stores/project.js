@@ -173,7 +173,7 @@ async function init() {
       used.add(venue.number);
       return true;
     }).sort((a, b) => a.number - b.number);
-    const current = Number.isInteger(data.displayed) && data.displayed >= 0 ? data.displayed : 6;
+    const current = Number.isInteger(data.displayed) && data.displayed >= 0 ? data.displayed : 5;
     const target = Number.isInteger(data.target) && data.target > 0 ? data.target : 50;
     $('venue-count').textContent = count(current);
     $('target-count').textContent = count(target);
