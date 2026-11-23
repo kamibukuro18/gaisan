@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>50 STORES PROJECT | GAI</title>
+<meta name="description" content="街に、絵を増殖させる。GAIが50店舗への展示を目指すアートプロジェクト。">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="project.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+<header class="mast wrap">
+<a class="brand" href="../">GAI<span>・</span></a>
+<nav aria-label="ページ内の案内"><a href="#about">企画</a><a href="#map">地図</a><a href="#gallery">写真</a><a href="#contact">展示募集</a></nav>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="title">
+<div class="wrap hero-inner">
+<p class="eyebrow hero-label">GAI ART PROJECT</p>
+<h1 id="title">50 STORES<br>PROJECT<span aria-hidden="true">.</span></h1>
+<p class="hero-message">街に、絵を増殖させる。</p>
+<p class="hero-text">いつか、どこかの店で見た絵に、別の店でまた出会う。その偶然を、街のあちこちに作っていく。</p>
+<div class="progress">
+<div class="progress-copy"><strong id="venue-count">06</strong><span> / <span id="target-count">50</span> STORES</span></div>
+<progress id="venue-progress" value="6" max="50" aria-label="展示店舗数：目標50店舗のうち6店舗">6 / 50</progress>
+<div class="progress-caption"><span>展示実績</span><span id="public-count">公開店舗 0</span></div>
+</div>
+</div>
+</section>
+<section class="section wrap" id="about" aria-labelledby="about-heading">
+<div class="section-head"><p class="eyebrow">01 / ABOUT</p><h2 id="about-heading">街の50店舗に、自分の絵を存在させる。</h2></div>
+<div class="about-copy">
+<p>自分の描いた絵が、街のいろいろな場所に飾られている。</p>
+<p>ある日、入った店で見かけた絵を、別の日に訪れた店でも見かける。</p>
+<p class="pullquote">「あれ、この絵、前にも見たな」</p>
+<p>そんな状況を作ってみたい。</p>
+<p>そのために、50店舗への展示を目指して、さまざまなお店に作品を置いてもらっています。</p>
+<p>これは、街の中に自分の作品を広げていくアートプロジェクトです。</p>
+</div>
+</section>
+<section class="section wrap" id="map" aria-labelledby="map-heading">
+<div class="section-head"><p class="eyebrow">02 / MAP</p><h2 id="map-heading">街のどこかに。</h2></div>
+<p class="intro">展示場所は、お店の掲載許可が取れたものから地図に追加します。</p>
+<p id="map-empty" class="map-empty"><span>NO PUBLIC LOCATIONS</span>公開できる展示場所は、まだありません。</p>
+<button id="map-open" class="button" type="button" hidden>地図を表示する</button>
+<div id="venue-map" class="map-view" role="region" aria-label="公開展示店舗の地図" hidden></div>
+<p id="map-status" class="map-status" role="status"></p>
+<a href="#stores" id="map-list-link" class="map-list-link" hidden>地図の代わりに店舗一覧を見る ↓</a>
+</section>
+<section class="section wrap" id="gallery" aria-labelledby="gallery-heading">
+<div class="section-head"><p class="eyebrow">03 / GALLERY</p><h2 id="gallery-heading">絵のある風景。</h2></div>
+<p class="intro">絵だけではなく、絵が置かれているお店の風景を記録します。</p>
+<p id="gallery-empty" class="empty">掲載許可が取れた展示写真を、ここに追加していきます。</p>
+<div id="venue-gallery" class="gallery"></div>
+</section>
+<section class="section wrap" id="stores" aria-labelledby="stores-heading">
+<div class="section-head"><p class="eyebrow">04 / STORES</p><h2 id="stores-heading">展示店舗一覧。</h2></div>
+<p id="stores-empty" class="empty">掲載許可が取れたお店を、ここに追加していきます。</p>
+<div id="store-table-wrap" class="table-wrap" hidden>
+<table class="stores-table">
+<caption class="sr-only">掲載許可を得た展示店舗</caption>
+<thead><tr><th scope="col">店舗名</th><th scope="col">エリア</th><th scope="col">展示作品</th><th scope="col">展示開始日</th></tr></thead>
+<tbody id="venue-table"></tbody>
+</table>
+</div>
+</section>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+<div class="wrap contact-inner">
+<p class="eyebrow">05 / HOST AN EXHIBITION</p>
+<h2 id="contact-heading">あなたのお店にも、<br>GAIの絵を。</h2>
+<p>飲食店、バー、シーシャ店、美容室、オフィスなど、作品を展示していただける場所を募集しています。展示条件や作品については、お気軽にお問い合わせください。</p>
+<a class="button" href="https://x.com/kamibukuro18">Xで展示について相談 <span aria-hidden="true">↗</span></a>
+</div>
+</section>
+<section class="section wrap artist" aria-labelledby="artist-heading">
+<div class="section-head"><p class="eyebrow">06 / ARTIST</p><h2 id="artist-heading">GAI</h2></div>
+<div class="about-copy"><p>生貝遼太。モノクロの細密なペン画を描くほか、ゲームやデジタル作品も制作しています。</p>
+<ul class="related"><li><a href="../#works">作品ポートフォリオ ↗</a></li><li><a href="https://gaitribal.myportfolio.com/">アート作品 ↗</a></li><li><a href="https://note.com/kamibukuro18">note ↗</a></li><li><a href="https://gaibako.com/about/">プロフィール ↗</a></li></ul>
+</div>
+</section>
+</main>
+<footer class="footer wrap"><a href="../">← gaisan に戻る</a><span>GAI / 50 STORES PROJECT</span></footer>
+</body>
+</html>

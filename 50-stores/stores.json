@@ -1,0 +1,41 @@
+{
+  "displayed": 6,
+  "target": 50,
+  "stores": [
+    {
+      "approved": true,
+      "number": 1,
+      "name": "シーシャカフェ&バー 煙仄2nd 池袋店",
+      "area": "東京・池袋",
+      "photo": "photos/honoka-ikebukuro.webp",
+      "alt": "窓を挟んで額入りの作品が並ぶ、煙仄2nd 池袋店の展示風景",
+      "website": "https://kemuri-honoka.com/ikebukuro/",
+      "directions": "https://maps.app.goo.gl/k8aBsjCY8n9cYegd8",
+      "lat": 35.7277056,
+      "lng": 139.7060862
+    },
+    {
+      "approved": true,
+      "number": 2,
+      "name": "Shisha Bar Smoky 池袋店",
+      "area": "東京・池袋",
+      "photo": "photos/smoky-ikebukuro.webp",
+      "alt": "店内の青い壁に二点のモノクロ作品が並ぶ、Shisha Bar Smokyの展示風景",
+      "directions": "https://maps.app.goo.gl/xTYwp6czTEAcnhE27",
+      "lat": 35.7324147,
+      "lng": 139.7075147
+    },
+    {
+      "number": 3,
+      "name": "Freestyle Dining E-nNS（フリースタイル ダイニング エン）",
+      "area": "埼玉・朝霞",
+      "directions": "https://maps.app.goo.gl/Ku3G9CtTbZuCabpaA",
+      "website": "https://tabelog.com/saitama/A1103/A110301/11034752/",
+      "lat": 35.7875418,
+      "lng": 139.5968893,
+      "approved": true,
+      "photo": "photos/enns-asaka.webp",
+      "alt": "木の柱に近い壁に飾られた、Freestyle Dining E-nNSの額入りモノクロ作品"
+    }
+  ]
+}
