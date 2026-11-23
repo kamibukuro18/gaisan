@@ -12,7 +12,8 @@
       "website": "https://kemuri-honoka.com/ikebukuro/",
       "directions": "https://maps.app.goo.gl/k8aBsjCY8n9cYegd8",
       "lat": 35.7277056,
-      "lng": 139.7060862
+      "lng": 139.7060862,
+      "date": "2026-11-23"
     },
     {
       "approved": true,
@@ -23,7 +24,8 @@
       "alt": "店内の青い壁に二点のモノクロ作品が並ぶ、Shisha Bar Smokyの展示風景",
       "directions": "https://maps.app.goo.gl/xTYwp6czTEAcnhE27",
       "lat": 35.7324147,
-      "lng": 139.7075147
+      "lng": 139.7075147,
+      "date": "2026-10-21"
     },
     {
       "number": 3,
@@ -35,7 +37,8 @@
       "lng": 139.5968893,
       "approved": true,
       "photo": "photos/enns-asaka.webp",
-      "alt": "木の柱に近い壁に飾られた、Freestyle Dining E-nNSの額入りモノクロ作品"
+      "alt": "木の柱に近い壁に飾られた、Freestyle Dining E-nNSの額入りモノクロ作品",
+      "date": "2026-10-20"
     }
   ]
 }

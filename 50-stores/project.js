@@ -35,11 +35,10 @@ function publicRecord(input) {
   const photo = publicPhoto(input.photo);
   if (!photo) return null;
   const { number, name, area, alt, lat, lng } = input;
-  const art = typeof input.art === 'string' ? input.art.trim() : '';
   const date = typeof input.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(input.date) ? input.date : '';
   const website = publicLink(input.website);
   const directions = publicLink(input.directions, true);
-  return { number, name, area, art, date, alt, photo, lat, lng, website, directions };
+  return { number, name, area, date, alt, photo, lat, lng, website, directions };
 }
 
 function image(venue, lazy = true) {
@@ -61,7 +60,7 @@ function renderVenues(venues) {
     fig.id = 'store-' + venue.number;
     const cap = make('figcaption');
     cap.append(make('span', 'STORE ' + count(venue.number)), make('strong', venue.name),
-      make('span', venue.area + (venue.art ? ' / ' + venue.art : '')));
+      make('span', venue.area));
     const links = make('span', null, 'store-links');
     if (venue.website) links.append(linkTo('店舗情報', venue.website));
     if (venue.directions) links.append(linkTo('Google マップで見る', venue.directions));
@@ -77,11 +76,11 @@ function renderVenues(venues) {
     name.append(link);
     const date = make('td', venue.date ? null : '—');
     if (venue.date) {
-      const when = make('time', venue.date.split('-').join('.'));
+      const when = make('time', venue.date.replaceAll('-', '/'));
       when.dateTime = venue.date;
       date.append(when);
     }
-    row.append(name, make('td', venue.area), make('td', venue.art || '—'), date);
+    row.append(name, make('td', venue.area), date);
     $('venue-table').append(row);
   }
 }
@@ -143,7 +142,7 @@ function renderMap(venues) {
         photo.height = 144;
         const link = make('a', '展示写真へ');
         link.href = '#store-' + venue.number;
-        details.append(photo, make('b', venue.name), make('span', venue.art || '作品名未記載'), link);
+        details.append(photo, make('b', venue.name), link);
         if (venue.directions) details.append(make('br'), linkTo('Google マップで見る', venue.directions));
         layer.addLayer(pin.bindPopup(details));
       }
