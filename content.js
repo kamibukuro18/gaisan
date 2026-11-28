@@ -2920,6 +2920,12 @@ window.siteContent = {
 
   timeline: [
     {
+      date: "2026.11.28",
+      title: "50 STORES PROJECTに高田馬場の展示を追加",
+      summary: "シーシャ屋 はっち Shisha Lounge 高田馬場店での展示を、写真・展示開始日・地図の位置とあわせて50 STORES PROJECTのページに掲載しました。展示店舗は6店舗になりました。",
+      href: "50-stores/",
+    },
+    {
       date: "2026.11.13",
       title: "ネタ帳にアプリアイデア2件を追加",
       summary: "位置情報付き写真・Googleマップ・AI生成を連携した旅の記録映像アプリと、フリックで経歴を選んでスキルシートやポートフォリオを作るアプリをIdeasに追加しました。",

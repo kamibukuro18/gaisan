@@ -1,5 +1,5 @@
 {
-  "displayed": 5,
+  "displayed": 6,
   "target": 50,
   "stores": [
     {
@@ -39,6 +39,18 @@
       "photo": "photos/enns-asaka.webp",
       "alt": "木の柱に近い壁に飾られた、Freestyle Dining E-nNSの額入りモノクロ作品",
       "date": "2026-10-20"
+    },
+    {
+      "approved": true,
+      "number": 4,
+      "name": "シーシャ屋 はっち Shisha Lounge 高田馬場店",
+      "area": "東京・高田馬場",
+      "photo": "photos/hachi-takadanobaba.webp",
+      "alt": "青い壁に額入りのモノクロ作品と作家カードが並ぶ、シーシャ屋 はっち 高田馬場店の展示風景",
+      "website": "https://shisha-hachi.jp/%e9%ab%98%e7%94%b0%e9%a6%ac%e5%a0%b4%e5%ba%97-2/",
+      "lat": 35.7157667,
+      "lng": 139.6997528,
+      "date": "2026-11-28"
     }
   ]
 }
